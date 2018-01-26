@@ -1,0 +1,79 @@
+\noindent This work is in press as: \textbf{R. G. Cavalcante}, S. Patil, Y. Park, L. S. Rozek, and M. A. Sartor, "Integrating DNA methylation and hydroxymethylation data with the mint pipeline.," \emph{Cancer Research}, In Press.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Introduction}
+\label{mint_introduction}
+
+Methylation of cytosines to form 5-methylcytosine (5mC), especially at CpGs, is an epigenetic mark with important roles in mammalian development and tissue specificity, genomic imprinting, and environmental responses \cite{Schubeler:2015it}. Dysregulation of 5mC causes aberrant gene expression, affecting cancer risk, progression and treatment response \cite{Baylin:2011ef}. 5-hydroxymethylcytosine (5hmC) is an intermediate in the cell's active DNA demethylation pathway with tissue-specific distribution affecting gene expression \cite{Branco:2011gg} and carcinogenesis \cite{Rampal:2014ka}.
+
+Bisulfite-conversion (BS) assays such as whole genome bisulfite sequencing (WGBS) and reduced representation bisulfite sequencing (RRBS) are widely used to quantify methylation levels at CpG-resolution. However, neither distinguishes 5mC from 5hmC since they are both protected from transformation under sodium bisulfite treatment. To distinguish the marks, OxBS-seq and TAB-seq detect either 5mC or 5hmC at CpG-resolution, respectively, however neither has been widely adopted. Immunoprecipitation (IP) assays such as MeDIP-seq, hMeDIP-seq, and hMeSeal are region-resolution assays detecting 5mC or 5hmC, respectively, and are more widely used and easily adopted. A review of these technologies can be found in \cite{Song:2012eb}.
+
+Currently, differentiating 5mC from 5hmC is done in silico via signal integration from multiple assays. A small number of methylation analysis pipelines exist, though none support the integrative analysis of diverse data types for genome-wide 5mC and 5hmC. The methylPipe Bioconductor package \cite{Kishore:2015jg} supports the analysis and visualization of base pair resolution methylation data. However, methylPipe does not support IP approaches and starts with bismark alignments, meaning users must perform QC, trimming, and alignment separately. SMAP is another methylation analysis pipeline, which supports processing from raw data, but only for RRBS experiments \cite{Wang:2015dc}. Here we present mint, a methylation integration pipeline for processing, analyzing, integrating, and visualizing genome-wide 5mC and/or 5hmC data.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Methods}
+\label{mint_methods}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{Overview of the mint pipeline}
+\label{mint_methods_overview}
+
+We developed mint to help jointly analyze and integrate 5mC and 5hmC genome-wide. From raw reads to integration and interpretation, users can analyze BS and IP technologies together (a 'hybrid' experiment), multiple IP technologies (e.g., MeDIP-seq and hMeDIP-seq 'pulldown' experiments), or a single type of experiment without integration.
+For any experimental setup, mint performs quality control, adapter and quality trimming, sample-wise methylation quantification, and differential methylation analysis steps (Figure \ref{chap5:fig:1}). 5mC and 5hmC data are then integrated in a genomic segmentation based on overlapping signal, and genomic annotations with graphical summaries (Figures \ref{chap5:fig:2} and \ref{chap5:fig:3}) and a UCSC Genome Browser track hub (Figure \ref{chap5:fig:4}) are generated for seamless visualization, interpretation, and hypothesis-generation. The mint pipeline is implemented as a command-line tool using make (\url{https://github.com/sartorlab/mint}), and as a GUI tool using the Galaxy web-based platform \cite{Afgan:2016il} (\url{https://github.com/sartorlab/mint_galaxy}).
+
+Analysis with mint is modular (described below), with the 5mC (either BS or IP-based) and 5hmC (IP-based) data handled independently until the integration module. To setup a project in the command-line tool, users must create tables containing sample metadata (Table \ref{chap5:table:1}), and comparison metadata (Table \ref{chap5:table:2}). After initializing a project, users may alter tool parameters in the make configuration file. In Galaxy, users input metadata and select appropriate files within the GUI. Tool parameters are specified on each tool's Galaxy page, and the tools are arranged into workflows. Galaxy workflows function both as pipelines and visualizations for the modules. The Galaxy implementation is currently limited to group versus group comparisons, with a planned future update to allow other experimental designs.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{Demonstration data}
+\label{mint_methods_data}
+
+We demonstrate the mint pipeline on enhanced RRBS and hMeSeal data from two Acute Myeloid Leukemia (AML) samples with IDH2 mutations and two normal bone marrow (NBM) samples from \cite{Rampal:2014ka} (GEO accession GSE52945). Previous findings indicate mutations in IDH2 lead to increased 5mC levels and decreased 5hmC levels, caused by an inhibition of the active demethylation process. In total, this data set has 8 pulldown samples and 4 bisulfite samples, and requires about 12 hours to run from raw reads to integration and visualization using 20 cores. Runtimes for other data will vary depending on the number samples, the number of CpGs covered, and available computing resources.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Results}
+\label{mint_results}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{Alignment modules}
+\label{mint_results_alignment}
+
+The alignment modules assess sample quality with FastQC, perform adapter and quality trimming with Trim Galore!, and align reads with bismark \cite{Krueger:2011eb} for BS data and bowtie2 \cite{Langmead:2012jh} for IP data. The reports for each sample are collated with MultiQC \cite{Ewels:2016bk}.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{Sample modules}
+\label{mint_results_sample}
+
+The sample modules determine CpG-specific percent methylation levels for BS data with bismark methylation extractor \cite{Krueger:2011eb} and qualitative methylation for IP data in the form of peaks called by macs2 \cite{Feng:2012hi}. For each data type, mint performs ‘simple classifications' of methylation levels into no, low, medium, or high. For BS data, thresholds of the absolute methylation level are used; for IP data, sample-wise tertiles based on fold change are used.
+
+In our AML samples, we saw less hydroxymethylation peaks in IDH2 mutants, as expected and previously reported \cite{Rampal:2014ka}. We observe more hydroxymethylation and less methylation in enhancers and 5'UTRs, respectively, compared to background regions (Figures \ref{chap5:fig:5} and \ref{chap5:fig:6}). We also observe hydroxymethylation to be similarly distributed across CpG features regardless of strength (Figure \ref{chap5:fig:7}), while we observe an increasing proportion of CpG island regions and decreasing CpG shelves as methylation strength decreases (Figure \ref{chap5:fig:8}).
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{Comparison modules}
+\label{mint_results_comparison}
+
+The comparison modules test for differentially methylated CpGs (DMCs) or regions (DMRs) and differentially hydroxymethylated regions (DhMRs) with multi-factor designs allowing for categorical and/or continuous covariates (Table \ref{chap5:table:2}). For BS data, we allow users to destrand and group CpGs into tiles prior to testing for DMCs or DMRs with the R Bioconductor package DSS \cite{Wu:2016hq}. The user sets FDR and methylation difference thresholds in the configuration file (or the Galaxy tool page) as criteria for differential methylation. For IP data, the R Bioconductor package csaw \cite{Lun:2016jv} tests for DhMRs, and the results are classified into weak, moderate, or strong DhMRs.
+
+As in previous findings, we observe that mutations in IDH2 increase 5mC levels genome-wide (Figure \ref{chap5:fig:9}) and cause hypo-hydroxymethylation at specific loci, including the KIRREL locus (Figure \ref{chap5:fig:10}) \cite{Rampal:2014ka}. Additionally, hypo-hydroxymethylated regions in IDH2 samples tend to occur more often at 5' ends of genes and in exons with concurrent hyper-methylated regions at the same genomic annotations (Figures \ref{chap5:fig:11} and \ref{chap5:fig:12}). Interestingly, enhancers appear to be enriched for regions of hyper-hydroxymethylation and hyper-methylation in IDH2 samples (Figures \ref{chap5:fig:11} and \ref{chap5:fig:12}).
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{Integration modules}
+\label{mint_results_integration}
+
+The integration modules segment the genome by 5mC and 5hmC signal per sample on the basis of overlapping signal, and/or by differential 5mC and 5hmC signal per comparison (Tables \ref{chap5:table:3}). For example, as in the sample module, integration of 5mC and 5hmC in the IDH2mut\_2 sample shows that low levels of 5mC occur in very different regions relative to CpG islands than either 5hmC or high 5mC (Figure \ref{chap5:fig:14}). Integrating the DMRs and DhMRs from the IDH2 mutant versus NBM comparison reveals regions of joint differential methylation and hydroxymethylation, and we observe that regions of hyper-5mC and hypo-5hmC (with respect to IDH2 mutation) occur primarily at CpG islands, shores, and shelves (Figure \ref{chap5:fig:15}), as well as in promoters and exons of genic regions (Figure \ref{chap5:fig:16}).
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{Annotation and Genome Browser Tracks}
+\label{mint_results_annotation}
+
+To facilitate hypothesis generation and biological interpretation, results from each module are annotated to genomic features using the annotatr Bioconductor package \cite{Cavalcante:2017gc}. Default genomic features include CpG features (islands, shores, shelves, and open sea), genic features (1-5kb upstream of TSS, promoter ($<$1kb upstream of TSS), 5'UTR, exons, introns, and 3'UTR), enhancers, and lncRNAs.
+
+The R session, summary tables, and plots tailored to the input data are saved, and users may reload them to further investigate the genomic annotations, summarize the data differently, alter default plots, or generate new plots (Figures \ref{chap5:fig:2} - \ref{chap5:fig:3}, Figures \ref{chap5:fig:5} - \ref{chap5:fig:9}, and Figures \ref{chap5:fig:11} - \ref{chap5:fig:16}). UCSC Genome Browser tracks are generated and arranged in a track hub folder for seamless viewing (Figures \ref{chap5:fig:4} and \ref{chap5:fig:17}).
+
+\section{Discussion}
+\label{mint_discussion}
+
+We developed the mint pipeline to jointly analyze 5mC and 5hmC signals in silico to better understand the biological roles of each epigenetic mark. The pipeline enables users to focus on optimizing parameters and interpreting experiments rather than interfacing with ten or more tools. The genomic annotations and default graphical outputs enable users to discover enriched features and associations that may have otherwise gone unexplored (e.g. overall hypo-methylation of CpG islands intersecting introns). Thus, mint streamlines data exploration and hypothesis generation, leading to discoveries that might otherwise be overlooked.
+
+The modular design of mint facilitates 5mC and 5hmC integration, but also supports analysis of WGBS, RRBS, hMe-DIP, or Me-DIP, etc. experiments alone. Users can run mint on small pilot data and later add more samples without having to rerun previous samples. Furthermore, its modularity allows users to stop and extract data at any step, and continue with a different program. If oxBS-seq and TAB-seq become more widely adopted, implementing support for them will be straightforward due to mint's modular implementation.
+
+Here we presented mint using a small AML dataset, but are also using mint to analyze 5mC and 5hmC in a set of 36 head and neck squamous cell carcinoma samples, and experiments studying bisphenol-A effects on aging in mice. Regardless of context, the mint pipeline facilitates complex, comprehensive analyses of genome-wide methylation and hydroxymethylation data, enabling new biological discoveries.

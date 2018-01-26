@@ -1,0 +1,46 @@
+\documentclass[11pt, oneside]{article}   	% use "amsart" instead of "article" for AMSLaTeX format
+\usepackage{geometry}                		% See geometry.pdf to learn the layout options. There are lots.
+\geometry{letterpaper}                   		% ... or a4paper or a5paper or ...
+%\geometry{landscape}                		% Activate for rotated page geometry
+%\usepackage[parfill]{parskip}    		% Activate to begin paragraphs with an empty line rather than an indent
+\usepackage{graphicx}				% Use pdf, png, jpg, or eps§ with pdflatex; use eps in DVI mode
+								% TeX will automatically convert eps --> pdf in pdflatex
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{setspace}
+
+\begin{document}
+\bibliographystyle{ieeetr}
+\onehalfspace
+
+\begin{center}
+\large
+Beyond the Transcriptome: Facilitating Interpretation of \\Epigenomics and Metabolomics Data \\\vspace{0.5cm}
+\normalsize
+Raymond Cavalcante Jr.
+\end{center}
+
+\noindent This is a brief excerpt/summary of the statistical chapter satisfiying the writing component of the Dual Masters in Statistics.
+
+\section*{Introduction}
+Gene set enrichment (GSE) is a common approach to infer biological function given a set of experimentally derived genes \cite{Draghici:2003uj}. GSE was originally developed to biologically interpret lists of differentially expressed genes derived from microarray studies \cite{Curtis:2005ck} in terms of particular biological functions, processes, or pathways (e.g., Gene Ontology \cite{Ashburner:2000ja} or KEGG Pathways \cite{Kanehisa:2000jn}). An early enrichment tool is DAVID \cite{Huang:2009gk}, which uses a slightly modified Fisher's exact test (FET) to determine whether experimentally derived genes significantly overlap a gene set representing a biological concept, relative to the remaining genes. Under the null hypothesis of no more overlap than expected by chance, FET assumes that each gene has the same probability of being detected as significant. In the context of GSE with ChIP-seq data, FET assumes that each gene has an equal probability of being associated with a peak. Although FET has been used with ChIP-seq data \cite{Blow:2010bu, Han:2013gv}, it is typically used only with peaks within or near gene promoters. When all peaks are used, the presence of a peak in a gene locus is often correlated with the length of the locus \cite{Ovcharenko:2005br}, thereby violating the FET assumption. We refer to this correlation as the locus length bias. Given that some gene sets contain genes that have, overall, significantly longer (e.g., nervous system, development, and transcription related) or shorter (e.g., metabolic processes and stimulus responses) than the average locus length, the possibility of confounding exists when no correction is made for locus length \cite{Taher:2009ko}. Using FET with only peaks near gene promoters removes nearly all of the length bias, but also ignores a large portion of the data.
+
+Recent GSE tools for ChIP-seq experiments have attempted to correct for this length bias. One such tool, Genomic Regions Enrichment of Annotations Tool (GREAT), uses a binomial-based test to test whether the total number of peaks within the loci in a gene set is greater than expected relative to the total number of peaks, the total locus length of the gene set, and the non-gapped length of the genome \cite{McLean:2010iq}. In contrast to Fisher's exact test, the binomial test of GREAT assumes that the number of peaks in a locus and the locus length are proportional. Thus, FET and the binomial test have opposing assumptions regarding the relationship between the presence of a peak in a genomic region, and the length of that region. While FET is typically used after classifying each gene as either (a) having at least one associated peak or (b) having no peak, the binomial test uses the total number of peaks. Both methods typically use a single nucleotide point, the midpoint or mode of the peak, to represent the entire peak region.
+
+We developed Broad-Enrich to functionally interpret large sets of broad genomic regions. A unique feature of our method is that we score gene loci according to the proportion of the locus covered by all peaks overlapping the locus, which we refer to as the coverage proportion. Broad-Enrich then uses a logistic regression model that empirically adjusts for any bias in gene loci coverage relative to locus length, avoiding the pitfalls of either Fisher's exact test or binomial-based tests.
+
+\section*{Methods}
+We use a logistic regression framework to test for functional enrichment, similar to LRpath \cite{Sartor:2008by} and ChIP-Enrich \cite{Welch:2014fb}, enrichment testing methods developed for microarray data and ChIP-seq data, respectively. The independent variable $r$ for Broad-Enrich is the vector of proportions of each gene's locus that is covered by the union of all peaks. The dependent variable is a binary vector indicating gene set membership (1 if the gene belongs to the gene set and 0 otherwise). Let $\pi$ be the proportion of genes in the gene set at a specified $r$ value and locus length $L$. Then the ratio $\frac{\pi}{1 - \pi}$ is the odds that a gene with peak coverage proportion $r$ and locus length $L$ is a member of a given gene set. If the log odds increases as $r$ increases, then we conclude the gene set is positively associated with the coverage proportion, and thus enriched with the experimental set of broad genomic regions. We use the model:
+\begin{equation} \label{broadenrich_equation_model}
+	\log \frac{\pi}{1 - \pi} = \beta_0 + \beta_1 r + SS (\log_{10} L)
+\end{equation}
+where $\beta_0$ is the intercept, $\beta_1$ is the coefficient of interest for the coverage proportion, the function $SS$ is a binomial cubic smoothing spline that adjusts for the potentially confounding effect of locus length, and the $log_{10}$-transformation is used to improve the model fit.
+
+The smoothing spline function is fit using generalized cross-validation to estimate the smoothing penalty, $\lambda$, and ten knots with the cubic spline basis as an approximation to a true cubic smoothing spline \cite{Wood:2010cl}. The overall model is fit using a penalized likelihood maximization approach with the gam function in the mgcv R package \cite{Wood:2010cl}. A Wald test is used to test the null hypothesis $H_0 : \beta_1 = 0$ versus the alternative $H_1 : \beta_1 \ne 0$ and to calculate the p-value for the significance of the coverage proportion coefficient, $\beta_1$. Gene sets with $\beta_1 > 0$ are enriched, while those with $\beta_1 < 0$ are depleted. P-values are corrected for multiple testing using the Benjamini-Hochberg false discovery rate adjustment \cite{Benjamini:1995cd}. For presented analyses, gene sets with $FDR < 0.05$ are considered to be significant.
+
+\section*{Results}
+We investigated the type I error rates for Broad-Enrich and existing methods for 55 histone modification ChIP-seq datasets under two permutation scenarios. Both permutations remove any true biological association between gene sets and the genes they contain. The first scenario (Permuted) assesses type I error of the enrichment test under no locus length bias. The second scenario (Permuted in Bins) has the effect of preserving the locus length properties of the gene sets, and illustrates the extent to which the type I error rate is affected by locus length. We found that Broad-Enrich exhibits the correct type I error rates in both permutation scenarios and at different $\alpha$ levels, and that existing methods do not. Moreover, we find that Broad-Enrich returns more biologically relevant results than GREAT at higher ranking.
+\singlespace
+\bibliography{bibliography}
+
+\end{document}

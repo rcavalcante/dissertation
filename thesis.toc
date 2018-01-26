@@ -1,0 +1,105 @@
+\contentsline {chapter}{DEDICATION}{ii}{Doc-Start}
+\contentsline {chapter}{ACKNOWLEDGEMENTS}{iii}{Doc-Start}
+\contentsline {chapter}{LIST OF FIGURES}{vii}{Doc-Start}
+\contentsline {chapter}{LIST OF TABLES}{ix}{Doc-Start}
+\contentsline {chapter}{ABSTRACT}{x}{Doc-Start}
+\mbox { }\newline \noindent {\bf CHAPTER}\newline 
+\hbox { }
+\hbox { }
+\contentsline {chap}{\numberline {\hbox { }\hfill \bf I.\hspace {5pt}}{\bf Introduction}}{1}{chapter.1}
+\hbox { }
+\contentsline {section}{\numberline {1.1}Introduction}{1}{section.1.1}
+\contentsline {section}{\numberline {1.2}Background}{3}{section.1.2}
+\contentsline {subsection}{\numberline {1.2.1}Histone modifications}{3}{subsection.1.2.1}
+\contentsline {subsection}{\numberline {1.2.2}DNA methylation}{4}{subsection.1.2.2}
+\contentsline {subsection}{\numberline {1.2.3}Gene set enrichment}{6}{subsection.1.2.3}
+\contentsline {subsection}{\numberline {1.2.4}Metabolomics}{8}{subsection.1.2.4}
+\contentsline {section}{\numberline {1.3}Dissertation overview}{10}{section.1.3}
+\contentsline {subsection}{\numberline {1.3.1}Chapter \ref {chap2}: Broad-Enrich}{10}{subsection.1.3.1}
+\contentsline {subsection}{\numberline {1.3.2}Chapter \ref {chap3}: ConceptMetab}{11}{subsection.1.3.2}
+\contentsline {subsection}{\numberline {1.3.3}Chapter \ref {chap4}: annotatr}{12}{subsection.1.3.3}
+\contentsline {subsection}{\numberline {1.3.4}Chapter \ref {chap5}: mint}{13}{subsection.1.3.4}
+\hbox { }
+\contentsline {chap}{\numberline {\hbox { }\hfill \bf II.\hspace {5pt}}{\bf Broad-Enrich: Functional interpretation of large sets of broad genomic regions}}{15}{chapter.2}
+\hbox { }
+\contentsline {section}{\numberline {2.1}Introduction}{15}{section.2.1}
+\contentsline {section}{\numberline {2.2}Methods}{18}{section.2.2}
+\contentsline {subsection}{\numberline {2.2.1}Gene locus definitions}{18}{subsection.2.2.1}
+\contentsline {subsection}{\numberline {2.2.2}Proportional assignment of peaks to genes}{19}{subsection.2.2.2}
+\contentsline {subsection}{\numberline {2.2.3}Annotation databases}{19}{subsection.2.2.3}
+\contentsline {subsection}{\numberline {2.2.4}Broad-Enrich method for functional enrichment testing}{20}{subsection.2.2.4}
+\contentsline {subsection}{\numberline {2.2.5}Experimental ChIP-seq peak datasets}{21}{subsection.2.2.5}
+\contentsline {subsection}{\numberline {2.2.6}Standard peak calling pipeline}{21}{subsection.2.2.6}
+\contentsline {subsection}{\numberline {2.2.7}Power study comparing Broad-Enrich to Fisher's exact test}{22}{subsection.2.2.7}
+\contentsline {subsection}{\numberline {2.2.8}Permutations to test type I error rate}{22}{subsection.2.2.8}
+\contentsline {subsection}{\numberline {2.2.9}Alternative functional enrichment testing methods}{23}{subsection.2.2.9}
+\contentsline {section}{\numberline {2.3}Results}{24}{section.2.3}
+\contentsline {subsection}{\numberline {2.3.1}Differences between histone and transcription-factor based ChIP-seq data}{24}{subsection.2.3.1}
+\contentsline {subsection}{\numberline {2.3.2}Broad-Enrich method}{25}{subsection.2.3.2}
+\contentsline {subsection}{\numberline {2.3.3}Investigation of type I error}{26}{subsection.2.3.3}
+\contentsline {subsection}{\numberline {2.3.4}Summary of ENCODE histone modification enrichment results}{27}{subsection.2.3.4}
+\contentsline {subsection}{\numberline {2.3.5}Comparison of Broad-Enrich to Fisher’s exact test and GREAT}{28}{subsection.2.3.5}
+\contentsline {subsection}{\numberline {2.3.6}Effect of locus definition on enrichment}{30}{subsection.2.3.6}
+\contentsline {section}{\numberline {2.4}Discussion}{31}{section.2.4}
+\hbox { }
+\contentsline {chap}{\numberline {\hbox { }\hfill \bf III.\hspace {5pt}}{\bf ConceptMetab: Exploring relationships among metabolite sets to identify links among biomedical concepts}}{54}{chapter.3}
+\hbox { }
+\contentsline {section}{\numberline {3.1}Introduction}{54}{section.3.1}
+\contentsline {section}{\numberline {3.2}Methods}{57}{section.3.2}
+\contentsline {subsection}{\numberline {3.2.1}Mapping small molecules to annotations}{57}{subsection.3.2.1}
+\contentsline {subsection}{\numberline {3.2.2}Compound dictionary}{58}{subsection.3.2.2}
+\contentsline {subsection}{\numberline {3.2.3}Metabolite set enrichment testing}{58}{subsection.3.2.3}
+\contentsline {subsection}{\numberline {3.2.4}Visualizing relationships among concepts}{59}{subsection.3.2.4}
+\contentsline {subsection}{\numberline {3.2.5}Visualizing metabolite sets as networks in MetScape}{60}{subsection.3.2.5}
+\contentsline {section}{\numberline {3.3}Results}{60}{section.3.3}
+\contentsline {subsection}{\numberline {3.3.1}Overview of ConceptMetab database}{60}{subsection.3.3.1}
+\contentsline {subsection}{\numberline {3.3.2}ConceptMetab workflow}{62}{subsection.3.3.2}
+\contentsline {subsection}{\numberline {3.3.3}Significant relationships among metabolite annotation sources}{63}{subsection.3.3.3}
+\contentsline {subsection}{\numberline {3.3.4}Comparing biological associations based on metabolites to those based on genes}{64}{subsection.3.3.4}
+\contentsline {subsection}{\numberline {3.3.5}Using ConceptMetab to understand the molecular/anatomical risks and effects of a disease}{66}{subsection.3.3.5}
+\contentsline {subsection}{\numberline {3.3.6}Using ConceptMetab to investigate the diseases associated with an aberrant biological process}{67}{subsection.3.3.6}
+\contentsline {subsection}{\numberline {3.3.7}Exploring relationships between metabolic pathways and diseases}{68}{subsection.3.3.7}
+\contentsline {subsection}{\numberline {3.3.8}Using ConceptMetab to explore the biological roles of a metabolite}{69}{subsection.3.3.8}
+\contentsline {section}{\numberline {3.4}Discussion}{70}{section.3.4}
+\hbox { }
+\contentsline {chap}{\numberline {\hbox { }\hfill \bf IV.\hspace {5pt}}{\bf annotatr: Genomic regions in context}}{89}{chapter.4}
+\hbox { }
+\contentsline {section}{\numberline {4.1}Introduction}{89}{section.4.1}
+\contentsline {section}{\numberline {4.2}Methods}{90}{section.4.2}
+\contentsline {subsection}{\numberline {4.2.1}Construction of genomic annotations}{90}{subsection.4.2.1}
+\contentsline {subsubsection}{CpG features}{90}{section*.5}
+\contentsline {subsubsection}{Genic features}{91}{section*.6}
+\contentsline {subsubsection}{lncRNA features}{91}{section*.7}
+\contentsline {subsubsection}{Enhancer features}{91}{section*.8}
+\contentsline {subsubsection}{Chromatin state features}{92}{section*.9}
+\contentsline {subsubsection}{AnnotationHub resources}{92}{section*.10}
+\contentsline {subsection}{\numberline {4.2.2}Benchmarking with microbenchmark and lineprof}{92}{subsection.4.2.2}
+\contentsline {section}{\numberline {4.3}Results}{93}{section.4.3}
+\contentsline {subsection}{\numberline {4.3.1}Implementation and features}{93}{subsection.4.3.1}
+\contentsline {subsection}{\numberline {4.3.2}Benchmarking}{94}{subsection.4.3.2}
+\contentsline {section}{\numberline {4.4}Discussion}{95}{section.4.4}
+\hbox { }
+\contentsline {chap}{\numberline {\hbox { }\hfill \bf V.\hspace {5pt}}{\bf Integrating DNA methylation and hydroxymethylation data with the mint pipeline}}{109}{chapter.5}
+\hbox { }
+\contentsline {section}{\numberline {5.1}Introduction}{109}{section.5.1}
+\contentsline {section}{\numberline {5.2}Methods}{110}{section.5.2}
+\contentsline {subsection}{\numberline {5.2.1}Overview of the mint pipeline}{110}{subsection.5.2.1}
+\contentsline {subsection}{\numberline {5.2.2}Demonstration data}{111}{subsection.5.2.2}
+\contentsline {section}{\numberline {5.3}Results}{112}{section.5.3}
+\contentsline {subsection}{\numberline {5.3.1}Alignment modules}{112}{subsection.5.3.1}
+\contentsline {subsection}{\numberline {5.3.2}Sample modules}{112}{subsection.5.3.2}
+\contentsline {subsection}{\numberline {5.3.3}Comparison modules}{112}{subsection.5.3.3}
+\contentsline {subsection}{\numberline {5.3.4}Integration modules}{113}{subsection.5.3.4}
+\contentsline {subsection}{\numberline {5.3.5}Annotation and Genome Browser Tracks}{114}{subsection.5.3.5}
+\contentsline {section}{\numberline {5.4}Discussion}{114}{section.5.4}
+\hbox { }
+\contentsline {chap}{\numberline {\hbox { }\hfill \bf VI.\hspace {5pt}}{\bf Conclusion}}{136}{chapter.6}
+\hbox { }
+\contentsline {section}{\numberline {6.1}Conclusions}{136}{section.6.1}
+\contentsline {section}{\numberline {6.2}Future Directions}{139}{section.6.2}
+\contentsline {subsection}{\numberline {6.2.1}Chapter \ref {chap2}: Broad-Enrich}{139}{subsection.6.2.1}
+\contentsline {subsection}{\numberline {6.2.2}Chapter \ref {chap3}: ConceptMetab}{141}{subsection.6.2.2}
+\contentsline {subsection}{\numberline {6.2.3}Chapter \ref {chap4}: annotatr}{142}{subsection.6.2.3}
+\contentsline {subsection}{\numberline {6.2.4}Chapter \ref {chap5}: mint}{142}{subsection.6.2.4}
+\contentsline {section}{\numberline {6.3}Epilogue}{144}{section.6.3}
+\contentsline {chapter}{BIBLIOGRAPHY}{145}{section.6.3}

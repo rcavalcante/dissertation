@@ -1,0 +1,81 @@
+\begin{sidewaystable}[!ht]
+\small
+\centering
+\begin{tabular}{lllllllllll}
+\textbf{projectID} & \textbf{sampleID}          & \textbf{humanID} & \textbf{pulldown} & \textbf{bisulfite} & \textbf{mc} & \textbf{hmc} & \textbf{input} & \textbf{group} & \textbf{subject} & \textbf{age} \\
+test\_hybrid       & IDH2mut\_1\_hmeseal        & IDH2mut\_1       & 1                 & 0                  & 0           & 1            & 0              & 1              & 1                & 3            \\
+test\_hybrid       & IDH2mut\_2\_hmeseal        & IDH2mut\_2       & 1                 & 0                  & 0           & 1            & 0              & 1              & 2                & 3            \\
+test\_hybrid       & IDH2mut\_1\_hmeseal\_input & IDH2mut\_1       & 1                 & 0                  & 0           & 1            & 1              & 1              & 1                & 3            \\
+test\_hybrid       & IDH2mut\_2\_hmeseal\_input & IDH2mut\_2       & 1                 & 0                  & 0           & 1            & 1              & 1              & 2                & 3            \\
+test\_hybrid       & IDH2mut\_1\_errbs          & IDH2mut\_1       & 0                 & 1                  & 1           & 1            & 0              & 1              & 1                & 3            \\
+test\_hybrid       & IDH2mut\_2\_errbs          & IDH2mut\_2       & 0                 & 1                  & 1           & 1            & 0              & 1              & 2                & 3            \\
+test\_hybrid       & NBM\_1\_hmeseal            & NBM\_1           & 1                 & 0                  & 0           & 1            & 0              & 0              & 1                & 10           \\
+test\_hybrid       & NBM\_2\_hmeseal            & NBM\_2           & 1                 & 0                  & 0           & 1            & 0              & 0              & 2                & 10           \\
+test\_hybrid       & NBM\_1\_hmeseal\_input     & NBM\_1           & 1                 & 0                  & 0           & 1            & 1              & 0              & 1                & 10           \\
+test\_hybrid       & NBM\_2\_hmeseal\_input     & NBM\_2           & 1                 & 0                  & 0           & 1            & 1              & 0              & 2                & 10           \\
+test\_hybrid       & NBM\_1\_errbs              & NBM\_1           & 0                 & 1                  & 1           & 1            & 0              & 0              & 1                & 10           \\
+test\_hybrid       & NBM\_2\_errbs              & NBM\_2           & 0                 & 1                  & 1           & 1            & 0              & 0              & 2                & 10
+\end{tabular}
+\normalsize
+\caption[Example of sample metadata and covariate information to be used in setting up a mint project.]
+{
+% Rackham requires the figure list title matches the first sentence, so repeat that sentence here
+\textbf{Example of sample metadata and covariate information to be used in setting up a mint project.}
+The table should be tab-delimited and placed in the mint/projects folder with a filename of the form [projectID]\_samples.txt. This ensures that the init.R initialization script looks at the proper metadata table for the project. The sampleID column will often not be human readable (i.e. automatically named .fastq.gz files provided by a sequencing core, GEO, or SRA). The humanID column is meant to connect human understandable names to the automatically generated IDs. The pulldown, bisulfite, mc, hmc, and input columns are binary where 0 means no and 1 means yes. In the example below, any bisulfite sample has a 1 in the mc and hmc columns to indicate that the platform (in this case ERRBS) cannot distinguish between them. The group column can contain multiple comma-separated numbers if a sample belongs to more than one group (e.g. '1,2'). Columns appearing after the group column are considered covariates to be used in the models used for differential methylation testing with csaw and DSS. Column headers for covariate columns must match the variables as they appear in the model and covariate columns of the comparisons table (Table \ref{chap5:table:2}).
+}
+\label{chap5:table:1}
+
+\end{sidewaystable}
+
+\newpage
+
+\begin{sidewaystable}[!ht]
+\centering
+\tiny
+\begin{tabular}{lllllllllllll}
+\textbf{projectID} & \textbf{comparison}     & \textbf{pulldown} & \textbf{bisulfite} & \textbf{mc} & \textbf{hmc} & \textbf{input} & \textbf{model}        & \textbf{contrast} & \textbf{covariates} & \textbf{covIsNumeric} & \textbf{groups} & \textbf{interpretation} \\
+test\_hybrid       & IDH2mut\_v\_NBM         & 1                 & 0                  & 0           & 1            & TRUE           & $\sim$1+group         & 0,1               & NA                  & 0                     & 0,1             & NBM,IDH2mut             \\
+test\_hybrid       & IDH2mut\_v\_NBM         & 0                 & 1                  & 1           & 1            & FALSE          & $\sim$1+group         & 0,1               & NA                  & 0                     & 0,1             & NBM,IDH2mut             \\
+test\_hybrid       & IDH2mut\_v\_NBM\_paired & 1                 & 0                  & 0           & 1            & TRUE           & $\sim$1+group+subject & 0,1,0             & subject             & 0                     & 0,1             & NBM,IDH2mut             \\
+test\_hybrid       & IDH2mut\_v\_NBM\_paired & 0                 & 1                  & 1           & 1            & FALSE          & $\sim$1+group+subject & 0,1,0             & subject             & 0                     & 0,1             & NBM,IDH2mut             \\
+test\_hybrid       & IDH2mut\_v\_NBM\_cont   & 1                 & 0                  & 0           & 1            & TRUE           & $\sim$1+group+age     & 0,1,0             & age                 & 1                     & 0,1             & NBM,IDH2mut             \\
+test\_hybrid       & IDH2mut\_v\_NBM\_cont   & 0                 & 1                  & 1           & 1            & FALSE          & $\sim$1+group+age     & 0,1,0             & age                 & 1                     & 0,1             & NBM,IDH2mut
+\end{tabular}
+\normalsize
+\caption[Example of comparison metadata and model information to be used in setting up a mint project.]
+{
+% Rackham requires the figure list title matches the first sentence, so repeat that sentence here
+\textbf{Example of comparison metadata and model information to be used in setting up a mint project.}
+The purpose of this table is to encode information needed for testing differential methylation with csaw and/or DSS with a filename of the form [projectID]\_comparisons.txt. The pulldown, bisulfite, mc, and hmc columns are as in Table \ref{chap5:table:1}. Here, the input column takes values of TRUE or FALSE and indicates whether the input for a comparison of IP data should be used to filter out windows for analysis in csaw. The model column is used to build the design matrix. The contrast column should be a binary vector indicating which coefficient from the model to test in csaw and DSS. The covariates column lists the covariates used in the model formula (comma-delimited if more than one and NA if none). The entries of this columns should also match the column headings in the sample matrix (Table \ref{chap5:table:1}). The covIsNumeric column indicates whether the covariate is numerical (1) or categorical (0). The groups column indicates the group numbers from the sample matrix (Table \ref{chap5:table:1}) to use for the test. The interpretation is a comma-delimited list indicating what interpretation to give to regions with logFC (csaw) or methdiff (DSS) $< 0$ (first entry) or $\geq 0$ (second entry).
+}
+\label{chap5:table:2}
+
+\end{sidewaystable}
+
+\newpage
+
+\begin{sidewaystable}[!ht]
+\small
+\centering
+\begin{tabular}{l|llll}
+\textbf{A.}             & \textbf{hmc peak}    & \textbf{No hmc peak} & \textbf{No signal} &                    \\\hline
+\textbf{High hmc + mc}  & hmc                  & mc                   & hmc or mc          &                    \\
+\textbf{Low hmc + mc}   & hmc                  & mc (low)             & hmc or mc (low)    &                    \\
+\textbf{No hmc + mc}    & hmc                  & no methylation       & no methylation     &                    \\
+\textbf{No signal}      & hmc                  & no methylation       & unclassifiable     &                    \\\hline
+\textbf{B.}             & \textbf{Hyper hmc}   & \textbf{Hypo hmc}    & \textbf{No DM}     & \textbf{No signal} \\\hline
+\textbf{Hyper hmc + mc} & Hyper mc / Hyper hmc & Hyper mc / Hypo hmc  & Hyper mc           & Hyper mc           \\
+\textbf{Hypo hmc + mc}  & Hypo mc / Hyper hmc  & Hypo mc / Hypo hmc   & Hypo mc            & Hypo mc            \\
+\textbf{No DM}          & Hyper hmc            & Hypo hmc             & No DM              & No DM              \\
+\textbf{No signal}      & Hyper hmc            & Hypo hmc             & No DM              & unclassifiable
+\end{tabular}
+\normalsize
+\caption[Classification scheme for integrating methylation and hydroxymethylation data.]
+{
+% Rackham requires the figure list title matches the first sentence, so repeat that sentence here
+\textbf{Classification scheme for integrating methylation and hydroxymethylation data.}
+(A) The sample-wise classifier. Rows are classifications given to 5mC + 5hmC signal from WGBS or RRBS and columns are 5hmC signal from hMeDIP-seq or hMe-Seal. The classifier operates on the intersection of the two signal tracks. Regions of no signal are determined either by the lack of coverage (5mC + 5hmC from WGBS or RRBS) or a lack of input coverage (5hmC from hMeDIP-seq or hMe-Seal). (B) The comparison-wise classifier. Rows are classifications given to 5mC + 5hmC differential methylation signal from DSS. Columns are 5hmC differential methylation signal from csaw. The classifier operates on the intersection of the two signal tracks. Hyper/hypo is written with respect to condition 1 of the comparison.
+}
+\label{chap5:table:3}
+
+\end{sidewaystable}

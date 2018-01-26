@@ -1,0 +1,864 @@
+\begin{thebibliography}{100}
+
+\bibitem{Lander:2001hk}
+E.~S. Lander, L.~M. Linton, B.~Birren, C.~Nusbaum, M.~C. Zody, J.~Baldwin,
+  K.~Devon, K.~Dewar, M.~Doyle, W.~FitzHugh, R.~Funke, D.~Gage, K.~Harris,
+  A.~Heaford, J.~Howland, L.~Kann, J.~Lehoczky, R.~LeVine, P.~McEwan,
+  K.~McKernan, J.~Meldrim, J.~P. Mesirov, C.~Miranda, W.~Morris, J.~Naylor,
+  C.~Raymond, M.~Rosetti, R.~Santos, A.~Sheridan, C.~Sougnez,
+  Y.~Stange-Thomann, N.~Stojanovic, A.~Subramanian, D.~Wyman, J.~Rogers,
+  J.~Sulston, R.~Ainscough, S.~Beck, D.~Bentley, J.~Burton, C.~Clee, N.~Carter,
+  A.~Coulson, R.~Deadman, P.~Deloukas, A.~Dunham, I.~Dunham, R.~Durbin,
+  L.~French, D.~Grafham, S.~Gregory, T.~Hubbard, S.~Humphray, A.~Hunt,
+  M.~Jones, C.~Lloyd, A.~McMurray, L.~Matthews, S.~Mercer, S.~Milne, J.~C.
+  Mullikin, A.~Mungall, R.~Plumb, M.~Ross, R.~Shownkeen, S.~Sims, R.~H.
+  Waterston, R.~K. Wilson, L.~W. Hillier, J.~D. McPherson, M.~A. Marra, E.~R.
+  Mardis, L.~A. Fulton, A.~T. Chinwalla, K.~H. Pepin, W.~R. Gish, S.~L.
+  Chissoe, M.~C. Wendl, K.~D. Delehaunty, T.~L. Miner, A.~Delehaunty, J.~B.
+  Kramer, L.~L. Cook, R.~S. Fulton, D.~L. Johnson, P.~J. Minx, S.~W. Clifton,
+  T.~Hawkins, E.~Branscomb, P.~Predki, P.~Richardson, S.~Wenning, T.~Slezak,
+  N.~Doggett, J.~F. Cheng, A.~Olsen, S.~Lucas, C.~Elkin, E.~Uberbacher,
+  M.~Frazier, R.~A. Gibbs, D.~M. Muzny, S.~E. Scherer, J.~B. Bouck, E.~J.
+  Sodergren, K.~C. Worley, C.~M. Rives, J.~H. Gorrell, M.~L. Metzker, S.~L.
+  Naylor, R.~S. Kucherlapati, D.~L. Nelson, G.~M. Weinstock, Y.~Sakaki,
+  A.~Fujiyama, M.~Hattori, T.~Yada, A.~Toyoda, T.~Itoh, C.~Kawagoe,
+  H.~Watanabe, Y.~Totoki, T.~Taylor, J.~Weissenbach, R.~Heilig, W.~Saurin,
+  F.~Artiguenave, P.~Brottier, T.~Bruls, E.~Pelletier, C.~Robert, P.~Wincker,
+  D.~R. Smith, L.~Doucette-Stamm, M.~Rubenfield, K.~Weinstock, H.~M. Lee,
+  J.~Dubois, A.~Rosenthal, M.~Platzer, G.~Nyakatura, S.~Taudien, A.~Rump,
+  H.~Yang, J.~Yu, J.~Wang, G.~Huang, J.~Gu, L.~Hood, L.~Rowen, A.~Madan,
+  S.~Qin, R.~W. Davis, N.~A. Federspiel, A.~P. Abola, M.~J. Proctor, R.~M.
+  Myers, J.~Schmutz, M.~Dickson, J.~Grimwood, D.~R. Cox, M.~V. Olson, R.~Kaul,
+  N.~Shimizu, K.~Kawasaki, S.~Minoshima, G.~A. Evans, M.~Athanasiou,
+  R.~Schultz, B.~A. Roe, F.~Chen, H.~Pan, J.~Ramser, H.~Lehrach, R.~Reinhardt,
+  W.~R. McCombie, M.~de~la Bastide, N.~Dedhia, H.~Bl{\"o}cker, K.~Hornischer,
+  G.~Nordsiek, R.~Agarwala, L.~Aravind, J.~A. Bailey, A.~Bateman, S.~Batzoglou,
+  E.~Birney, P.~Bork, D.~G. Brown, C.~B. Burge, L.~Cerutti, H.~C. Chen,
+  D.~Church, M.~Clamp, R.~R. Copley, T.~Doerks, S.~R. Eddy, E.~E. Eichler,
+  T.~S. Furey, J.~Galagan, J.~G. Gilbert, C.~Harmon, Y.~Hayashizaki,
+  D.~Haussler, H.~Hermjakob, K.~Hokamp, W.~Jang, L.~S. Johnson, T.~A. Jones,
+  S.~Kasif, A.~Kaspryzk, S.~Kennedy, W.~J. Kent, P.~Kitts, E.~V. Koonin,
+  I.~Korf, D.~Kulp, D.~Lancet, T.~M. Lowe, A.~McLysaght, T.~Mikkelsen, J.~V.
+  Moran, N.~Mulder, V.~J. Pollara, C.~P. Ponting, G.~Schuler, J.~Schultz,
+  G.~Slater, A.~F. Smit, E.~Stupka, J.~Szustakowki, D.~Thierry-Mieg,
+  J.~Thierry-Mieg, L.~Wagner, J.~Wallis, R.~Wheeler, A.~Williams, Y.~I. Wolf,
+  K.~H. Wolfe, S.~P. Yang, R.~F. Yeh, F.~Collins, M.~S. Guyer, J.~Peterson,
+  A.~Felsenfeld, K.~A. Wetterstrand, A.~Patrinos, M.~J. Morgan, P.~de~Jong,
+  J.~J. Catanese, K.~Osoegawa, H.~Shizuya, S.~Choi, Y.~J. Chen, and
+  {International Human Genome Sequencing Consortium}, ``{Initial sequencing and
+  analysis of the human genome.},'' {\em Nature}, vol.~409, pp.~860--921, Feb.
+  2001.
+
+\bibitem{Patti:2012ek}
+G.~J. Patti, O.~Yanes, and G.~Siuzdak, ``{Innovation: Metabolomics: the apogee
+  of the omics trilogy},'' {\em Nature Reviews Molecular Cell Biology},
+  vol.~13, pp.~263--269, Mar. 2012.
+
+\bibitem{Robinson:2010cw}
+M.~D. Robinson, D.~J. McCarthy, and G.~K. Smyth, ``{edgeR: a Bioconductor
+  package for differential expression analysis of digital gene expression
+  data.},'' {\em Bioinformatics}, vol.~26, pp.~139--140, Jan. 2010.
+
+\bibitem{Love:2014ka}
+M.~I. Love, W.~Huber, and S.~Anders, ``{Moderated estimation of fold change and
+  dispersion for RNA-seq data with DESeq2.},'' {\em Genome Biology}, vol.~15,
+  no.~12, p.~550, 2014.
+
+\bibitem{Zhang:2008gm}
+Y.~Zhang, T.~Liu, C.~A. Meyer, J.~Eeckhoute, D.~S. Johnson, B.~E. Bernstein,
+  C.~Nusbaum, R.~M. Myers, M.~Brown, W.~Li, and X.~S. Liu, ``{Model-based
+  analysis of ChIP-Seq (MACS).},'' {\em Genome Biology}, vol.~9, no.~9,
+  p.~R137, 2008.
+
+\bibitem{Xu:2014eh}
+S.~Xu, S.~Grullon, K.~Ge, and W.~Peng, ``{Spatial clustering for identification
+  of ChIP-enriched regions (SICER) to map regions of histone methylation
+  patterns in embryonic stem cells.},'' {\em Methods in molecular biology
+  (Clifton, N.J.)}, vol.~1150, no.~Chapter 5, pp.~97--111, 2014.
+
+\bibitem{Zhang:2014cu}
+Y.~Zhang, Y.~H. Lin, T.~D. Johnson, L.~S. Rozek, and M.~A. Sartor, ``{PePr: a
+  peak-calling prioritization pipeline to identify consistent or differential
+  peaks from replicated ChIP-Seq data.},'' {\em Bioinformatics}, vol.~30,
+  pp.~2568--2575, Sept. 2014.
+
+\bibitem{Krueger:2011eb}
+F.~Krueger and S.~R. Andrews, ``{Bismark: a flexible aligner and methylation
+  caller for Bisulfite-Seq applications.},'' {\em Bioinformatics}, vol.~27,
+  pp.~1571--1572, June 2011.
+
+\bibitem{Luger:2012gc}
+K.~Luger, M.~L. Dechassa, and D.~J. Tremethick, ``{New insights into nucleosome
+  and chromatin structure: an ordered state or a disordered affair?},'' {\em
+  Nature Reviews Molecular Cell Biology}, vol.~13, pp.~436--447, June 2012.
+
+\bibitem{Rothbart:2014kf}
+S.~B. Rothbart and B.~D. Strahl, ``{Interpreting the language of histone and
+  DNA modifications},'' {\em BBA - Gene Regulatory Mechanisms}, vol.~1839,
+  pp.~627--643, Aug. 2014.
+
+\bibitem{Strahl:2000jj}
+B.~D. Strahl and C.~D. Allis, ``{The language of covalent histone
+  modifications.},'' {\em Nature}, vol.~403, pp.~41--45, Jan. 2000.
+
+\bibitem{Smith:2013cd}
+Z.~D. Smith and A.~Meissner, ``{DNA methylation: roles in mammalian
+  development.},'' {\em Nature Reviews Genetics}, vol.~14, pp.~204--220, Mar.
+  2013.
+
+\bibitem{Yong:2016jw}
+W.-S. Yong, F.-M. Hsu, and P.-Y. Chen, ``{Profiling genome-wide DNA
+  methylation},'' {\em Epigenetics {\&} Chromatin}, vol.~9, pp.~1--16, June
+  2016.
+
+\bibitem{Kriaucionis:2009bm}
+S.~Kriaucionis and N.~Heintz, ``{The nuclear DNA base 5-hydroxymethylcytosine
+  is present in Purkinje neurons and the brain.},'' {\em Science}, vol.~324,
+  pp.~929--930, May 2009.
+
+\bibitem{Tahiliani:2009kl}
+M.~Tahiliani, K.~P. Koh, Y.~Shen, W.~A. Pastor, H.~Bandukwala, Y.~Brudno,
+  S.~Agarwal, L.~M. Iyer, D.~R. Liu, L.~Aravind, and A.~Rao, ``{Conversion of
+  5-methylcytosine to 5-hydroxymethylcytosine in mammalian DNA by MLL partner
+  TET1.},'' {\em Science}, vol.~324, pp.~930--935, May 2009.
+
+\bibitem{He:2011hc}
+Y.-F. He, B.-Z. Li, Z.~Li, P.~Liu, Y.~Wang, Q.~Tang, J.~Ding, Y.~Jia, Z.~Chen,
+  L.~Li, Y.~Sun, X.~Li, Q.~Dai, C.~X. Song, K.~Zhang, C.~He, and G.-L. Xu,
+  ``{Tet-mediated formation of 5-carboxylcytosine and its excision by TDG in
+  mammalian DNA.},'' {\em Science}, vol.~333, pp.~1303--1307, Sept. 2011.
+
+\bibitem{Ito:2011bv}
+S.~Ito, L.~Shen, Q.~Dai, S.~C. Wu, L.~B. Collins, J.~A. Swenberg, C.~He, and
+  Y.~Zhang, ``{Tet proteins can convert 5-methylcytosine to 5-formylcytosine
+  and 5-carboxylcytosine.},'' {\em Science}, vol.~333, pp.~1300--1303, Sept.
+  2011.
+
+\bibitem{Wu:2017hu}
+X.~Wu and Y.~Zhang, ``{TET-mediated active DNA demethylation: mechanism,
+  function and beyond},'' {\em Nature Reviews Genetics}, pp.~1--18, 2017.
+
+\bibitem{Bachman:2014dla}
+M.~Bachman, S.~Uribe-Lewis, X.~Yang, M.~Williams, A.~Murrell, and
+  S.~Balasubramanian, ``{5-Hydroxymethylcytosine is a predominantly stable DNA
+  modification},'' {\em Nature Chemistry}, vol.~6, pp.~1049--1055, Sept. 2014.
+
+\bibitem{Spruijt:2013ep}
+C.~G. Spruijt, F.~Gnerlich, A.~H. Smits, T.~Pfaffeneder, P.~W. T.~C. Jansen,
+  C.~Bauer, M.~M{\"u}nzel, M.~Wagner, M.~M{\"u}ller, F.~Khan, H.~C. Eberl,
+  A.~Mensinga, A.~B. Brinkman, K.~Lephikov, U.~M{\"u}ller, J.~Walter,
+  R.~Boelens, H.~van Ingen, H.~Leonhardt, T.~Carell, and M.~Vermeulen,
+  ``{Dynamic readers for 5-(hydroxy)methylcytosine and its oxidized
+  derivatives.},'' {\em Cell}, vol.~152, pp.~1146--1159, Feb. 2013.
+
+\bibitem{Bock:2012kr}
+C.~Bock, ``{Analysing and interpreting DNA methylation data.},'' {\em Nature
+  Reviews Genetics}, vol.~13, pp.~705--719, Oct. 2012.
+
+\bibitem{Subramanian:2005jt}
+A.~Subramanian, P.~Tamayo, V.~K. Mootha, S.~Mukherjee, B.~L. Ebert, M.~A.
+  Gillette, A.~Paulovich, S.~L. Pomeroy, T.~R. Golub, E.~S. Lander, and J.~P.
+  Mesirov, ``{Gene set enrichment analysis: a knowledge-based approach for
+  interpreting genome-wide expression profiles.},'' {\em Proceedings of the
+  National Academy of Sciences of the United States of America}, vol.~102,
+  pp.~15545--15550, Oct. 2005.
+
+\bibitem{Young:2010ud}
+M.~D. Young and M.~J. Wakefield, ``{Gene ontology analysis for RNA-seq:
+  accounting for selection bias},'' {\em Genome Biology}, 2010.
+
+\bibitem{Lee:2016es}
+C.~Lee, S.~Patil, and M.~A. Sartor, ``{RNA-Enrich: a cut-off free functional
+  enrichment testing method for RNA-seq with improved detection power},'' {\em
+  Bioinformatics}, vol.~32, pp.~1100--1102, Apr. 2016.
+
+\bibitem{McLean:2010iq}
+C.~Y. McLean, D.~Bristor, M.~Hiller, S.~L. Clarke, B.~T. Schaar, C.~B. Lowe,
+  A.~M. Wenger, and G.~Bejerano, ``{GREAT improves functional interpretation of
+  cis-regulatory regions},'' {\em Nature Biotechnology}, vol.~28, pp.~495--501,
+  May 2010.
+
+\bibitem{Welch:2014fb}
+R.~P. Welch, C.~Lee, P.~M. Imbriano, S.~Patil, T.~E. Weymouth, R.~A. Smith,
+  L.~J. Scott, and M.~A. Sartor, ``{ChIP-Enrich: gene set enrichment testing
+  for ChIP-seq data},'' {\em Nucleic Acids Research}, vol.~42, pp.~e105--e105,
+  July 2014.
+
+\bibitem{Ashburner:2000ja}
+M.~Ashburner, C.~A. Ball, J.~A. Blake, D.~Botstein, H.~Butler, J.~M. Cherry,
+  A.~P. Davis, K.~Dolinski, S.~S. Dwight, J.~T. Eppig, M.~A. Harris, D.~P.
+  Hill, L.~Issel-Tarver, A.~Kasarskis, S.~Lewis, J.~C. Matese, J.~E.
+  Richardson, M.~Ringwald, G.~M. Rubin, and G.~Sherlock, ``{Gene ontology: tool
+  for the unification of biology. The Gene Ontology Consortium.},'' {\em Nature
+  genetics}, vol.~25, pp.~25--29, May 2000.
+
+\bibitem{Kanehisa:2000jn}
+M.~Kanehisa, ``{KEGG: Kyoto Encyclopedia of Genes and Genomes},'' {\em Nucleic
+  Acids Research}, vol.~28, pp.~27--30, Jan. 2000.
+
+\bibitem{Huang:2009gk}
+D.~W. Huang, B.~T. Sherman, and R.~A. Lempicki, ``{Systematic and integrative
+  analysis of large gene lists using DAVID bioinformatics resources.},'' {\em
+  Nature Protocols}, vol.~4, no.~1, pp.~44--57, 2009.
+
+\bibitem{Khatri:2012fy}
+P.~Khatri, M.~Sirota, and A.~J. Butte, ``{Ten Years of Pathway Analysis:
+  Current Approaches and Outstanding Challenges},'' {\em PLoS computational
+  biology}, vol.~8, p.~e1002375, Feb. 2012.
+
+\bibitem{Taher:2009ko}
+L.~Taher and I.~Ovcharenko, ``{Variable locus length in the human genome leads
+  to ascertainment bias in functional inference for non-coding elements.},''
+  {\em Bioinformatics}, vol.~25, pp.~578--584, Mar. 2009.
+
+\bibitem{Sartor:2008by}
+M.~A. Sartor, G.~D. Leikauf, and M.~Medvedovic, ``{LRpath: a logistic
+  regression approach for identifying enriched biological groups in gene
+  expression data},'' {\em Bioinformatics}, vol.~25, pp.~211--217, Nov. 2008.
+
+\bibitem{Buscher:2009ko}
+J.~M. B{\"u}scher, D.~Czernik, J.~C. Ewald, U.~Sauer, and N.~Zamboni,
+  ``{Cross-Platform Comparison of Methods for Quantitative Metabolomics of
+  Primary Metabolism},'' {\em Analytical chemistry}, vol.~81, pp.~2135--2143,
+  Mar. 2009.
+
+\bibitem{Xia:2002gx}
+J.~Xia and D.~S. Wishart, {\em {Using MetaboAnalyst 3.0 for Comprehensive
+  Metabolomics Data Analysis}}, vol.~5 of {\em Using MetaboAnalyst 3.0 for
+  Comprehensive Metabolomics Data Analysis}.
+\newblock Hoboken, NJ, USA: John Wiley {\&} Sons, Inc., Aug. 2002.
+
+\bibitem{Xia:2010fv}
+J.~Xia and D.~S. Wishart, ``{MSEA: a web-based tool to identify biologically
+  meaningful patterns in quantitative metabolomic data},'' {\em Nucleic Acids
+  Research}, vol.~38, pp.~W71--W77, June 2010.
+
+\bibitem{Chagoyen:2011bl}
+M.~Chagoyen and F.~Pazos, ``{MBRole: enrichment analysis of metabolomic
+  data},'' {\em Bioinformatics}, vol.~27, pp.~730--731, Feb. 2011.
+
+\bibitem{Kanehisa:2011fz}
+M.~Kanehisa, S.~Goto, Y.~Sato, M.~Furumichi, and M.~Tanabe, ``{KEGG for
+  integration and interpretation of large-scale molecular data sets},'' {\em
+  Nucleic Acids Research}, vol.~40, pp.~D109--D114, Dec. 2011.
+
+\bibitem{Wishart:2012wa}
+D.~S. Wishart, T.~Jewison, A.~C. Guo, and M.~Wilson, ``{HMDB
+  3.0{\textemdash}the human metabolome database in 2013},'' {\em Nucleic acids
+  {\ldots}}, 2012.
+
+\bibitem{Hastings:2012ww}
+J.~Hastings, P.~de~Matos, A.~Dekker, M.~Ennis, B.~Harsha, N.~Kale,
+  V.~Muthukrishnan, G.~Owen, S.~Turner, M.~Williams, and C.~Steinbeck, ``{The
+  ChEBI reference database and ontology for biologically relevant chemistry:
+  enhancements for 2013},'' {\em Nucleic Acids Research}, vol.~41,
+  pp.~D456--D463, Jan. 2013.
+
+\bibitem{Sartor:2009fo}
+M.~A. Sartor, V.~Mahavisno, V.~G. Keshamouni, J.~Cavalcoli, Z.~Wright,
+  A.~Karnovsky, R.~Kuick, H.~V. Jagadish, B.~Mirel, T.~Weymouth, B.~Athey, and
+  G.~S. Omenn, ``{ConceptGen: a gene set enrichment and gene set relation
+  mapping tool},'' {\em Bioinformatics}, vol.~26, pp.~456--463, Dec. 2009.
+
+\bibitem{Cavalcante:2014dr}
+R.~G. Cavalcante, C.~Lee, R.~P. Welch, S.~Patil, T.~Weymouth, L.~J. Scott, and
+  M.~A. Sartor, ``{Broad-Enrich: functional interpretation of large sets of
+  broad genomic regions.},'' {\em Bioinformatics}, vol.~30, pp.~i393--400,
+  Sept. 2014.
+
+\bibitem{Cavalcante:2016cj}
+R.~G. Cavalcante, S.~Patil, T.~E. Weymouth, K.~G. Bendinskas, A.~Karnovsky, and
+  M.~A. Sartor, ``{ConceptMetab: exploring relationships among metabolite sets
+  to identify links among biomedical concepts.},'' {\em Bioinformatics},
+  vol.~32, pp.~1536--1543, May 2016.
+
+\bibitem{Cavalcante:2017gc}
+R.~G. Cavalcante and M.~A. Sartor, ``{annotatr: Genomic regions in context.},''
+  {\em Bioinformatics}, Mar. 2017.
+
+\bibitem{Barski:2007gh}
+A.~Barski, S.~Cuddapah, K.~Cui, T.-Y. Roh, D.~E. Schones, Z.~Wang, G.~Wei,
+  I.~Chepelev, and K.~Zhao, ``{High-resolution profiling of histone
+  methylations in the human genome.},'' {\em Cell}, vol.~129, pp.~823--837, May
+  2007.
+
+\bibitem{Valouev:2008ev}
+A.~Valouev, D.~S. Johnson, A.~Sundquist, C.~Medina, E.~Anton, S.~Batzoglou,
+  R.~M. Myers, and A.~Sidow, ``{Genome-wide analysis of transcription factor
+  binding sites based on ChIP-Seq data},'' {\em Nature Methods}, vol.~5,
+  pp.~829--834, Aug. 2008.
+
+\bibitem{Bailey:2013ie}
+T.~Bailey, P.~Krajewski, I.~Ladunga, C.~Lefebvre, Q.~Li, T.~Liu, P.~Madrigal,
+  C.~Taslim, and J.~Zhang, ``{Practical guidelines for the comprehensive
+  analysis of ChIP-seq data.},'' {\em PLoS computational biology}, vol.~9,
+  no.~11, p.~e1003326, 2013.
+
+\bibitem{Zang:2009ht}
+C.~Zang, D.~E. Schones, C.~Zeng, K.~Cui, K.~Zhao, and W.~Peng, ``{A clustering
+  approach for identification of enriched domains from histone modification
+  ChIP-Seq data},'' {\em Bioinformatics}, vol.~25, pp.~1952--1958, June 2009.
+
+\bibitem{Sen:2008gx}
+G.~L. Sen, D.~E. Webster, D.~I. Barragan, H.~Y. Chang, and P.~A. Khavari,
+  ``{Control of differentiation in a self-renewing mammalian tissue by the
+  histone demethylase JMJD3},'' {\em Genes {\&} Development}, vol.~22,
+  pp.~1865--1870, July 2008.
+
+\bibitem{Bernstein:2006ip}
+B.~E. Bernstein, T.~S. Mikkelsen, X.~Xie, M.~Kamal, D.~J. Huebert, J.~Cuff,
+  B.~Fry, A.~Meissner, M.~Wernig, K.~Plath, R.~Jaenisch, A.~Wagschal, R.~Feil,
+  S.~L. Schreiber, and E.~S. Lander, ``{A Bivalent Chromatin Structure Marks
+  Key Developmental Genes in Embryonic Stem Cells},'' {\em Cell}, vol.~125,
+  pp.~315--326, Apr. 2006.
+
+\bibitem{Pan:2007ey}
+G.~Pan, S.~Tian, J.~Nie, C.~Yang, V.~Ruotti, H.~Wei, G.~A. Jonsdottir,
+  R.~Stewart, and J.~A. Thomson, ``{Whole-Genome Analysis of Histone H3 Lysine
+  4 and Lysine 27 Methylation in Human Embryonic Stem Cells},'' {\em Cell Stem
+  Cell}, vol.~1, pp.~299--312, Sept. 2007.
+
+\bibitem{Chi:2010bd}
+P.~Chi, C.~D. Allis, and G.~G. Wang, ``{Covalent histone
+  modifications--miswritten, misinterpreted and mis-erased in human
+  cancers.},'' {\em Nature reviews. Cancer}, vol.~10, pp.~457--469, July 2010.
+
+\bibitem{Kaelin:2013kp}
+W.~G. Kaelin and S.~L. McKnight, ``{Influence of metabolism on epigenetics and
+  disease.},'' {\em Cell}, vol.~153, pp.~56--69, Mar. 2013.
+
+\bibitem{Draghici:2003uj}
+S.~Draghici, P.~Khatri, R.~P. Martins, G.~C. Ostermeier, and S.~A. Krawetz,
+  ``{Global functional profiling of gene expression.},'' {\em Genomics},
+  vol.~81, pp.~98--104, Feb. 2003.
+
+\bibitem{Curtis:2005ck}
+R.~K. Curtis, M.~Oresic, and A.~Vidal-Puig, ``{Pathways to the analysis of
+  microarray data.},'' {\em Trends in biotechnology}, vol.~23, pp.~429--435,
+  Aug. 2005.
+
+\bibitem{Blow:2010bu}
+M.~J. Blow, D.~J. McCulley, Z.~Li, T.~Zhang, J.~A. Akiyama, A.~Holt,
+  I.~Plajzer-Frick, M.~Shoukry, C.~Wright, F.~Chen, V.~Afzal, J.~Bristow,
+  B.~Ren, B.~L. Black, E.~M. Rubin, A.~Visel, and L.~A. Pennacchio, ``{ChIP-Seq
+  identification of weakly conserved heart enhancers.},'' {\em Nature
+  genetics}, vol.~42, pp.~806--810, Sept. 2010.
+
+\bibitem{Han:2013gv}
+J.~Han, S.~H. Back, J.~Hur, Y.~H. Lin, R.~Gildersleeve, J.~Shan, C.~L. Yuan,
+  D.~Krokowski, S.~Wang, M.~Hatzoglou, M.~S. Kilberg, M.~A. Sartor, and R.~J.
+  Kaufman, ``{ER-stress-induced transcriptional regulation increases protein
+  synthesis leading to cell~death.},'' {\em Nature cell biology}, vol.~15,
+  pp.~481--490, May 2013.
+
+\bibitem{Ovcharenko:2005br}
+I.~Ovcharenko, ``{Evolution and functional classification of vertebrate gene
+  deserts},'' {\em Genome Research}, vol.~15, pp.~137--145, Jan. 2005.
+
+\bibitem{ENCODEProjectConsortium:2012gc}
+{ENCODE Project Consortium}, ``{An integrated encyclopedia of DNA elements in
+  the human genome.},'' {\em Nature}, vol.~489, pp.~57--74, Sept. 2012.
+
+\bibitem{Kim:2012bk}
+J.~H. Kim, A.~Karnovsky, V.~Mahavisno, T.~Weymouth, M.~Pande, D.~C. Dolinoy,
+  L.~S. Rozek, and M.~A. Sartor, ``{LRpath analysis reveals common pathways
+  dysregulated via DNA methylation across cancer types},'' {\em BMC Genomics},
+  vol.~13, no.~526, 2012.
+
+\bibitem{Nishimura:2001hd}
+D.~Nishimura, ``{BioCarta},'' {\em Biotech Software {\&} Internet Report},
+  vol.~2, pp.~117--120, June 2001.
+
+\bibitem{Mi:2013jj}
+H.~Mi, A.~Muruganujan, and P.~D. Thomas, ``{PANTHER in 2013: modeling the
+  evolution of gene function, and other gene attributes, in the context of
+  phylogenetic trees.},'' {\em Nucleic Acids Research}, vol.~41, pp.~D377--86,
+  Jan. 2013.
+
+\bibitem{Punta:2012ko}
+M.~Punta, P.~C. Coggill, R.~Y. Eberhardt, J.~Mistry, J.~Tate, C.~Boursnell,
+  N.~Pang, K.~Forslund, G.~Ceric, J.~Clements, A.~Heger, L.~Holm, E.~L.~L.
+  Sonnhammer, S.~R. Eddy, A.~Bateman, and R.~D. Finn, ``{The Pfam protein
+  families database.},'' {\em Nucleic Acids Research}, vol.~40, pp.~D290--301,
+  Jan. 2012.
+
+\bibitem{Peduzzi:1996cq}
+P.~Peduzzi, J.~Concato, E.~Kemper, T.~R. Holford, and A.~R. Feinstein, ``{A
+  simulation study of the number of events per variable in logistic regression
+  analysis},'' {\em Journal of Clinical Epidemiology}, vol.~49, pp.~1373--1379,
+  Dec. 1996.
+
+\bibitem{Wood:2010cl}
+S.~N. Wood, ``{Fast stable restricted maximum likelihood and marginal
+  likelihood estimation of semiparametric generalized linear models},'' {\em
+  Journal of the Royal Statistical Society Series B}, vol.~73, pp.~3--36, Sept.
+  2010.
+
+\bibitem{Benjamini:1995cd}
+Y.~Benjamini and Y.~Hochberg, ``{Controlling the false discovery rate: a
+  practical and powerful approach to multiple testing},'' {\em Journal of the
+  Royal Statistical Society Series B}, vol.~57, no.~1, pp.~289--300, 1995.
+
+\bibitem{Li:2011gg}
+Q.~Li, J.~B. Brown, H.~Huang, and P.~J. Bickel, ``{Measuring reproducibility of
+  high-throughput experiments},'' {\em The Annals of Applied Statistics},
+  vol.~5, pp.~1752--1779, Sept. 2011.
+
+\bibitem{Landt:2012cl}
+S.~G. Landt, G.~K. Marinov, A.~Kundaje, P.~Kheradpour, F.~Pauli, S.~Batzoglou,
+  B.~E. Bernstein, P.~Bickel, J.~B. Brown, P.~Cayting, Y.~Chen, G.~DeSalvo,
+  C.~Epstein, K.~I. Fisher-Aylor, G.~Euskirchen, M.~Gerstein, J.~Gertz, A.~J.
+  Hartemink, M.~M. Hoffman, V.~R. Iyer, Y.~L. Jung, S.~Karmakar, M.~Kellis,
+  P.~V. Kharchenko, Q.~Li, T.~Liu, X.~S. Liu, L.~Ma, A.~Milosavljevic, R.~M.
+  Myers, P.~J. Park, M.~J. Pazin, M.~D. Perry, D.~Raha, T.~E. Reddy,
+  J.~Rozowsky, N.~Shoresh, A.~Sidow, M.~Slattery, J.~A. Stamatoyannopoulos,
+  M.~Y. Tolstorukov, K.~P. White, S.~Xi, P.~J. Farnham, J.~D. Lieb, B.~J. Wold,
+  and M.~Snyder, ``{ChIP-seq guidelines and practices of the ENCODE and
+  modENCODE consortia.},'' {\em Genome Research}, vol.~22, pp.~1813--1831,
+  Sept. 2012.
+
+\bibitem{Pekowska:2010hk}
+A.~Pekowska, T.~Benoukraf, P.~Ferrier, and S.~Spicuglia, ``{A unique H3K4me2
+  profile marks tissue-specific gene regulation},'' {\em Genome Research},
+  vol.~20, pp.~1493--1502, Nov. 2010.
+
+\bibitem{Barth:2010jc}
+T.~K. Barth and A.~Imhof, ``{Fast signals and slow marks: the dynamics of
+  histone modifications},'' {\em Trends in Biochemical Sciences}, vol.~35,
+  pp.~618--626, Nov. 2010.
+
+\bibitem{Xie:2013fk}
+W.~Xie, M.~D. Schultz, R.~Lister, Z.~Hou, N.~Rajagopal, P.~Ray, J.~W. Whitaker,
+  S.~Tian, R.~D. Hawkins, D.~Leung, H.~Yang, T.~Wang, A.~Y. Lee, S.~A. Swanson,
+  J.~Zhang, Y.~Zhu, A.~Kim, J.~R. Nery, M.~A. Urich, S.~Kuan, C.-a. Yen,
+  S.~Klugman, P.~Yu, K.~Suknuntha, N.~E. Propson, H.~Chen, L.~E. Edsall,
+  U.~Wagner, Y.~Li, Z.~Ye, A.~Kulkarni, Z.~Xuan, W.-Y. Chung, N.~C. Chi, J.~E.
+  Antosiewicz-Bourget, I.~Slukvin, R.~Stewart, M.~Q. Zhang, W.~Wang, J.~A.
+  Thomson, J.~R. Ecker, and B.~Ren, ``{Epigenomic Analysis of Multilineage
+  Differentiation of Human Embryonic Stem Cells},'' {\em Cell}, vol.~153,
+  pp.~1134--1148, May 2013.
+
+\bibitem{Dong:2012di}
+X.~Dong, M.~C. Greven, A.~Kundaje, S.~Djebali, J.~B. Brown, C.~Cheng, T.~R.
+  Gingeras, M.~Gerstein, R.~Guig{\'o}, E.~Birney, and Z.~Weng, ``{Modeling gene
+  expression using chromatin features in various cellular contexts.},'' {\em
+  Genome Biology}, vol.~13, p.~R53, June 2012.
+
+\bibitem{Deaton:2011cz}
+A.~M. Deaton and A.~Bird, ``{CpG islands and the regulation of
+  transcription.},'' {\em Genes {\&} Development}, vol.~25, pp.~1010--1022, May
+  2011.
+
+\bibitem{Jonsson:2004bo}
+P.~Jonsson, J.~Gullberg, A.~Nordstr{\"o}m, M.~Kusano, M.~Kowalczyk,
+  M.~Sj{\"o}str{\"o}m, and T.~Moritz, ``{A strategy for identifying differences
+  in large series of metabolomic samples analyzed by GC/MS.},'' {\em Analytical
+  chemistry}, vol.~76, pp.~1738--1745, Mar. 2004.
+
+\bibitem{Wishart:2011kd}
+D.~S. Wishart, ``{Advances in metabolite identification.},'' {\em Bioanalysis},
+  vol.~3, pp.~1769--1782, Aug. 2011.
+
+\bibitem{Baker:2011fd}
+M.~Baker, ``{Metabolomics: from small molecules to big ideas},'' {\em Nature
+  Methods}, vol.~8, pp.~117--121, Feb. 2011.
+
+\bibitem{Sreekumar:2009bk}
+A.~Sreekumar, L.~M. Poisson, T.~M. Rajendiran, A.~P. Khan, Q.~Cao, J.~Yu,
+  B.~Laxman, R.~Mehra, R.~J. Lonigro, Y.~Li, M.~K. Nyati, A.~Ahsan,
+  S.~Kalyana-Sundaram, B.~Han, X.~Cao, J.~Byun, G.~S. Omenn, D.~Ghosh,
+  S.~Pennathur, D.~C. Alexander, A.~Berger, J.~R. Shuster, J.~T. Wei,
+  S.~Varambally, C.~Beecher, and A.~M. Chinnaiyan, ``{Metabolomic profiles
+  delineate potential role for sarcosine in prostate cancer progression},''
+  {\em Nature}, vol.~457, pp.~910--914, Feb. 2009.
+
+\bibitem{Urayama:2010du}
+S.~Urayama, W.~Zou, K.~Brooks, and V.~Tolstikov, ``{Comprehensive mass
+  spectrometry based metabolic profiling of blood plasma reveals potent
+  discriminatory classifiers of pancreatic cancer},'' {\em Rapid Communications
+  in Mass Spectrometry}, vol.~24, pp.~613--620, Mar. 2010.
+
+\bibitem{Wang:2011bz}
+T.~J. Wang, M.~G. Larson, R.~S. Vasan, S.~Cheng, E.~P. Rhee, E.~McCabe, G.~D.
+  Lewis, C.~S. Fox, P.~F. Jacques, C.~Fernandez, C.~J. O'Donnell, S.~A. Carr,
+  V.~K. Mootha, J.~C. Florez, A.~Souza, O.~Melander, C.~B. Clish, and R.~E.
+  Gerszten, ``{Metabolite profiles and the risk of developing diabetes},'' {\em
+  Nature medicine}, vol.~17, pp.~448--453, Apr. 2011.
+
+\bibitem{Wisloff:2005iy}
+U.~Wisloff, ``{Cardiovascular Risk Factors Emerge After Artificial Selection
+  for Low Aerobic Capacity},'' {\em Science}, vol.~307, pp.~418--420, Jan.
+  2005.
+
+\bibitem{Yap:2010cv}
+I.~K.~S. Yap, I.~J. Brown, Q.~Chan, A.~Wijeyesekera, I.~Garcia-Perez,
+  M.~Bictash, R.~L. Loo, M.~Chadeau-Hyam, T.~Ebbels, M.~D. Iorio, E.~Maibaum,
+  L.~Zhao, H.~Kesteloot, M.~L. Daviglus, J.~Stamler, J.~K. Nicholson,
+  P.~Elliott, and E.~Holmes, ``{Metabolome-Wide Association Study Identifies
+  Multiple Biomarkers that Discriminate North and South Chinese Populations at
+  Differing Risks of Cardiovascular Disease: INTERMAP Study},'' {\em Journal of
+  Proteome Research}, vol.~9, pp.~6647--6654, Dec. 2010.
+
+\bibitem{Sas:2015go}
+K.~M. Sas, A.~Karnovsky, G.~Michailidis, and S.~Pennathur, ``{Metabolomics and
+  Diabetes: Analytical and Computational Approaches},'' {\em Diabetes},
+  vol.~64, pp.~718--732, Mar. 2015.
+
+\bibitem{Xia:2012fs}
+J.~Xia, R.~Mandal, I.~V. Sinelnikov, D.~Broadhurst, and D.~S. Wishart,
+  ``{MetaboAnalyst 2.0--a comprehensive server for metabolomic data
+  analysis},'' {\em Nucleic Acids Research}, vol.~40, pp.~W127--W133, June
+  2012.
+
+\bibitem{Harris:2004kt}
+M.~A. Harris, J.~Clark, A.~Ireland, J.~Lomax, M.~Ashburner, R.~Foulger,
+  K.~Eilbeck, S.~Lewis, B.~Marshall, C.~Mungall, J.~Richter, G.~M. Rubin, J.~A.
+  Blake, C.~Bult, M.~Dolan, H.~Drabkin, J.~T. Eppig, D.~P. Hill, L.~Ni,
+  M.~Ringwald, R.~Balakrishnan, J.~M. Cherry, K.~R. Christie, M.~C. Costanzo,
+  S.~S. Dwight, S.~Engel, D.~G. Fisk, J.~E. Hirschman, E.~L. Hong, R.~S. Nash,
+  A.~Sethuraman, C.~L. Theesfeld, D.~Botstein, K.~Dolinski, B.~Feierbach,
+  T.~Berardini, S.~Mundodi, S.~Y. Rhee, R.~Apweiler, D.~Barrell, E.~Camon,
+  E.~Dimmer, V.~Lee, R.~Chisholm, P.~Gaudet, W.~Kibbe, R.~Kishore, E.~M.
+  Schwarz, P.~Sternberg, M.~Gwinn, L.~Hannick, J.~Wortman, M.~Berriman,
+  V.~Wood, N.~de~la Cruz, P.~Tonellato, P.~Jaiswal, T.~Seigfried, R.~White, and
+  {Gene Ontology Consortium}, ``{The Gene Ontology (GO) database and
+  informatics resource.},'' {\em Nucleic Acids Research}, vol.~32,
+  pp.~D258--61, Jan. 2004.
+
+\bibitem{Sartor:2012eb}
+M.~A. Sartor, A.~Ade, Z.~Wright, D.~States, G.~S. Omenn, B.~Athey, and
+  A.~Karnovsky, ``{Metab2MeSH: annotating compounds with medical subject
+  headings},'' {\em Bioinformatics}, vol.~28, pp.~1408--1410, May 2012.
+
+\bibitem{Araki:2012bv}
+H.~Araki, C.~Knapp, P.~Tsai, and C.~Print, ``{GeneSetDB: A comprehensive
+  meta-database, statistical and visualisation framework for gene set
+  analysis},'' {\em FEBS Open Bio}, vol.~2, pp.~76--82, Apr. 2012.
+
+\bibitem{PerezLlamas:2011ju}
+C.~Perez-Llamas and N.~Lopez-Bigas, ``{Gitools: Analysis and Visualisation of
+  Genomic Data Using Interactive Heat-Maps},'' {\em PLoS ONE}, vol.~6,
+  p.~e19541, May 2011.
+
+\bibitem{Rhodes:2007bd}
+D.~R. Rhodes, S.~Kalyana-Sundaram, S.~A. Tomlins, V.~Mahavisno, N.~Kasper,
+  R.~Varambally, T.~R. Barrette, D.~Ghosh, S.~Varambally, and A.~M. Chinnaiyan,
+  ``{Molecular Concepts Analysis Links Tumors, Pathways, Mechanisms, and
+  Drugs},'' {\em Neoplasia}, vol.~9, pp.~443--IN9, May 2007.
+
+\bibitem{Sartor:2010fo}
+M.~A. Sartor, V.~Mahavisno, V.~G. Keshamouni, J.~Cavalcoli, Z.~Wright,
+  A.~Karnovsky, R.~Kuick, H.~V. Jagadish, B.~Mirel, T.~Weymouth, B.~Athey, and
+  G.~S. Omenn, ``{ConceptGen: a gene set enrichment and gene set relation
+  mapping tool},'' {\em Bioinformatics}, vol.~26, pp.~456--463, Feb. 2010.
+
+\bibitem{Coletti:2001gv}
+M.~H. Coletti and H.~L. Bleich, ``{Medical Subject Headings Used to Search the
+  Biomedical Literature},'' {\em Journal of the American Medical Informatics
+  Association}, vol.~8, pp.~317--323, July 2001.
+
+\bibitem{Wang:2009cf}
+Y.~Wang, J.~Xiao, T.~O. Suzek, J.~Zhang, J.~Wang, and S.~H. Bryant, ``{PubChem:
+  a public information system for analyzing bioactivities of small
+  molecules},'' {\em Nucleic Acids Research}, vol.~37, pp.~W623--W633, July
+  2009.
+
+\bibitem{Huang:2009gka}
+D.~W. Huang, B.~T. Sherman, and R.~A. Lempicki, ``{Systematic and integrative
+  analysis of large gene lists using DAVID bioinformatics resources.},'' {\em
+  Nature Protocols}, vol.~4, no.~1, pp.~44--57, 2009.
+
+\bibitem{Karnovsky:2012cf}
+A.~Karnovsky, T.~Weymouth, T.~Hull, V.~G. Tarcea, G.~Scardoni, C.~Laudanna,
+  M.~A. Sartor, K.~A. Stringer, H.~V. Jagadish, C.~Burant, B.~Athey, and G.~S.
+  Omenn, ``{Metscape 2 bioinformatics tool for the analysis and visualization
+  of metabolomics and gene expression data.},'' {\em Bioinformatics}, vol.~28,
+  pp.~373--380, Feb. 2012.
+
+\bibitem{Ross:1993tb}
+R.~Ross, ``{The pathogenesis of atherosclerosis: a perspective for the
+  1990s.},'' {\em Nature}, vol.~362, no.~6423, pp.~801--809, 1993.
+
+\bibitem{Ross:1999jw}
+R.~Ross, ``{Atherosclerosis {\textemdash} An Inflammatory Disease},'' {\em New
+  England Journal of Medicine}, vol.~340, pp.~115--126, Oct. 1999.
+
+\bibitem{Lenna:2012cy}
+S.~Lenna and M.~Trojanowska, ``{The role of endoplasmic reticulum stress and
+  the unfolded protein response in fibrosis},'' {\em Current Opinion in
+  Rheumatology}, vol.~24, pp.~663--668, Nov. 2012.
+
+\bibitem{Gardarin:2010gs}
+A.~Gardarin, S.~Ch{\'e}din, G.~Lagniel, J.-C. Aude, E.~Godat, P.~Catty, and
+  J.~Labarre, ``{Endoplasmic reticulum is a major target of cadmium toxicity in
+  yeast.},'' {\em Molecular microbiology}, vol.~76, pp.~1034--1048, May 2010.
+
+\bibitem{Kadam:2012im}
+S.~D. Kadam, M.~Gucek, R.~N. Cole, P.~A. Watkins, and A.~M. Comi, ``{Cell
+  proliferation and oxidative stress pathways are modified in fibroblasts from
+  Sturge?Weber syndrome patients},'' {\em Archives of Dermatological Research},
+  vol.~304, pp.~229--235, Mar. 2012.
+
+\bibitem{Lanza:2010jr}
+I.~R. Lanza, S.~Zhang, L.~E. Ward, H.~Karakelides, D.~Raftery, and K.~S. Nair,
+  ``{Quantitative metabolomics by H-NMR and LC-MS/MS confirms altered metabolic
+  pathways in diabetes.},'' {\em PLoS ONE}, vol.~5, p.~e10538, May 2010.
+
+\bibitem{Bendinskas:2011ea}
+K.~Bendinskas, P.~Sattelberg, D.~Crossett, A.~Banyikwa, D.~Dempsey, and J.~A.
+  MacKenzie, ``{Enzymatic detection of $\gamma$-hydroxybutyrate using aldo-keto
+  reductase 7A2.},'' {\em Journal of forensic sciences}, vol.~56, pp.~783--787,
+  May 2011.
+
+\bibitem{Gahlinger:2004ud}
+P.~M. Gahlinger, ``{Club drugs: MDMA, gamma-hydroxybutyrate (GHB), Rohypnol,
+  and ketamine.},'' {\em American family physician}, vol.~69, pp.~2619--2626,
+  June 2004.
+
+\bibitem{Mamelak:1986du}
+M.~Mamelak, M.~B. Scharf, and M.~Woods, ``{Treatment of Narcolepsy with
+  $\gamma$-Hydroxybutyrate. A Review of Clinical and Sleep Laboratory
+  Findings},'' {\em Sleep}, vol.~9, pp.~285--289, Mar. 1986.
+
+\bibitem{Vayer:1987cj}
+P.~Vayer, P.~Mandel, and M.~Maitre, ``{Gamma-hydroxybutyrate, a possible
+  neurotransmitter},'' {\em Life sciences}, vol.~41, pp.~1547--1557, Sept.
+  1987.
+
+\bibitem{Pearl:2003dx}
+P.~L. Pearl, K.~M. Gibson, M.~T. Acosta, L.~G. Vezina, W.~H. Theodore, M.~A.
+  Rogawski, E.~J. Novotny, A.~Gropman, J.~A. Conry, G.~T. Berry, and
+  M.~Tuchman, ``{Clinical spectrum of succinic semialdehyde dehydrogenase
+  deficiency},'' {\em Neurology}, vol.~60, pp.~1413--1417, May 2003.
+
+\bibitem{Shuaib:2002vq}
+A.~Shuaib, ``{The role of taurine in cerebral ischemia: studies in transient
+  forebrain ischemia and embolic focal ischemia in rodents.},'' {\em Advances
+  in experimental medicine and biology}, 2002.
+
+\bibitem{Pearl:2014ct}
+P.~L. Pearl, J.~Schreiber, W.~H. Theodore, R.~McCarter, E.~S. Barrios, J.~Yu,
+  E.~Wiggs, J.~He, and K.~M. Gibson, ``{Taurine trial in succinic semialdehyde
+  dehydrogenase deficiency and elevated CNS GABA},'' {\em Neurology}, vol.~82,
+  pp.~940--944, Mar. 2014.
+
+\bibitem{Addolorato:2000wz}
+G.~Addolorato, F.~Caputo, E.~Capristo, G.~Colombo, G.~L. Gessa, and
+  G.~Gasbarrini, ``{Ability of baclofen in reducing alcohol craving and intake:
+  II--Preliminary clinical evidence.},'' {\em Alcoholism, clinical and
+  experimental research}, vol.~24, pp.~67--71, Jan. 2000.
+
+\bibitem{LeTourneau:2008gj}
+J.~L. LeTourneau, D.~S. Hagg, and S.~M. Smith, ``{Baclofen and
+  Gamma-Hydroxybutyrate Withdrawal},'' {\em Neurocritical Care}, vol.~8,
+  pp.~430--433, Feb. 2008.
+
+\bibitem{Caspi:2013je}
+R.~Caspi, T.~Altman, R.~Billington, K.~Dreher, H.~Foerster, C.~A. Fulcher,
+  T.~A. Holland, I.~M. Keseler, A.~Kothari, A.~Kubo, M.~Krummenacker,
+  M.~Latendresse, L.~A. Mueller, Q.~Ong, S.~Paley, P.~Subhraveti, D.~S. Weaver,
+  D.~Weerasinghe, P.~Zhang, and P.~D. Karp, ``{The MetaCyc database of
+  metabolic pathways and enzymes and the BioCyc collection of Pathway/Genome
+  Databases},'' {\em Nucleic Acids Research}, vol.~42, pp.~D459--D471, Dec.
+  2013.
+
+\bibitem{Thiele:2013jd}
+I.~Thiele, N.~Swainston, R.~M.~T. Fleming, A.~Hoppe, S.~Sahoo, M.~K. Aurich,
+  H.~Haraldsdottir, M.~L. Mo, O.~Rolfsson, M.~D. Stobbe, S.~G. Thorleifsson,
+  R.~Agren, C.~B{\"o}lling, S.~Bordel, A.~K. Chavali, P.~Dobson, W.~B. Dunn,
+  L.~Endler, D.~Hala, M.~Hucka, D.~Hull, D.~Jameson, N.~Jamshidi, J.~J.
+  Jonsson, N.~Juty, S.~Keating, I.~Nookaew, N.~Le~Nov{\`e}re, N.~Malys,
+  A.~Mazein, J.~A. Papin, N.~D. Price, E.~Selkov~Sr, M.~I. Sigurdsson,
+  E.~Simeonidis, N.~Sonnenschein, K.~Smallbone, A.~Sorokin, J.~H. G.~M. van
+  Beek, D.~Weichart, I.~Goryanin, J.~Nielsen, H.~V. Westerhoff, D.~B. Kell,
+  P.~Mendes, and B.~{\O}. Palsson, ``{A community-driven global reconstruction
+  of human metabolism},'' {\em Nature Biotechnology}, vol.~31, pp.~419--425,
+  May 2013.
+
+\bibitem{Croft:2014iq}
+D.~Croft, A.~F. Mundo, R.~Haw, M.~Milacic, J.~Weiser, G.~Wu, M.~Caudy,
+  P.~Garapati, M.~Gillespie, M.~R. Kamdar, B.~Jassal, S.~Jupe, L.~Matthews,
+  B.~May, S.~Palatnik, K.~Rothfels, V.~Shamovsky, H.~Song, M.~Williams,
+  E.~Birney, H.~Hermjakob, L.~Stein, and P.~D'Eustachio, ``{The Reactome
+  pathway knowledgebase.},'' {\em Nucleic Acids Research}, vol.~42,
+  pp.~D472--7, Jan. 2014.
+
+\bibitem{Jewison:2014gc}
+T.~Jewison, Y.~Su, F.~M. Disfany, Y.~Liang, C.~Knox, A.~Maciejewski,
+  J.~Poelzer, J.~Huynh, Y.~Zhou, D.~Arndt, Y.~Djoumbou, Y.~Liu, L.~Deng, A.~C.
+  Guo, B.~Han, A.~Pon, M.~Wilson, S.~Rafatnia, P.~Liu, and D.~S. Wishart,
+  ``{SMPDB 2.0: big improvements to the Small Molecule Pathway Database.},''
+  {\em Nucleic Acids Research}, vol.~42, pp.~D478--84, Jan. 2014.
+
+\bibitem{Zhu:2010be}
+L.~J. Zhu, C.~Gazin, N.~D. Lawson, H.~Pag{\`e}s, S.~M. Lin, D.~S. Lapointe, and
+  M.~R. Green, ``{ChIPpeakAnno: a Bioconductor package to annotate ChIP-seq and
+  ChIP-chip data.},'' {\em BMC Bioinformatics}, vol.~11, p.~237, May 2010.
+
+\bibitem{Bhasin:2016bk}
+J.~M. Bhasin and A.~H. Ting, ``{Goldmine integrates information placing genomic
+  ranges into meaningful biological contexts.},'' {\em Nucleic Acids Research},
+  vol.~44, pp.~5550--5556, July 2016.
+
+\bibitem{Quinlan:2010km}
+A.~R. Quinlan and I.~M. Hall, ``{BEDTools: a flexible suite of utilities for
+  comparing genomic features.},'' {\em Bioinformatics}, vol.~26, pp.~841--842,
+  Mar. 2010.
+
+\bibitem{Lawrence:2013hi}
+M.~Lawrence, W.~Huber, H.~Pag{\`e}s, P.~Aboyoun, M.~Carlson, R.~Gentleman,
+  M.~T. Morgan, and V.~J. Carey, ``{Software for computing and annotating
+  genomic ranges.},'' {\em PLoS computational biology}, vol.~9, no.~8,
+  p.~e1003118, 2013.
+
+\bibitem{Harrow:2012cx}
+J.~Harrow, A.~Frankish, J.~M. Gonzalez, E.~Tapanari, M.~Diekhans,
+  F.~Kokocinski, B.~L. Aken, D.~Barrell, A.~Zadissa, S.~Searle, I.~Barnes,
+  A.~Bignell, V.~Boychenko, T.~Hunt, M.~Kay, G.~Mukherjee, J.~Rajan,
+  G.~Despacio-Reyes, G.~Saunders, C.~Steward, R.~Harte, M.~Lin, C.~Howald,
+  A.~Tanzer, T.~Derrien, J.~Chrast, N.~Walters, S.~Balasubramanian, B.~Pei,
+  M.~Tress, J.~M. Rodriguez, I.~Ezkurdia, J.~van Baren, M.~Brent, D.~Haussler,
+  M.~Kellis, A.~Valencia, A.~Reymond, M.~Gerstein, R.~Guigo, and T.~J. Hubbard,
+  ``{GENCODE: The reference human genome annotation for The ENCODE Project},''
+  {\em Genome Research}, vol.~22, pp.~1760--1774, Sept. 2012.
+
+\bibitem{Andersson:2014bn}
+R.~Andersson, C.~Gebhard, I.~Miguel-Escalada, I.~Hoof, J.~Bornholdt, M.~Boyd,
+  Y.~Chen, X.~Zhao, C.~Schmidl, T.~Suzuki, E.~Ntini, E.~Arner, E.~Valen, K.~Li,
+  L.~Schwarzfischer, D.~Glatz, J.~Raithel, B.~Lilje, N.~Rapin, F.~O. Bagger,
+  M.~J{\o}rgensen, P.~R. Andersen, N.~Bertin, O.~Rackham, a.~M. Burroughs,
+  J.~K. Baillie, Y.~Ishizu, Y.~Shimizu, E.~Furuhata, S.~Maeda, Y.~Negishi,
+  C.~J. Mungall, T.~F. Meehan, T.~Lassmann, M.~Itoh, H.~Kawaji, N.~Kondo,
+  J.~Kawai, A.~Lennartsson, C.~O. Daub, P.~Heutink, D.~a. Hume, T.~H. Jensen,
+  H.~Suzuki, Y.~Hayashizaki, F.~M{\"u}ller, {FANTOM Consortium}, A.~R.~R.
+  Forrest, P.~Carninci, M.~Rehli, and A.~Sandelin, ``{An atlas of active
+  enhancers across human cell types and tissues.},'' {\em Nature}, vol.~507,
+  pp.~455--461, Mar. 2014.
+
+\bibitem{Ernst:2012ii}
+J.~Ernst and M.~Kellis, ``{ChromHMM: automating chromatin-state discovery and
+  characterization.},'' {\em Nature Methods}, vol.~9, pp.~215--216, Feb. 2012.
+
+\bibitem{Figueroa:2010ch}
+M.~E. Figueroa, O.~Abdel-Wahab, C.~Lu, P.~S. Ward, J.~Patel, A.~Shih, Y.~Li,
+  N.~Bhagwat, A.~Vasanthakumar, H.~F. Fernandez, M.~S. Tallman, Z.~Sun,
+  K.~Wolniak, J.~K. Peeters, W.~Liu, S.~E. Choe, V.~R. Fantin, E.~Paietta,
+  B.~L{\"o}wenberg, J.~D. Licht, L.~A. Godley, R.~Delwel, P.~J.~M. Valk, C.~B.
+  Thompson, R.~L. Levine, and A.~Melnick, ``{Leukemic IDH1 and IDH2 mutations
+  result in a hypermethylation phenotype, disrupt TET2 function, and impair
+  hematopoietic differentiation.},'' {\em Cancer Cell}, vol.~18, pp.~553--567,
+  Dec. 2010.
+
+\bibitem{Park:2014ho}
+Y.~Park, M.~E. Figueroa, L.~S. Rozek, and M.~A. Sartor, ``{MethylSig: a whole
+  genome DNA methylation analysis pipeline.},'' {\em Bioinformatics}, vol.~30,
+  pp.~2414--2422, Sept. 2014.
+
+\bibitem{Schubeler:2015it}
+D.~Sch{\"u}beler, ``{Function and information content of DNA methylation.},''
+  {\em Nature}, vol.~517, pp.~321--326, Jan. 2015.
+
+\bibitem{Baylin:2011ef}
+S.~B. Baylin and P.~A. Jones, ``{A decade of exploring the cancer epigenome -
+  biological and translational implications.},'' {\em Nature Reviews Cancer},
+  vol.~11, pp.~726--734, Oct. 2011.
+
+\bibitem{Branco:2011gg}
+M.~R. Branco, G.~Ficz, and W.~Reik, ``{Uncovering the role of
+  5-hydroxymethylcytosine in the epigenome.},'' {\em Nature Reviews Genetics},
+  vol.~13, pp.~7--13, Nov. 2011.
+
+\bibitem{Rampal:2014ka}
+R.~Rampal, A.~Alkalin, J.~Madzo, A.~Vasanthakumar, E.~Pronier, J.~Patel, Y.~Li,
+  J.~Ahn, O.~Abdel-Wahab, A.~Shih, C.~Lu, P.~S. Ward, J.~J. Tsai, T.~Hricik,
+  V.~Tosello, J.~E. Tallman, X.~Zhao, D.~Daniels, Q.~Dai, L.~Ciminio,
+  I.~Aifantis, C.~He, F.~Fuks, M.~S. Tallman, A.~Ferrando, S.~Nimer,
+  E.~Paietta, C.~B. Thompson, J.~D. Licht, C.~E. Mason, L.~A. Godley,
+  A.~Melnick, M.~E. Figueroa, and R.~L. Levine, ``{DNA hydroxymethylation
+  profiling reveals that WT1 mutations result in loss of TET2 function in acute
+  myeloid leukemia.},'' {\em Cell Reports}, vol.~9, pp.~1841--1855, Dec. 2014.
+
+\bibitem{Song:2012eb}
+C.~X. Song, C.~Yi, and C.~He, ``{Mapping recently identified nucleotide
+  variants in the genome and transcriptome.},'' {\em Nature Biotechnology},
+  vol.~30, pp.~1107--1116, Nov. 2012.
+
+\bibitem{Kishore:2015jg}
+K.~Kishore, S.~de~Pretis, R.~Lister, M.~J. Morelli, V.~Bianchi, B.~Amati, J.~R.
+  Ecker, and M.~Pelizzola, ``{methylPipe and compEpiTools: a suite of R
+  packages for the integrative analysis of epigenomics data.},'' {\em BMC
+  Bioinformatics}, vol.~16, Sept. 2015.
+
+\bibitem{Wang:2015dc}
+J.~Wang, R.~Li, K.~Kristiansen, E.~J. Rodger, P.~A. Stockwell, P.~A. Jones,
+  I.~M. Morison, W.~Li, A.~Gnirke, R.~Lister, M.~E. Figueroa, A.~Chatterjee,
+  P.~W. Laird, Y.~Li, S.~Gao, A.~Meissner, Y.~Xi, C.~Bock, D.~Zou, L.~Mao,
+  Q.~Zhou, W.~Jia, Y.~Huang, S.~Zhao, G.~Chen, S.~Wu, D.~Li, F.~Xia, H.~Chen,
+  M.~Chen, T.~F. {\O}rntoft, L.~Bolund, and K.~D. S{\o}rensen, ``{SMAP: a
+  streamlined methylation analysis pipeline for bisulfite sequencing.},'' {\em
+  GigaScience}, vol.~4, no.~29, 2015.
+
+\bibitem{Afgan:2016il}
+E.~Afgan, D.~Baker, M.~van~den Beek, D.~Blankenberg, D.~Bouvier, M.~{\v C}ech,
+  J.~Chilton, D.~Clements, N.~Coraor, C.~Eberhard, B.~Gr{\"u}ning, A.~Guerler,
+  J.~Hillman-Jackson, G.~Von~Kuster, E.~Rasche, N.~Soranzo, N.~Turaga,
+  J.~Taylor, A.~Nekrutenko, and J.~Goecks, ``{The Galaxy platform for
+  accessible, reproducible and collaborative biomedical analyses: 2016
+  update.},'' {\em Nucleic Acids Research}, vol.~44, pp.~W3--W10, July 2016.
+
+\bibitem{Langmead:2012jh}
+B.~Langmead and S.~L. Salzberg, ``{Fast gapped-read alignment with Bowtie
+  2.},'' {\em Nature Methods}, vol.~9, pp.~357--359, Mar. 2012.
+
+\bibitem{Ewels:2016bk}
+P.~Ewels, M.~Magnusson, S.~Lundin, and M.~K{\"a}ller, ``{MultiQC: summarize
+  analysis results for multiple tools and samples in a single report.},'' {\em
+  Bioinformatics}, vol.~32, pp.~3047--3048, Oct. 2016.
+
+\bibitem{Feng:2012hi}
+J.~Feng, T.~Liu, B.~Qin, Y.~Zhang, and X.~S. Liu, ``{Identifying ChIP-seq
+  enrichment using MACS.},'' {\em Nature Protocols}, vol.~7, pp.~1728--1740,
+  Sept. 2012.
+
+\bibitem{Wu:2016hq}
+H.~Wu and Y.~Park, ``{Differential methylation analysis for BS-seq data under
+  general experimental design},'' {\em Bioinformatics}, vol.~32,
+  pp.~1446--1453, May 2016.
+
+\bibitem{Lun:2016jv}
+A.~T.~L. Lun and G.~K. Smyth, ``{csaw: a Bioconductor package for differential
+  binding analysis of ChIP-seq data using sliding windows.},'' {\em Nucleic
+  Acids Research}, vol.~44, pp.~e45--e45, Mar. 2016.
+
+\bibitem{Thurman:2012fe}
+R.~E. Thurman, E.~Rynes, R.~Humbert, J.~Vierstra, M.~T. Maurano, E.~Haugen,
+  N.~C. Sheffield, A.~B. Stergachis, H.~Wang, B.~Vernot, K.~Garg, S.~John,
+  R.~Sandstrom, D.~Bates, L.~Boatman, T.~K. Canfield, M.~Diegel, D.~Dunn, A.~K.
+  Ebersol, T.~Frum, E.~Giste, A.~K. Johnson, E.~M. Johnson, T.~Kutyavin,
+  B.~Lajoie, B.-K. Lee, K.~Lee, D.~London, D.~Lotakis, S.~Neph, F.~Neri, E.~D.
+  Nguyen, H.~Qu, A.~P. Reynolds, V.~Roach, A.~Safi, M.~E. Sanchez, A.~Sanyal,
+  A.~Shafer, J.~M. Simon, L.~Song, S.~Vong, M.~Weaver, Y.~Yan, Z.~Zhang,
+  Z.~Zhang, B.~Lenhard, M.~Tewari, M.~O. Dorschner, R.~S. Hansen, P.~A. Navas,
+  G.~Stamatoyannopoulos, V.~R. Iyer, J.~D. Lieb, S.~R. Sunyaev, J.~M. Akey,
+  P.~J. Sabo, R.~Kaul, T.~S. Furey, J.~Dekker, G.~E. Crawford, and J.~A.
+  Stamatoyannopoulos, ``{The accessible chromatin landscape of the human
+  genome},'' {\em Nature}, vol.~488, pp.~75--82, Aug. 2012.
+
+\bibitem{Rao:2014eo}
+S.~S.~P. Rao, M.~H. Huntley, N.~C. Durand, E.~K. Stamenova, I.~D. Bochkov,
+  J.~T. Robinson, A.~L. Sanborn, I.~Machol, A.~D. Omer, E.~S. Lander, and E.~L.
+  Aiden, ``{A 3D Map of the Human Genome at Kilobase Resolution Reveals
+  Principles of Chromatin Looping},'' {\em Cell}, vol.~159, pp.~1665--1680,
+  Dec. 2014.
+
+\bibitem{LpezIbez:2016bt}
+J.~Lopez-Ibanez, F.~Pazos, and M.~Chagoyen, ``{MBROLE 2.0: functional
+  enrichment of chemical compounds},'' {\em Nucleic Acids Research}, vol.~44,
+  pp.~W201--W204, July 2016.
+
+\bibitem{Ehrlich:2014hj}
+M.~Ehrlich and K.~C. Ehrlich, ``{DNA cytosine methylation and
+  hydroxymethylation at the borders.},'' {\em Epigenomics}, vol.~6, no.~6,
+  pp.~563--566, 2014.
+
+\end{thebibliography}

@@ -1,0 +1,91 @@
+\BOOKMARK [0][-]{Doc-Start}{DEDICATION}{}% 1
+\BOOKMARK [0][-]{Doc-Start}{ACKNOWLEDGEMENTS}{}% 2
+\BOOKMARK [0][-]{Doc-Start}{LIST OF FIGURES}{}% 3
+\BOOKMARK [0][-]{Doc-Start}{LIST OF TABLES}{}% 4
+\BOOKMARK [0][-]{Doc-Start}{ABSTRACT}{}% 5
+\BOOKMARK [0][-]{chapter.1}{Introduction}{}% 6
+\BOOKMARK [1][-]{section.1.1}{Introduction}{chapter.1}% 7
+\BOOKMARK [1][-]{section.1.2}{Background}{chapter.1}% 8
+\BOOKMARK [2][-]{subsection.1.2.1}{Histone modifications}{section.1.2}% 9
+\BOOKMARK [2][-]{subsection.1.2.2}{DNA methylation}{section.1.2}% 10
+\BOOKMARK [2][-]{subsection.1.2.3}{Gene set enrichment}{section.1.2}% 11
+\BOOKMARK [2][-]{subsection.1.2.4}{Metabolomics}{section.1.2}% 12
+\BOOKMARK [1][-]{section.1.3}{Dissertation overview}{chapter.1}% 13
+\BOOKMARK [2][-]{subsection.1.3.1}{Chapter II: Broad-Enrich}{section.1.3}% 14
+\BOOKMARK [2][-]{subsection.1.3.2}{Chapter III: ConceptMetab}{section.1.3}% 15
+\BOOKMARK [2][-]{subsection.1.3.3}{Chapter IV: annotatr}{section.1.3}% 16
+\BOOKMARK [2][-]{subsection.1.3.4}{Chapter V: mint}{section.1.3}% 17
+\BOOKMARK [0][-]{chapter.2}{Broad-Enrich: Functional interpretation of large sets of broad genomic regions}{}% 18
+\BOOKMARK [1][-]{section.2.1}{Introduction}{chapter.2}% 19
+\BOOKMARK [1][-]{section.2.2}{Methods}{chapter.2}% 20
+\BOOKMARK [2][-]{subsection.2.2.1}{Gene locus definitions}{section.2.2}% 21
+\BOOKMARK [2][-]{subsection.2.2.2}{Proportional assignment of peaks to genes}{section.2.2}% 22
+\BOOKMARK [2][-]{subsection.2.2.3}{Annotation databases}{section.2.2}% 23
+\BOOKMARK [2][-]{subsection.2.2.4}{Broad-Enrich method for functional enrichment testing}{section.2.2}% 24
+\BOOKMARK [2][-]{subsection.2.2.5}{Experimental ChIP-seq peak datasets}{section.2.2}% 25
+\BOOKMARK [2][-]{subsection.2.2.6}{Standard peak calling pipeline}{section.2.2}% 26
+\BOOKMARK [2][-]{subsection.2.2.7}{Power study comparing Broad-Enrich to Fisher's exact test}{section.2.2}% 27
+\BOOKMARK [2][-]{subsection.2.2.8}{Permutations to test type I error rate}{section.2.2}% 28
+\BOOKMARK [2][-]{subsection.2.2.9}{Alternative functional enrichment testing methods}{section.2.2}% 29
+\BOOKMARK [1][-]{section.2.3}{Results}{chapter.2}% 30
+\BOOKMARK [2][-]{subsection.2.3.1}{Differences between histone and transcription-factor based ChIP-seq data}{section.2.3}% 31
+\BOOKMARK [2][-]{subsection.2.3.2}{Broad-Enrich method}{section.2.3}% 32
+\BOOKMARK [2][-]{subsection.2.3.3}{Investigation of type I error}{section.2.3}% 33
+\BOOKMARK [2][-]{subsection.2.3.4}{Summary of ENCODE histone modification enrichment results}{section.2.3}% 34
+\BOOKMARK [2][-]{subsection.2.3.5}{Comparison of Broad-Enrich to Fisher’s exact test and GREAT}{section.2.3}% 35
+\BOOKMARK [2][-]{subsection.2.3.6}{Effect of locus definition on enrichment}{section.2.3}% 36
+\BOOKMARK [1][-]{section.2.4}{Discussion}{chapter.2}% 37
+\BOOKMARK [0][-]{chapter.3}{ConceptMetab: Exploring relationships among metabolite sets to identify links among biomedical concepts}{}% 38
+\BOOKMARK [1][-]{section.3.1}{Introduction}{chapter.3}% 39
+\BOOKMARK [1][-]{section.3.2}{Methods}{chapter.3}% 40
+\BOOKMARK [2][-]{subsection.3.2.1}{Mapping small molecules to annotations}{section.3.2}% 41
+\BOOKMARK [2][-]{subsection.3.2.2}{Compound dictionary}{section.3.2}% 42
+\BOOKMARK [2][-]{subsection.3.2.3}{Metabolite set enrichment testing}{section.3.2}% 43
+\BOOKMARK [2][-]{subsection.3.2.4}{Visualizing relationships among concepts}{section.3.2}% 44
+\BOOKMARK [2][-]{subsection.3.2.5}{Visualizing metabolite sets as networks in MetScape}{section.3.2}% 45
+\BOOKMARK [1][-]{section.3.3}{Results}{chapter.3}% 46
+\BOOKMARK [2][-]{subsection.3.3.1}{Overview of ConceptMetab database}{section.3.3}% 47
+\BOOKMARK [2][-]{subsection.3.3.2}{ConceptMetab workflow}{section.3.3}% 48
+\BOOKMARK [2][-]{subsection.3.3.3}{Significant relationships among metabolite annotation sources}{section.3.3}% 49
+\BOOKMARK [2][-]{subsection.3.3.4}{Comparing biological associations based on metabolites to those based on genes}{section.3.3}% 50
+\BOOKMARK [2][-]{subsection.3.3.5}{Using ConceptMetab to understand the molecular/anatomical risks and effects of a disease}{section.3.3}% 51
+\BOOKMARK [2][-]{subsection.3.3.6}{Using ConceptMetab to investigate the diseases associated with an aberrant biological process}{section.3.3}% 52
+\BOOKMARK [2][-]{subsection.3.3.7}{Exploring relationships between metabolic pathways and diseases}{section.3.3}% 53
+\BOOKMARK [2][-]{subsection.3.3.8}{Using ConceptMetab to explore the biological roles of a metabolite}{section.3.3}% 54
+\BOOKMARK [1][-]{section.3.4}{Discussion}{chapter.3}% 55
+\BOOKMARK [0][-]{chapter.4}{annotatr: Genomic regions in context}{}% 56
+\BOOKMARK [1][-]{section.4.1}{Introduction}{chapter.4}% 57
+\BOOKMARK [1][-]{section.4.2}{Methods}{chapter.4}% 58
+\BOOKMARK [2][-]{subsection.4.2.1}{Construction of genomic annotations}{section.4.2}% 59
+\BOOKMARK [3][-]{section*.5}{CpG features}{subsection.4.2.1}% 60
+\BOOKMARK [3][-]{section*.6}{Genic features}{subsection.4.2.1}% 61
+\BOOKMARK [3][-]{section*.7}{lncRNA features}{subsection.4.2.1}% 62
+\BOOKMARK [3][-]{section*.8}{Enhancer features}{subsection.4.2.1}% 63
+\BOOKMARK [3][-]{section*.9}{Chromatin state features}{subsection.4.2.1}% 64
+\BOOKMARK [3][-]{section*.10}{AnnotationHub resources}{subsection.4.2.1}% 65
+\BOOKMARK [2][-]{subsection.4.2.2}{Benchmarking with microbenchmark and lineprof}{section.4.2}% 66
+\BOOKMARK [1][-]{section.4.3}{Results}{chapter.4}% 67
+\BOOKMARK [2][-]{subsection.4.3.1}{Implementation and features}{section.4.3}% 68
+\BOOKMARK [2][-]{subsection.4.3.2}{Benchmarking}{section.4.3}% 69
+\BOOKMARK [1][-]{section.4.4}{Discussion}{chapter.4}% 70
+\BOOKMARK [0][-]{chapter.5}{Integrating DNA methylation and hydroxymethylation data with the mint pipeline}{}% 71
+\BOOKMARK [1][-]{section.5.1}{Introduction}{chapter.5}% 72
+\BOOKMARK [1][-]{section.5.2}{Methods}{chapter.5}% 73
+\BOOKMARK [2][-]{subsection.5.2.1}{Overview of the mint pipeline}{section.5.2}% 74
+\BOOKMARK [2][-]{subsection.5.2.2}{Demonstration data}{section.5.2}% 75
+\BOOKMARK [1][-]{section.5.3}{Results}{chapter.5}% 76
+\BOOKMARK [2][-]{subsection.5.3.1}{Alignment modules}{section.5.3}% 77
+\BOOKMARK [2][-]{subsection.5.3.2}{Sample modules}{section.5.3}% 78
+\BOOKMARK [2][-]{subsection.5.3.3}{Comparison modules}{section.5.3}% 79
+\BOOKMARK [2][-]{subsection.5.3.4}{Integration modules}{section.5.3}% 80
+\BOOKMARK [2][-]{subsection.5.3.5}{Annotation and Genome Browser Tracks}{section.5.3}% 81
+\BOOKMARK [1][-]{section.5.4}{Discussion}{chapter.5}% 82
+\BOOKMARK [0][-]{chapter.6}{Conclusion}{}% 83
+\BOOKMARK [1][-]{section.6.1}{Conclusions}{chapter.6}% 84
+\BOOKMARK [1][-]{section.6.2}{Future Directions}{chapter.6}% 85
+\BOOKMARK [2][-]{subsection.6.2.1}{Chapter II: Broad-Enrich}{section.6.2}% 86
+\BOOKMARK [2][-]{subsection.6.2.2}{Chapter III: ConceptMetab}{section.6.2}% 87
+\BOOKMARK [2][-]{subsection.6.2.3}{Chapter IV: annotatr}{section.6.2}% 88
+\BOOKMARK [2][-]{subsection.6.2.4}{Chapter V: mint}{section.6.2}% 89
+\BOOKMARK [1][-]{section.6.3}{Epilogue}{chapter.6}% 90
+\BOOKMARK [0][-]{section.6.3}{BIBLIOGRAPHY}{}% 91

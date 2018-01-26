@@ -1,0 +1,186 @@
+\begin{table}[!ht]
+\centering
+\small
+\begin{tabular}{l|ll}
+\textbf{Annotation Type} & \textbf{Organism}      & \textbf{Genome Builds}                         \\\hline
+\textbf{Genic}           & Fly, Human, Mouse, Rat & dm3, dm6, hg19, hg38, mm9, mm10, rn4, rn5, rn6 \\
+\textbf{CpG}             & Human, Mouse, Rat      & hg19, hg38, mm9, mm10, rn4, rn5, rn6           \\
+\textbf{lncRNA}          & Human, Mouse           & hg19, hg38, mm10                               \\
+\textbf{Enhancers}       & Human, Mouse           & hg19, hg38, mm9, mm10                          \\
+\textbf{Chromatin State} & Human                  & hg19
+\end{tabular}
+\normalsize
+\caption[A summary of annotations available for organisms and genome builds.]
+{
+% Rackham requires the figure list title matches the first sentence, so repeat that sentence here
+\textbf{A summary of annotations available for organisms and genome builds.}
+Custom annotations may be used in conjunction with built-in annotations, or for organisms with no built-in annotations. Note, enhancers for hg38 and mm10 use the rtracklayer::liftOver() function on enhancers from hg19 and mm9, respectively.
+}
+\label{chap4:table:1}
+
+\end{table}
+
+\newpage
+
+\begin{table}[!ht]
+\small
+\centering
+\begin{tabular}{lllllllll}
+\textbf{chr} & \textbf{start} & \textbf{end} & \textbf{DM\_status} & \textbf{pval} & \textbf{strand} & \textbf{mu0} & \textbf{mu1} & \textbf{diff\_meth} \\
+chr9         & 10849          & 10948        & none                & 0.505         & *               & -10.73       & 79.98        & 90.71               \\
+chr9         & 10949          & 11048        & none                & 0.223         & *               & 8.72         & 86.7         & 77.98               \\
+chr9         & 28949          & 29048        & none                & 0.553         & *               & 0.07         & 0.12         & 0.05                \\
+chr9         & 72849          & 72948        & hyper               & 0.012         & *               & 44.88        & 72.46        & 27.58               \\
+chr9         & 72949          & 73048        & none                & 0.175         & *               & 17.76        & 28.44        & 10.68               \\
+chr9         & 73049          & 73148        & hyper               & 0.029         & *               & 3.8          & 4.14         & 0.34                \\
+chr9         & 73149          & 73248        & none                & 0.28          & *               & 1.62         & 2.21         & 0.59                \\
+chr9         & 73349          & 73448        & none                & 0.19          & *               & -1.05        & 0            & 1.05
+\end{tabular}
+\normalsize
+\caption[Example of a BED6$+$ file used for input into annotatr.]
+{
+% Rackham requires the figure list title matches the first sentence, so repeat that sentence here
+\textbf{Example of a BED6$+$ file used for input into annotatr.}
+The BED6 format has 6 required columns in the following order: chr, start, end, name, score, and strand. Annotatr can interpret BED files with any number of columns after these 6 (the $+$), so long as they are named and their type is explicitly given (see ?annotatr::read\_regions for details). The underlying rtracklayer::import() function can also read files that have the first 3, 4, or 5 columns. Additionally, bedGraph files are supported using the format='bedGraph' parameter. In this example file, the additional columns are used to provide the mean methylation levels of two groups of samples (mu0 and mu1) and the difference in percent methylation between them.
+}
+\label{chap4:table:2}
+
+\end{table}
+
+\newpage
+
+\begin{table}
+\small
+\centering
+\begin{tabular}{lllll}
+\textbf{annot.type}               & \textbf{annot.id}         & \textbf{n} & \textbf{mean} & \textbf{sd} \\
+hg19\_genes\_exonintronboundaries & exonintronboundary:301892 & 5          & 3.84          & 4.89        \\
+hg19\_genes\_introns              & intron:282469             & 10         & 1.71          & 7.6         \\
+hg19\_genes\_introns              & intron:287513             & 3          & -2.55         & 3.07        \\
+hg19\_genes\_introns              & intron:289069             & 4          & 0.93          & 7.61        \\
+hg19\_genes\_introns              & intron:296414             & 2          & 13.89         & 4.67        \\
+hg19\_genes\_introns              & intron:299213             & 3          & -0.13         & 0.41        \\
+hg19\_genes\_promoters            & promoter:35271            & 3          & 0.19          & 0.25        \\
+hg19\_genes\_promoters            & promoter:37273            & 6          & 10.16         & 15.87
+\end{tabular}
+\normalsize
+\caption[Example of summarized information of a numerical column over the annotations.]
+{
+% Rackham requires the figure list title matches the first sentence, so repeat that sentence here
+\textbf{Example of summarized information of a numerical column over the annotations.}
+Shown is a subset of the result of the summarize\_numerical() function by annotation types (annot.type) and the specific annotated regions (annot.id, an internal ID specific to annotatr) over the column containing change in percent methylation (diff\_meth). The input regions are the results of tests for differential methylation as described in the text. Each row is an annotation and contains the average diff\_meth (mean) and standard deviation (sd) over all the input regions intersecting the annotation (the total number of which is n). The annot.id column can be cross referenced with the annotated regions (Table \ref{chap4:table:3}) for information about the specific annot.id (such as Entrez ID or gene symbol) and the n intersecting input regions (such as the exact diff\_meth values for each region).
+}
+\label{chap4:table:4}
+
+\end{table}
+
+\newpage
+
+\begin{table}[!ht]
+\small
+\centering
+\begin{tabular}{lll}
+\textbf{annot.type}             & \textbf{DM\_status} & \textbf{n} \\
+hg19\_chromatin\_K562-Insulator & hyper               & 66         \\
+hg19\_chromatin\_K562-Insulator & hypo                & 11         \\
+hg19\_chromatin\_K562-Insulator & none                & 394        \\
+hg19\_cpg\_inter                & hyper               & 523        \\
+hg19\_cpg\_inter                & hypo                & 596        \\
+hg19\_cpg\_inter                & none                & 7052       \\
+hg19\_cpg\_islands              & hyper               & 976        \\
+hg19\_cpg\_islands              & hypo                & 50         \\
+hg19\_cpg\_islands              & none                & 4621       \\
+hg19\_cpg\_shelves              & hyper               & 63         \\
+hg19\_cpg\_shelves              & hypo                & 70         \\
+hg19\_cpg\_shelves              & none                & 1114       \\
+hg19\_cpg\_shores               & hyper               & 477        \\
+hg19\_cpg\_shores               & hypo                & 151        \\
+hg19\_cpg\_shores               & none                & 2963       \\
+hg19\_enhancers\_fantom         & hyper               & 100        \\
+hg19\_enhancers\_fantom         & hypo                & 11         \\
+hg19\_enhancers\_fantom         & none                & 497        \\
+hg19\_genes\_1to5kb             & hyper               & 322        \\
+hg19\_genes\_1to5kb             & hypo                & 91         \\
+hg19\_genes\_1to5kb             & none                & 2334       \\
+hg19\_genes\_3UTRs              & hyper               & 69         \\
+hg19\_genes\_3UTRs              & hypo                & 31         \\
+hg19\_genes\_3UTRs              & none                & 456        \\
+hg19\_genes\_5UTRs              & hyper               & 191        \\
+hg19\_genes\_5UTRs              & hypo                & 20         \\
+hg19\_genes\_5UTRs              & none                & 1450
+\end{tabular}
+\normalsize
+\caption[Power comparisons for Broad-Enrich versus Fisher's exact test]
+{
+% Rackham requires the figure list title matches the first sentence, so repeat that sentence here
+\textbf{Example of summarized information of a categorical data column over the annotations.}
+The summarize\_categorical() function was used by type of annotation (annot.type) and differential methylation status (DM\_status), a categorical data column defined as hyper, hypo, or none. The result indicates the number of annotated regions in each annotation type and with each of the DM\_status types.
+}
+\label{chap4:table:5}
+
+\end{table}
+
+\newpage
+
+\begin{sidewaystable}[!ht]
+\small
+\centering
+\begin{tabular}{ll|llll}
+\textbf{File Size (lines)} & \textbf{Software} & \textbf{Runtime Min. (s)} & \textbf{Runtime Mean (s)} & \textbf{Runtime Max (s)} & \textbf{X Mean / annotatr mean} \\\hline
+\textbf{31k}               & ChIPpeakAnno      & 1.97                      & 3.33                      & 4.67                     & 0.96x                           \\
+\textbf{}                  & goldmine          & 9.31                      & 11.17                     & 12.79                    & 3.2x                            \\
+\textbf{}                  & annotatr          & 2.51                      & 3.47                      & 5.22                     & --                              \\\hline
+\textbf{290k}              & ChIPpeakAnno      & 26.75                     & 29.08                     & 31.71                    & 4.1x                            \\
+\textbf{}                  & goldmine          & 46.55                     & 52.92                     & 58.16                    & 7.51x                           \\
+\textbf{}                  & annotatr          & 4.22                      & 7.04                      & 10.64                    & --                              \\\hline
+\textbf{2.5m}              & ChIPpeakAnno      & 135.96                    & 162.67                    & 185.89                   & 13.1x                           \\
+\textbf{}                  & goldmine          & 318.56                    & 341.11                    & 375.75                   & 27.5x                           \\
+\textbf{}                  & annotatr          & 8.39                      & 12.41                     & 17.14                    & --
+\end{tabular}
+\normalsize
+\caption[Benchmarking results.]
+{
+% Rackham requires the figure list title matches the first sentence, so repeat that sentence here
+\textbf{Benchmarking results.}
+Benchmarking (in seconds, over 10 runs and 3 datasets) of ChIPpeakAnno and goldmine versus annotatr using the microbenchmark R package. In summary, the annotatr package tends to perform faster than competing packages.
+}
+\label{chap4:table:6}
+
+\end{sidewaystable}
+
+\newpage
+
+\begin{table}[!ht]
+\small
+\centering
+\begin{tabular}{l|lll}
+\textbf{Feature}                           & \textbf{annotatr} & \textbf{goldmine} & \textbf{ChIPpeakAnno} \\\hline
+\textbf{Built-in Annotation Types}         &                   &                   &                       \\\hline
+CpG features                               & Yes               & Yes               & No                    \\
+Genic features                             & Yes               & Yes               & Yes                   \\
+A la carte selection of genic features     & Yes               & No                & No                    \\
+Enhancers                                  & Yes               & Yes               & No                    \\
+miRNA                                      & No                & Yes               & Yes                   \\
+lncRNAs                                    & Yes               & Yes               & No                    \\
+Chromatin States                           & Yes               & Yes               & No                    \\
+Custom Annotations                         & Yes               & Yes               & Yes                   \\
+Import Annotations from UCSC Tables        & No                & Yes               & No                    \\\hline
+\textbf{Annotation Reporting}              &                   &                   &                       \\\hline
+One-to-many annotation reporting           & Yes               & Yes               & No                    \\
+Prioritized annotation reporting           & No                & Yes               & Yes                   \\\hline
+\textbf{Summaries and Plots}               &                   &                   &                       \\\hline
+Summarization functions                    & Yes               & Yes               & Yes                   \\
+Plot regions per annotation type           & Yes               & No                & Yes                   \\
+Plot regions per pair of annotation types  & Yes               & No                & No                    \\
+Plot region data over annotations          & Yes               & No                & No                    \\
+Plot region data over pairs of annotations & Yes               & No                & No
+\end{tabular}
+\normalsize
+\caption[Feature comparison between comparable annotation tools.]
+{
+% Rackham requires the figure list title matches the first sentence, so repeat that sentence here
+\textbf{Feature comparison between comparable annotation tools.}
+}
+\label{chap4:table:7}
+
+\end{table}

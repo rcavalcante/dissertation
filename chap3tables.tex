@@ -1,0 +1,53 @@
+\begin{table}[!ht]
+\small
+\centering
+\begin{tabular}{l|llll}
+\textbf{Concept Type}       & \textbf{\# Concepts} & \textbf{Mean Size} & \textbf{Median Size} & \textbf{\# Compounds} \\\hline
+\textbf{Enzyme}             & 175                  & 11                 & 7                    & 874                   \\
+\textbf{GOBP}               & 3712                 & 56                 & 20                   & 1220                  \\
+\textbf{GOCC}               & 346                  & 117                & 19                   & 1213                  \\
+\textbf{GOMF}               & 864                  & 48                 & 14                   & 1226                  \\
+\textbf{KEGG Pathway}       & 74                   & 42                 & 38                   & 2427                  \\
+\textbf{MeSH Anatomy}       & 1506                 & 357                & 208                  & 37706                 \\
+\textbf{MeSH Diseases}      & 4089                 & 182                & 105                  & 33074                 \\
+\textbf{MeSH Organisms}     & 3011                 & 150                & 58                   & 48688                 \\
+\textbf{MeSH Phen and Proc} & 1443                 & 404                & 195                  & 43016                 \\
+\textbf{MeSH Psy and Psy}   & 519                  & 180                & 79                   & 9188                  \\
+\textbf{MeSH Tech}          & 330                  & 280                & 198                  & 15721
+\end{tabular}
+\normalsize
+\caption[An overview of the annotation databases in ConceptMetab.]
+{
+% Rackham requires the figure list title matches the first sentence, so repeat that sentence here
+\textbf{An overview of the annotation databases in ConceptMetab.}
+The number of biological concepts, the mean and median number of compounds in them, and the number of unique compounds across all concepts in each concept type are given.
+}
+\label{chap3:table:1}
+
+\end{table}
+
+\newpage
+
+\begin{sidewaystable}[!ht]
+\tiny
+\centering
+\begin{tabular}{l|p{1.5cm}p{1.5cm}|p{1cm}p{1cm}p{1cm}p{1cm}|p{2cm}p{2cm}p{2cm}|p{2cm}}
+\textbf{}             & \multicolumn{2}{l}{\textbf{Query Methods}}                        & \multicolumn{4}{l}{\textbf{Annotations}}                                     & \multicolumn{3}{l}{\textbf{Enrichment and Mapping}}                                                                                                         & \textbf{Visualizations} \\
+\textbf{Tool}         & \textbf{Query by Biological Concept} & \textbf{Query by Compound} & \textbf{MeSH} & \textbf{Metabolic Pathways} & \textbf{GO} & \textbf{Enzymes} & \textbf{Pathway Mapping of User-supplied Compounds} & \textbf{Enrichment of User-supplied Compound Sets} & \textbf{Enrichment of Pre-defined Compound Sets} & \textbf{}               \\\hline
+\textbf{ConceptMetab} & Yes                                  & Yes                        & Yes           & Yes                         & Yes         & Yes              & No                                                  & No                                                 & Yes                                              & Yes                     \\
+\textbf{MetScape}     & No                                   & Yes                        & Yes           & Yes                         & No          & Yes              & Yes                                                 & No                                                 & No                                               & Yes                     \\
+\textbf{MetDisease}   & No                                   & Yes                        & Yes           & Yes                         & No          & Yes              & No                                                  & No                                                 & No                                               & Yes                     \\
+\textbf{Metab2MeSH}   & No                                   & Yes                        & Yes           & No                          & No          & No               & No                                                  & No                                                 & No                                               & No                      \\
+\textbf{MBRole}       & No                                   & No                         & No            & Yes                         & No          & Yes              & Yes                                                 & Yes                                                & No                                               & No                      \\
+\textbf{MSEA}         & No                                   & No                         & No            & Yes                         & No          & Yes              & Yes                                                 & Yes                                                & No                                               & Yes                     \\
+\textbf{MetPA}        & No                                   & No                         & No            & Yes                         & No          & Yes              & Yes                                                 & Yes                                                & No                                               & Yes
+\end{tabular}
+\normalsize
+\caption[A feature comparison of ConceptMetab and other metabolite-related tools.]
+{
+% Rackham requires the figure list title matches the first sentence, so repeat that sentence here
+\textbf{A feature comparison of ConceptMetab and other metabolite-related tools.}
+}
+\label{chap3:table:2}
+
+\end{sidewaystable}

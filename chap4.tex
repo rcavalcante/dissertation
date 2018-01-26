@@ -1,0 +1,83 @@
+\noindent This work has been published as: \textbf{R. G. Cavalcante} and M. A. Sartor, "annotatr: Genomic regions in context.," \emph{Bioinformatics}, Mar. 2017.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Introduction}
+\label{annotatr_introduction}
+
+Genomic regions resulting from next-generation sequencing experiments and bioinformatics pipelines require annotation to genomic features for context. For example, hyper-methylation of CpG shores in promoters may indicate different regulatory regimes in one condition compared to another, or it may be of interest that a transcription factor overwhelmingly binds in enhancers, while another tends to bind at exon-intron boundaries.
+
+While tools exist to intersect genomic regions of interest with genomic annotations, we found the annotations, methods of intersection, and graphics options had room for improvement. ChIPpeakAnno \cite{Zhu:2010be} is an R package that has been used in many studies across a variety of organisms. It returns only one genomic annotation per input region, and while providing the user with some plots, these are limited by their inability to incorporate data associated with the regions of interest such as methylation rates, fold changes, etc. Another R package, goldmine \cite{Bhasin:2016bk}, returns either all annotations intersecting regions of interest (a one-to-many mapping) or annotations based on a prioritization (a one-to-one mapping). The goldmine package provides helper functions to create annotations from any UCSC genome browser table. However, it does not offer built-in functions for summary plots, nor to plot data related to the regions over the annotations. Outside of the R ecosystem, BEDtools \cite{Quinlan:2010km}, implemented in C++, intersects and aggregates genomic regions with annotations, and is very fast. However, its more general purpose means users must provide all annotations and manually generate plots.
+
+We developed annotatr, a Bioconductor package that reports all intersections of genomic regions with built-in genomic annotations for D. melanogaster (dm3 and dm6), H. Sapiens (hg19 and hg38), M. musculus (mm9 and mm10), R. norvegicus (rn4, rn5, and rn6), annotations imported from the AnnotationHub R package, or custom annotations for any organism. annotatr enables users to associate numerical or categorical data with regions, enabling better understanding of the underlying experiments via summarization and visualization functions. annotatr is fast, flexible, and easily included in bioinformatics pipelines.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Methods}
+\label{annotatr_methods}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{Construction of genomic annotations}
+\label{annotatr_methods_construction}
+
+%%%%%%%%%%%%%%%%%%%
+\subsubsection{CpG features}
+We use the AnnotationHub R package (Morgan, 2016) to obtain the CpG island annotations when available (hg19, mm9, rn4, and rn5), and otherwise use the UCSC Golden Path (hg38, mm10, and rn6). Using functions in the GenomicRanges R package \cite{Lawrence:2013hi}, we defined CpG shores as 2kb upstream and downstream of the CpG island boundaries and excluding CpG islands. CpG shelves are defined as the 2kb regions immediately upstream and downstream of the CpG shores opposite of the CpG island. Again, this excludes regions already annotated as CpG islands and CpG shores. See Figure \ref{chap4:fig:1} for a schematic of the CpG annotations, and Table \ref{chap4:table:1} for the organisms and genome builds with CpG annotations.
+
+%%%%%%%%%%%%%%%%%%%
+\subsubsection{Genic features}
+We use the TxDb R packages for the specified genomes (e.g. the Bioconductor package: TxDb.Hsapiens.UCSC.hg19.knownGene (Carlson, 2015) for human genome version hg19) and functions from the GenomicFeatures R package \cite{Lawrence:2013hi} to extract 1-5kb regions upstream of a TSS, promoters ($<$1Kb upstream of a TSS), 5'UTRs, exons, introns, and 3'UTRs. Intron/exon and exon/intron boundaries are defined as 200bp around the boundary. Intergenic annotations are taken to be the complement of the aforementioned annotations. We allow all genic annotations to overlap. See Figure \ref{chap4:fig:1} for a schematic of the genic annotations, and Table \ref{chap4:table:1} for organisms and genome builds with genic annotations.
+
+%%%%%%%%%%%%%%%%%%%
+\subsubsection{lncRNA features}
+We use GENCODE long non-coding RNAs (lncRNA) from GENCODE at the transcript level \cite{Harrow:2012cx}. For hg19 we use GENCODE v19, for hg38 we use GENCODE v23, and for mm10 we use GENCODE vM6. Relevant GENCODE biotypes (\url{https://www.gencodegenes.org/gencode_biotypes.html}) are included as part of the annotations.
+
+%%%%%%%%%%%%%%%%%%%
+\subsubsection{Enhancer features}
+We use enhancers defined via bi-directional CAGE transcription from the FANTOM5 consortium \cite{Andersson:2014bn} for human (hg19) and mouse (mm9). We provide enhancer annotations for hg38 and mm10 with the rtracklayer::liftover() function on the hg19 and mm9 enhancer annotations. Additional enhancer regions are defined within the chromatin state features (see below). Enhancers in hg38 and mm10 will be available in the April 2017 Bioconductor release, or users may download annotatr from the GitHub repository to use this feature.
+
+%%%%%%%%%%%%%%%%%%%
+\subsubsection{Chromatin state features}
+We use the chromatin states given by chromHMM \cite{Ernst:2012ii} in each of 9 human cell lines. The cell lines are: GM12878, H1-hESC, HepG2, HUVEC, HMEC, HSMM, K562, NHEK, NHLF. The genomic coordinates are with respect to hg19 only. In brief, numerous ChIP-seq experiments and a hidden Markov model were used to segment the genome into the following 15 functional chromatin states: active promoter, weak promoter, inactive/poised promoter, strong enhancer (2 classes), weak enhancer (2 classes), insulator, transcriptional transition, transcriptional elongation, weak transcribed, polycomb repressed, heterochromatin, and repetitive/CNV (2 classes).
+
+%%%%%%%%%%%%%%%%%%%
+\subsubsection{AnnotationHub resources}
+Any GRanges class resource from the AnnotationHub R package can be converted to an annotatr annotation via the build\_ah\_annots() function. Some resources of special interest to users may be COSMIC mutations, GWAS catalog mutations, and ENCODE/Roadmap Epigenomics datasets. Among the ENCODE and Roadmap datasets are many transcription factor binding peaks and histone modification peaks. This feature will be available in the April 2017 Bioconductor release, or users may download annotatr from the GitHub repository to use this feature.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{Benchmarking with microbenchmark and lineprof}
+\label{annotatr_methods_benchmarking}
+
+The microbenchmark R package (Mersmann, 2015) was used on three data sets to compare runtimes over 10 runs of annotatr v1.0.1, ChIPpeakAnno v3.8.1 \cite{Zhu:2010be}, and goldmine v1.0.0 \cite{Bhasin:2016bk}.
+
+Benchmarks were run on our lab server containing 40 cores and 128 GB of RAM. The three data sets, ranging in size from 31,000 to 2,500,000 lines, are:
+
+\begin{enumerate}
+	\item A ~31,000 line ChIP-seq peak file from ENCODE for Pol2 in the Gm12878 cell line \cite{ENCODEProjectConsortium:2012gc}.
+	\item A ~290,000 line file of hydroxymethylation peaks resulting from macs2 \cite{Zhang:2008gm} on GEO dataset GSE52945 \cite{Figueroa:2010ch}.
+	\item A ~2,500,000 line CpG bedGraph report from Bismark \cite{Krueger:2011eb} on a whole genome bisulfite sequencing run (unpublished data).
+\end{enumerate}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Results}
+\label{annotatr_results}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{Implementation and features}
+\label{annotatr_results_implementation}
+
+A core feature of annotatr is the variety of standard and specialized genomic annotations it includes. Standard annotations include CpG island related features (CpG islands, shores, shelves, and "open sea") and genic features (promoters, 5'UTRs, exons, introns, CDS, and 3'UTRs) (Figure \ref{chap4:fig:1}). Specialized genomic annotations include intron/exon boundaries, enhancers, lncRNAs, and chromatin state segmentations. A built-in function easily transforms resources in the AnnotationHub R package (such as COSMIC, ENCODE, and Roadmap Epigenomics) into usable annotations. Finally, custom annotations can supplement built-in annotations or enable annotation to any organism.
+
+The annotatr package consists of four modules that read, annotate, summarize, and visualize genomic regions. The read module reads a BED6+ file, defined as BED6 and any number of numerical or categorical data columns (Table \ref{chap4:table:2}). The annotate module reports the overlap of all input regions with all intersecting genomic annotations selected by the user, with a user-defined threshold overlap between regions and annotations (Figure \ref{chap4:table:3}). The summarize module enables users to quickly compute summarized information of any numerical (Table \ref{chap4:table:4}) or categorical data (Table \ref{chap4:table:4}) over the annotations.
+
+The collective goal of the visualization module is to provide insight into modes of regulation, and to discover specific relationships among the input regions and genomic annotations with minimum code or forethought. Consider bisulfite sequencing results from methylSig \cite{Park:2014ho} reporting genome-wide differential methylation (DM) between two sample groups. It has columns for DM status (hyper, hypo, none), p-value, methylation difference between the groups, and methylation rates of each group. The annotatr package implements functions to show: 1) the number of DM regions in each annotation type with the option to compare against randomized regions (Figure \ref{chap4:fig:2}), 2) a heatmap of the number of regions annotated to pairs of annotation types (Figure \ref{chap4:fig:3}), 3) the distribution of numerical data across the annotations or any categorical variable (Figure \ref{chap4:fig:4}), 4) the joint distribution of two numerical data columns across the annotations or any categorical variable (Figure \ref{chap4:fig:5}), 5) the distribution of numerical data for regions in any two intersecting annotations (Figure \ref{chap4:fig:6}), and 6) the distribution of a categorical variable across the annotations or any other categorical variable (Figure \ref{chap4:fig:7}).
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{Benchmarking}
+\label{annotatr_results_benchmarking}
+
+We compared runtimes between ChIPpeakAnno (v3.8.1), goldmine (v1.0.0), and  annotatr (v1.0.1) on three data sets varying in size from 31,000 to 2,500,000 lines (Supplementary Methods). annotatr performs up to 13.1x faster than ChIPpeakAnno, and up to 27.5x faster than goldmine, with increasingly better performance as file size increases (Table \ref{chap4:table:6} and Figure \ref{chap4:fig:8}). In addition to benchmarking, we have compared the features of the three packages (Table \ref{chap4:table:7}).
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Discussion}
+\label{annotatr_discussion}
+
+Associating regions of interest to genomic annotations is a standard part of many bioinformatics pipelines. The annotatr package improves upon existing annotation tools by returning all the genomic annotations associated with a region instead of artificially prioritizing one annotation type over another, giving a clearer picture of the biological complexities at play. In addition to tabular output of the annotations, annotatr's built-in plotting functions provide an easy and flexible way to summarize the annotations and view how data associated with the regions changes in different genomic contexts. The annotatr package thus enables fast exploration, more complete genomic contextualization of experiments, and more potential discoveries.

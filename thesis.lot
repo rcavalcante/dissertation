@@ -1,0 +1,23 @@
+\noindent \relax $\@@underline {\hbox {\bf Table}}\mathsurround \z@ $\relax \hfill \rm \newline 
+\contentsline {table}{\numberline {2.1}{\ignorespaces Type I error rate estimates for Broad-Enrich, the binomial-based test, and Fisher's exact test at the 0.05 $\alpha $-level.}}{44}{table.2.1}
+\contentsline {table}{\numberline {2.2}{\ignorespaces A comparison of the number of enriched and depleted gene sets for each HM in each cell line using the nearest TSS, exons, and $\leq 5kb$ locus definitions.}}{45}{table.2.2}
+\contentsline {table}{\numberline {2.3}{\ignorespaces Percentage of uniquely and mutually enriched gene sets by Broad-Enrich for each HM in each cell line.}}{46}{table.2.3}
+\contentsline {table}{\numberline {2.4}{\ignorespaces A comparison between Fisher's exact test and Broad-Enrich for the 16 datasets with acceptable type I error rates for Fisher's exact test.}}{47}{table.2.4}
+\contentsline {table}{\numberline {2.5}{\ignorespaces Power comparisons for Broad-Enrich versus Fisher's exact test}}{48}{table.2.5}
+\contentsline {table}{\numberline {2.6}{\ignorespaces A comparison of the characteristics of the top 20 gene sets identified by Broad-Enrich and GREAT.}}{48}{table.2.6}
+\contentsline {table}{\numberline {2.7}{\ignorespaces Top 20 Broad-Enrich ranked GO terms for H3K4me1 in the cell line GM12878 with nearest TSS locus definition.}}{49}{table.2.7}
+\contentsline {table}{\numberline {2.8}{\ignorespaces Top 20 GREAT ranked GO terms for H3K4me1 in the cell line GM12878 with the "single nearest gene" within 9999kb as the gene regulatory domain.}}{50}{table.2.8}
+\contentsline {table}{\numberline {2.9}{\ignorespaces Subset of top 20 genes ranked by Broad-Enrich and GREAT.}}{51}{table.2.9}
+\contentsline {table}{\numberline {2.10}{\ignorespaces Top 20 Broad-Enrich ranked GO terms for H3K27me3 in the cell line GM12878 with nearest TSS locus definition.}}{52}{table.2.10}
+\contentsline {table}{\numberline {2.11}{\ignorespaces Top 20 GREAT ranked GO terms for H3K27me3 in the cell line GM12878 with the "single nearest gene" within 9999kb as the gene regulatory domain.}}{53}{table.2.11}
+\contentsline {table}{\numberline {3.1}{\ignorespaces An overview of the annotation databases in ConceptMetab.}}{87}{table.3.1}
+\contentsline {table}{\numberline {3.2}{\ignorespaces A feature comparison of ConceptMetab and other metabolite-related tools.}}{88}{table.3.2}
+\contentsline {table}{\numberline {4.1}{\ignorespaces A summary of annotations available for organisms and genome builds.}}{104}{table.4.1}
+\contentsline {table}{\numberline {4.2}{\ignorespaces Example of a BED6$+$ file used for input into annotatr.}}{105}{table.4.2}
+\contentsline {table}{\numberline {4.3}{\ignorespaces Example of summarized information of a numerical column over the annotations.}}{106}{table.4.3}
+\contentsline {table}{\numberline {4.4}{\ignorespaces Power comparisons for Broad-Enrich versus Fisher's exact test}}{106}{table.4.4}
+\contentsline {table}{\numberline {4.5}{\ignorespaces Benchmarking results.}}{107}{table.4.5}
+\contentsline {table}{\numberline {4.6}{\ignorespaces Feature comparison between comparable annotation tools.}}{108}{table.4.6}
+\contentsline {table}{\numberline {5.1}{\ignorespaces Example of sample metadata and covariate information to be used in setting up a mint project.}}{133}{table.5.1}
+\contentsline {table}{\numberline {5.2}{\ignorespaces Example of comparison metadata and model information to be used in setting up a mint project.}}{134}{table.5.2}
+\contentsline {table}{\numberline {5.3}{\ignorespaces Classification scheme for integrating methylation and hydroxymethylation data.}}{135}{table.5.3}

@@ -1,0 +1,456 @@
+\begin{table}[!ht]
+\tiny
+\centering
+\begin{tabular}{ll|ll|ll|ll|ll}
+\multicolumn{2}{l}{}                                        & \multicolumn{2}{c}{{\color[HTML]{000000} \textbf{Binomial}}}                                                               & \multicolumn{2}{c}{\textbf{Broad-Enrich}}                                    & \multicolumn{2}{c}{\textbf{Broad-Enrich NS}}                                   & \multicolumn{2}{c}{\textbf{FET}}                                               \\
+\multicolumn{1}{c}{\textbf{Histone}} & \multicolumn{1}{c}{\textbf{Cell Line}} & \multicolumn{1}{c}{{\color[HTML]{000000} \textbf{Permuted}}} & \multicolumn{1}{c}{{\color[HTML]{000000} \textbf{In Bins}}} & \multicolumn{1}{c}{\textbf{Permuted}} & \multicolumn{1}{c}{\textbf{In Bins}} & \multicolumn{1}{c}{\textbf{Permuted}} & \multicolumn{1}{c}{\textbf{In Bins}}   & \multicolumn{1}{c}{\textbf{Permuted}} & \multicolumn{1}{c}{\textbf{In Bins}}   \\\hline
+H2az                                 & Gm12878                                & {\color[HTML]{CB0000} \textbf{0.3092}}                       & {\color[HTML]{CB0000} \textbf{0.3901}}                      & 0.0411                                & 0.0463                               & 0.0476                                & \textbf{0.0716}                        & 0.0409                                & \textbf{0.0603}                        \\
+H3k27ac                              & Gm12878                                & {\color[HTML]{CB0000} \textbf{0.3127}}                       & {\color[HTML]{CB0000} \textbf{0.3368}}                      & 0.0527                                & 0.0352                               & 0.0426                                & {\color[HTML]{CB0000} \textbf{0.1295}} & 0.0387                                & 0.0398                                 \\
+H3k27me3                             & Gm12878                                & {\color[HTML]{CB0000} \textbf{0.2195}}                       & {\color[HTML]{CB0000} \textbf{0.2409}}                      & 0.0494                                & 0.0444                               & 0.0398                                & {\color[HTML]{CB0000} \textbf{0.1105}} & 0.0385                                & {\color[HTML]{CB0000} \textbf{0.1401}} \\
+H3k36me3                             & Gm12878                                & {\color[HTML]{CB0000} \textbf{0.1923}}                       & {\color[HTML]{CB0000} \textbf{0.2369}}                      & 0.0455                                & 0.0320                               & 0.0381                                & {\color[HTML]{CB0000} \textbf{0.1375}} & 0.0411                                & 0.0307                                 \\
+H3k4me1                              & Gm12878                                & {\color[HTML]{CB0000} \textbf{0.3749}}                       & {\color[HTML]{CB0000} \textbf{0.4045}}                      & 0.0357                                & 0.0398                               & 0.0313                                & {\color[HTML]{CB0000} \textbf{0.1558}} & 0.0422                                & \textbf{0.0650}                        \\
+H3k4me2                              & Gm12878                                & {\color[HTML]{CB0000} \textbf{0.3205}}                       & {\color[HTML]{CB0000} \textbf{0.3490}}                      & \textbf{0.0855}                       & 0.0396                               & 0.0437                                & {\color[HTML]{CB0000} \textbf{0.1031}} & 0.0326                                & \textbf{0.0751}                        \\
+H3k4me3                              & Gm12878                                & {\color[HTML]{CB0000} \textbf{0.4110}}                       & {\color[HTML]{CB0000} \textbf{0.3033}}                      & 0.0365                                & 0.0483                               & 0.0479                                & \textbf{0.0790}                        & 0.0379                                & \textbf{0.0675}                        \\
+H3k79me2                             & Gm12878                                & {\color[HTML]{CB0000} \textbf{0.2998}}                       & {\color[HTML]{CB0000} \textbf{0.2650}}                      & 0.0346                                & 0.0535                               & 0.0365                                & 0.0426                                 & 0.0402                                & 0.0431                                 \\
+H3k9ac                               & Gm12878                                & {\color[HTML]{CB0000} \textbf{0.2759}}                       & {\color[HTML]{CB0000} \textbf{0.3087}}                      & 0.0446                                & 0.0324                               & 0.0498                                & \textbf{0.0725}                        & 0.0476                                & 0.0426                                 \\
+H3k9me3                              & Gm12878                                & {\color[HTML]{CB0000} \textbf{0.3199}}                       & {\color[HTML]{CB0000} \textbf{0.3427}}                      & 0.0309                                & 0.0361                               & 0.0357                                & \textbf{0.0642}                        & 0.0407                                & {\color[HTML]{CB0000} \textbf{0.2215}} \\
+H4k20me1                             & Gm12878                                & {\color[HTML]{CB0000} \textbf{0.2422}}                       & {\color[HTML]{CB0000} \textbf{0.2689}}                      & 0.0383                                & 0.0331                               & 0.0346                                & {\color[HTML]{CB0000} \textbf{0.1108}} & 0.0346                                & \textbf{0.0781}                        \\
+H2az                                 & H1hesc                                 & {\color[HTML]{CB0000} \textbf{0.3869}}                       & {\color[HTML]{CB0000} \textbf{0.2950}}                      & 0.0372                                & 0.0402                               & 0.0392                                & \textbf{0.0646}                        & 0.0398                                & \textbf{0.0814}                        \\
+H3k27ac                              & H1hesc                                 & {\color[HTML]{CB0000} \textbf{0.2678}}                       & {\color[HTML]{CB0000} \textbf{0.3024}}                      & 0.0415                                & 0.0490                               & 0.0392                                & \textbf{0.0731}                        & 0.0437                                & \textbf{0.0907}                        \\
+H3k27me3                             & H1hesc                                 & {\color[HTML]{CB0000} \textbf{0.2568}}                       & {\color[HTML]{CB0000} \textbf{0.2328}}                      & 0.0368                                & 0.0398                               & 0.0352                                & \textbf{0.0883}                        & 0.0385                                & {\color[HTML]{CB0000} \textbf{0.1678}} \\
+H3k36me3                             & H1hesc                                 & {\color[HTML]{CB0000} \textbf{0.2172}}                       & {\color[HTML]{CB0000} \textbf{0.2280}}                      & 0.0403                                & 0.0342                               & 0.0477                                & {\color[HTML]{CB0000} \textbf{0.1297}} & 0.0476                                & 0.0477                                 \\
+H3k4me1                              & H1hesc                                 & {\color[HTML]{CB0000} \textbf{0.3327}}                       & {\color[HTML]{CB0000} \textbf{0.2857}}                      & 0.0405                                & 0.0501                               & 0.0333                                & {\color[HTML]{CB0000} \textbf{0.1584}} & 0.0392                                & {\color[HTML]{CB0000} \textbf{0.1005}} \\
+H3k4me2                              & H1hesc                                 & {\color[HTML]{CB0000} \textbf{0.3571}}                       & {\color[HTML]{CB0000} \textbf{0.3174}}                      & 0.0522                                & \textbf{0.0661}                      & 0.0385                                & 0.0557                                 & 0.0468                                & \textbf{0.0818}                        \\
+H3k4me3                              & H1hesc                                 & {\color[HTML]{CB0000} \textbf{0.2361}}                       & {\color[HTML]{CB0000} \textbf{0.2487}}                      & 0.0501                                & 0.0305                               & 0.0339                                & 0.0522                                 & 0.0337                                & 0.0540                                 \\
+H3k79me2                             & H1hesc                                 & {\color[HTML]{CB0000} \textbf{0.3087}}                       & {\color[HTML]{CB0000} \textbf{0.3155}}                      & \textbf{0.0644}                       & 0.0376                               & 0.0318                                & 0.0398                                 & 0.0396                                & \textbf{0.0642}                        \\
+H3k9ac                               & H1hesc                                 & {\color[HTML]{CB0000} \textbf{0.3190}}                       & {\color[HTML]{CB0000} \textbf{0.2887}}                      & 0.0370                                & 0.0487                               & \textbf{0.0629}                       & \textbf{0.0927}                        & 0.0435                                & \textbf{0.0968}                        \\
+H3k9me3                              & H1hesc                                 & {\color[HTML]{CB0000} \textbf{0.2328}}                       & {\color[HTML]{CB0000} \textbf{0.2826}}                      & 0.0427                                & 0.0396                               & 0.0241                                & 0.0509                                 & 0.0494                                & {\color[HTML]{CB0000} \textbf{0.2469}} \\
+H4k20me1                             & H1hesc                                 & {\color[HTML]{CB0000} \textbf{0.3205}}                       & {\color[HTML]{CB0000} \textbf{0.2509}}                      & 0.0444                                & 0.0518                               & 0.0472                                & \textbf{0.0831}                        & 0.0377                                & {\color[HTML]{CB0000} \textbf{0.1062}} \\
+H2az                                 & Helas3                                 & {\color[HTML]{CB0000} \textbf{0.3886}}                       & {\color[HTML]{CB0000} \textbf{0.3397}}                      & 0.0353                                & 0.0344                               & 0.0294                                & 0.0252                                 & 0.0394                                & 0.0548                                 \\
+H3k27ac                              & Helas3                                 & {\color[HTML]{CB0000} \textbf{0.3494}}                       & {\color[HTML]{CB0000} \textbf{0.2800}}                      & 0.0335                                & 0.0431                               & 0.0374                                & {\color[HTML]{CB0000} \textbf{0.1166}} & 0.0361                                & 0.0505                                 \\
+H3k27me3                             & Helas3                                 & {\color[HTML]{CB0000} \textbf{0.2415}}                       & {\color[HTML]{CB0000} \textbf{0.2776}}                      & 0.0437                                & 0.0446                               & 0.0446                                & {\color[HTML]{CB0000} \textbf{0.1121}} & 0.0453                                & {\color[HTML]{CB0000} \textbf{0.1223}} \\
+H3k36me3                             & Helas3                                 & {\color[HTML]{CB0000} \textbf{0.2522}}                       & {\color[HTML]{CB0000} \textbf{0.2778}}                      & 0.0389                                & 0.0453                               & 0.0357                                & \textbf{0.0972}                        & 0.0472                                & \textbf{0.0727}                        \\
+H3k4me1                              & Helas3                                 & {\color[HTML]{CB0000} \textbf{0.4260}}                       & {\color[HTML]{CB0000} \textbf{0.4325}}                      & 0.0442                                & 0.0357                               & 0.0522                                & {\color[HTML]{CB0000} \textbf{0.1195}} & 0.0383                                & \textbf{0.0648}                        \\
+H3k4me2                              & Helas3                                 & {\color[HTML]{CB0000} \textbf{0.3681}}                       & {\color[HTML]{CB0000} \textbf{0.3429}}                      & \textbf{0.0616}                       & 0.0561                               & 0.0355                                & \textbf{0.0872}                        & 0.0254                                & \textbf{0.0738}                        \\
+H3k4me3                              & Helas3                                 & {\color[HTML]{CB0000} \textbf{0.2950}}                       & {\color[HTML]{CB0000} \textbf{0.3164}}                      & 0.0348                                & 0.0377                               & 0.0357                                & \textbf{0.0742}                        & 0.0442                                & 0.0476                                 \\
+H3k79me2                             & Helas3                                 & {\color[HTML]{CB0000} \textbf{0.3436}}                       & {\color[HTML]{CB0000} \textbf{0.3038}}                      & 0.0377                                & 0.0511                               & 0.0400                                & \textbf{0.0725}                        & 0.0461                                & \textbf{0.0620}                        \\
+H3k9ac                               & Helas3                                 & {\color[HTML]{CB0000} \textbf{0.2974}}                       & {\color[HTML]{CB0000} \textbf{0.2702}}                      & 0.0457                                & 0.0348                               & 0.0387                                & 0.0550                                 & 0.0483                                & 0.0520                                 \\
+H3k9me3                              & Helas3                                 & {\color[HTML]{CB0000} \textbf{0.3035}}                       & {\color[HTML]{CB0000} \textbf{0.2470}}                      & 0.0377                                & 0.0437                               & 0.0311                                & \textbf{0.0674}                        & 0.0287                                & {\color[HTML]{CB0000} \textbf{0.1997}} \\
+H4k20me1                             & Helas3                                 & {\color[HTML]{CB0000} \textbf{0.2953}}                       & {\color[HTML]{CB0000} \textbf{0.3830}}                      & 0.0403                                & 0.0353                               & 0.0357                                & \textbf{0.0664}                        & 0.0390                                & {\color[HTML]{CB0000} \textbf{0.1255}} \\
+H2az                                 & Hepg2                                  & {\color[HTML]{CB0000} \textbf{0.3249}}                       & {\color[HTML]{CB0000} \textbf{0.2846}}                      & 0.0368                                & 0.0544                               & 0.0361                                & \textbf{0.0644}                        & 0.0409                                & 0.0555                                 \\
+H3k27ac                              & Hepg2                                  & {\color[HTML]{CB0000} \textbf{0.3383}}                       & {\color[HTML]{CB0000} \textbf{0.3216}}                      & 0.0420                                & 0.0329                               & 0.0439                                & {\color[HTML]{CB0000} \textbf{0.1255}} & 0.0461                                & 0.0370                                 \\
+H3k27me3                             & Hepg2                                  & {\color[HTML]{CB0000} \textbf{0.3014}}                       & {\color[HTML]{CB0000} \textbf{0.2859}}                      & 0.0439                                & 0.0509                               & 0.0476                                & \textbf{0.0951}                        & 0.0377                                & \textbf{0.0816}                        \\
+H3k36me3                             & Hepg2                                  & {\color[HTML]{CB0000} \textbf{0.2976}}                       & {\color[HTML]{CB0000} \textbf{0.2459}}                      & 0.0427                                & 0.0429                               & 0.0376                                & {\color[HTML]{CB0000} \textbf{0.1893}} & 0.0477                                & 0.0392                                 \\
+H3k4me1                              & Hepg2                                  & {\color[HTML]{CB0000} \textbf{0.4030}}                       & {\color[HTML]{CB0000} \textbf{0.3625}}                      & 0.0453                                & 0.0437                               & \textbf{0.0659}                       & {\color[HTML]{CB0000} \textbf{0.1719}} & 0.0392                                & \textbf{0.0949}                        \\
+H3k4me2                              & Hepg2                                  & {\color[HTML]{CB0000} \textbf{0.4334}}                       & {\color[HTML]{CB0000} \textbf{0.3740}}                      & 0.0292                                & 0.0481                               & 0.0346                                & {\color[HTML]{CB0000} \textbf{0.1070}} & 0.0426                                & \textbf{0.0835}                        \\
+H3k4me3                              & Hepg2                                  & {\color[HTML]{CB0000} \textbf{0.3531}}                       & {\color[HTML]{CB0000} \textbf{0.3311}}                      & 0.0455                                & 0.0540                               & 0.0446                                & {\color[HTML]{CB0000} \textbf{0.1386}} & 0.0366                                & 0.0444                                 \\
+H3k79me2                             & Hepg2                                  & {\color[HTML]{CB0000} \textbf{0.3292}}                       & {\color[HTML]{CB0000} \textbf{0.2635}}                      & 0.0446                                & 0.0363                               & \textbf{0.0922}                       & 0.0431                                 & 0.0400                                & 0.0514                                 \\
+H3k9ac                               & Hepg2                                  & {\color[HTML]{CB0000} \textbf{0.3298}}                       & {\color[HTML]{CB0000} \textbf{0.3118}}                      & 0.0581                                & 0.0390                               & 0.0381                                & 0.0377                                 & 0.0461                                & 0.0413                                 \\
+H3k9me3                              & Hepg2                                  & {\color[HTML]{CB0000} \textbf{0.2837}}                       & {\color[HTML]{CB0000} \textbf{0.3370}}                      & 0.0470                                & 0.0435                               & 0.0313                                & 0.0575                                 & 0.0346                                & \textbf{0.2543}                        \\
+H4k20me1                             & Hepg2                                  & {\color[HTML]{CB0000} \textbf{0.2552}}                       & {\color[HTML]{CB0000} \textbf{0.2720}}                      & 0.0455                                & 0.0411                               & 0.0411                                & \textbf{0.0981}                        & 0.0522                                & {\color[HTML]{CB0000} \textbf{0.1195}} \\
+H2az                                 & K562                                   & {\color[HTML]{CB0000} \textbf{0.3647}}                       & {\color[HTML]{CB0000} \textbf{0.3705}}                      & 0.0361                                & 0.0376                               & 0.0466                                & \textbf{0.0964}                        & 0.0363                                & 0.0563                                 \\
+H3k27ac                              & K562                                   & {\color[HTML]{CB0000} \textbf{0.4110}}                       & {\color[HTML]{CB0000} \textbf{0.3394}}                      & 0.0287                                & 0.0405                               & 0.0461                                & {\color[HTML]{CB0000} \textbf{0.1442}} & 0.0396                                & 0.0513                                 \\
+H3k27me3                             & K562                                   & {\color[HTML]{CB0000} \textbf{0.2909}}                       & {\color[HTML]{CB0000} \textbf{0.2715}}                      & 0.0387                                & 0.0533                               & 0.0374                                & {\color[HTML]{CB0000} \textbf{0.1107}} & 0.0492                                & {\color[HTML]{CB0000} \textbf{0.1355}} \\
+H3k36me3                             & K562                                   & {\color[HTML]{CB0000} \textbf{0.2691}}                       & {\color[HTML]{CB0000} \textbf{0.2541}}                      & 0.0518                                & 0.0550                               & 0.0453                                & {\color[HTML]{CB0000} \textbf{0.1273}} & 0.0359                                & 0.0435                                 \\
+H3k4me1                              & K562                                   & {\color[HTML]{CB0000} \textbf{0.4010}}                       & {\color[HTML]{CB0000} \textbf{0.3546}}                      & 0.0366                                & 0.0435                               & 0.0429                                & {\color[HTML]{CB0000} \textbf{0.1628}} & 0.0383                                & 0.0402                                 \\
+H3k4me2                              & K562                                   & {\color[HTML]{CB0000} \textbf{0.3871}}                       & {\color[HTML]{CB0000} \textbf{0.3568}}                      & 0.0468                                & 0.0409                               & 0.0400                                & {\color[HTML]{CB0000} \textbf{0.1301}} & 0.0300                                & 0.0326                                 \\
+H3k4me3                              & K562                                   & {\color[HTML]{CB0000} \textbf{0.3451}}                       & {\color[HTML]{CB0000} \textbf{0.2907}}                      & 0.0485                                & 0.0394                               & 0.0370                                & {\color[HTML]{CB0000} \textbf{0.1158}} & 0.0439                                & 0.0452                                 \\
+H3k79me2                             & K562                                   & {\color[HTML]{CB0000} \textbf{0.2659}}                       & {\color[HTML]{CB0000} \textbf{0.2432}}                      & 0.0377                                & 0.0470                               & 0.0498                                & 0.0457                                 & 0.0289                                & 0.0389                                 \\
+H3k9ac                               & K562                                   & {\color[HTML]{CB0000} \textbf{0.3531}}                       & {\color[HTML]{CB0000} \textbf{0.3259}}                      & 0.0339                                & 0.0492                               & 0.0405                                & \textbf{0.0659}                        & 0.0346                                & 0.0387                                 \\
+H3k9me3                              & K562                                   & {\color[HTML]{CB0000} \textbf{0.2807}}                       & {\color[HTML]{CB0000} \textbf{0.2400}}                      & 0.0361                                & 0.0372                               & 0.0370                                & 0.0509                                 & 0.0372                                & {\color[HTML]{CB0000} \textbf{0.1784}} \\
+H4k20me1                             & K562                                   & {\color[HTML]{CB0000} \textbf{0.2446}}                       & {\color[HTML]{CB0000} \textbf{0.2837}}                      & 0.0540                                & 0.0390                               & 0.0426                                & {\color[HTML]{CB0000} \textbf{0.1447}} & 0.0575                                & \textbf{0.0894}
+\end{tabular}
+\normalsize
+\caption[Type I error rate estimates for Broad-Enrich, the binomial-based test, and Fisher's exact test at the 0.05 $\alpha$-level.]
+{
+% Rackham requires the figure list title matches the first sentence, so repeat that sentence here
+\textbf{Type I error rate estimates for Broad-Enrich, the binomial-based test, and Fisher's exact test at the 0.05 $\alpha$-level.}
+"Permuted" refers to permutations that do not retain locus length bias. "In Bins" refers to permutations that retain the locus length bias (see Methods for more detail). Ideally, all estimates should be $= 0.05$. Values much higher than 0.05 will lead to an overabundance of false positives when testing real, non-permuted data. Broad-Enrich displays well-calibrated type 1 error rates for all tests, the binomial test has highly inflated type 1 error rates for all tests, and Fisher's exact test and Simple LR (the same model as Broad-Enrich but without the binomial smoothing spline) has elevated type 1 error rates only for a subset of the "In Bins" permutations. We note that FET, Broad-Enrich, and the simple LR model exhibit the same trend for being slightly conservative. This is known for FET and is due to the discrete nature of the data (Upton, 1992) which has a similar effect for Broad-Enrich and Simple LR. All estimates are based on 5,404 tests, the nearest TSS locus definition, and one permutation per data set. Type I error rates $> 0.06$ are in bold; those $> 0.10$ are in red.
+}
+\label{chap2:table:1}
+
+\end{table}
+
+\newpage
+
+\begin{sidewaystable}[!ht]
+\tiny
+\centering
+\begin{tabular}{ll|lllll|lllll|lllll}
+\multicolumn{2}{l}{\textbf{}}         & \multicolumn{5}{c}{\textbf{Nearest TSS}}                                              & \multicolumn{5}{c}{\textbf{Exon}}                                                     & \multicolumn{5}{c}{\textbf{5kb}}                                                      \\
+\textbf{}         & \textbf{HM}       & \textbf{Gm12878} & \textbf{H1hesc} & \textbf{Helas3} & \textbf{Hepg2} & \textbf{K562} & \textbf{Gm12878} & \textbf{H1hesc} & \textbf{Helas3} & \textbf{Hepg2} & \textbf{K562} & \textbf{Gm12878} & \textbf{H1hesc} & \textbf{Helas3} & \textbf{Hepg2} & \textbf{K562} \\\hline
+\textbf{Enriched} & \textbf{H2az}     & 476              & 767             & 360             & 74             & 298           & 231              & 1,169           & 274             & 139            & 70            & 663              & 721             & 143             & 107            & 429           \\
+                  & \textbf{H3k27ac}  & 985              & 488             & 756             & 661            & 531           & 812              & 419             & 585             & 638            & 550           & 1,165            & 525             & 1,001           & 920            & 877           \\
+                  & \textbf{H3k27me3} & 959              & 906             & 339             & 986            & 664           & 1,531            & 1,308           & 591             & 1,357          & 1,107         & 1,424            & 1,358           & 566             & 1,265          & 968           \\
+                  & \textbf{H3k36me3} & 822              & 587             & 761             & 761            & 834           & 1,027            & 889             & 997             & 1,026          & 976           & 922              & 668             & 921             & 916            & 944           \\
+                  & \textbf{H3k4me1}  & 999              & 850             & 698             & 841            & 627           & 608              & 997             & 308             & 458            & 259           & 899              & 1,274           & 684             & 785            & 643           \\
+                  & \textbf{H3k4me2}  & 1,015            & 1,058           & 580             & 1,012          & 683           & 697              & 1,078           & 539             & 717            & 414           & 1,147            & 1,676           & 976             & 1,101          & 980           \\
+                  & \textbf{H3k4me3}  & 923              & 659             & 389             & 845            & 600           & 720              & 990             & 505             & 759            & 492           & 1,173            & 1,615           & 957             & 1,087          & 968           \\
+                  & \textbf{H3k79me2} & 1,014            & 818             & 860             & 811            & 875           & 965              & 804             & 831             & 764            & 825           & 1,249            & 962             & 1,070           & 1,006          & 1,113         \\
+                  & \textbf{H3k9ac}   & 926              & 529             & 561             & 564            & 588           & 756              & 452             & 467             & 485            & 521           & 1,140            & 809             & 851             & 920            & 947           \\
+                  & \textbf{H3k9me3}  & 253              & 44              & 73              & 29             & 8             & 396              & 37              & 76              & 32             & 14            & 369              & 45              & 73              & 27             & 6             \\
+                  & \textbf{H4k20me1} & 528              & 781             & 251             & 394            & 527           & 352              & 971             & 308             & 498            & 369           & 607              & 1,153           & 353             & 626            & 440           \\
+\textbf{Depleted} & \textbf{H2az}     & 25               & 128             & 10              & 1              & 8             & 26               & 271             & 29              & 1              & 6             & 230              & 120             & 4               & 11             & 248           \\
+                  & \textbf{H3k27ac}  & 224              & 69              & 112             & 188            & 102           & 309              & 119             & 183             & 278            & 234           & 627              & 104             & 505             & 469            & 597           \\
+                  & \textbf{H3k27me3} & 320              & 121             & 258             & 172            & 205           & 471              & 230             & 314             & 314            & 379           & 481              & 303             & 301             & 206            & 311           \\
+                  & \textbf{H3k36me3} & 714              & 510             & 748             & 839            & 769           & 1,412            & 1,148           & 1,238           & 1,418          & 1,392         & 1,154            & 706             & 1,014           & 1,187          & 1,148         \\
+                  & \textbf{H3k4me1}  & 138              & 47              & 57              & 88             & 74            & 123              & 81              & 47              & 56             & 54            & 239              & 109             & 218             & 226            & 249           \\
+                  & \textbf{H3k4me2}  & 243              & 221             & 145             & 121            & 162           & 173              & 146             & 183             & 110            & 136           & 545              & 534             & 596             & 504            & 707           \\
+                  & \textbf{H3k4me3}  & 268              & 187             & 63              & 149            & 150           & 211              & 171             & 145             & 111            & 169           & 610              & 546             & 476             & 547            & 710           \\
+                  & \textbf{H3k79me2} & 497              & 565             & 446             & 453            & 501           & 597              & 492             & 536             & 502            & 655           & 929              & 713             & 681             & 755            & 1,022         \\
+                  & \textbf{H3k9ac}   & 182              & 25              & 76              & 116            & 154           & 209              & 40              & 120             & 146            & 225           & 565              & 68              & 374             & 515            & 747           \\
+                  & \textbf{H3k9me3}  & 79               & 67              & 11              & 176            & -             & 124              & 67              & 30              & 97             & 2             & 44               & 36              & 11              & 47             & 2             \\
+                  & \textbf{H4k20me1} & 45               & 390             & 35              & 66             & 73            & 34               & 631             & 71              & 84             & 80            & 64               & 559             & 68              & 86             & 72
+\end{tabular}
+\normalsize
+\caption[A comparison of the number of enriched and depleted gene sets for each HM in each cell line using the nearest TSS, exons, and $\leq 5kb$ locus definitions.]
+{
+% Rackham requires the figure list title matches the first sentence, so repeat that sentence here
+\textbf{A comparison of the number of enriched and depleted gene sets for each HM in each cell line using the nearest TSS, exons, and $\leq 5kb$ locus definitions.}
+The number of significantly enriched ($\beta_1 > 0$ and $FDR < 0.05$) and significantly depleted ($\beta_1 < 0$ and $FDR < 0.05$) gene sets for the 55 histone based ChIP-seq datasets evaluated with Broad-Enrich using the nearest TSS, exons, and $\leq 5kb$ locus definition and a total of 5,591 gene sets from GO and KEGG. Number of enriched/depleted gene sets can vary substantially overall and across cell lines for a single histone modification. The number of enriched/depleted gene sets can also vary substantially across locus definitions for a single histone modification and cell line pair. Variation among histone modifications may partially be due to antibody quality rather than biological differences. Depleted gene sets in this context can be interpreted as having less histone modification coverage than expected by chance. On average, the significantly enriched terms outnumber significantly depleted terms by about 3:1.
+}
+\label{chap2:table:2}
+
+\end{sidewaystable}
+
+\newpage
+
+\begin{table}[!ht]
+\small
+\centering
+\begin{tabular}{l|lllll|l}
+            & \multicolumn{5}{c}{\textbf{\% Uniquely Enriched in Cell Line}}                          & \multicolumn{1}{c}{}          \\
+\textbf{HM} & \textbf{GM12878} & \textbf{H1-hESC} & \textbf{HeLa-S3} & \textbf{HepG2} & \textbf{K562} & \textbf{\% Mutually Enriched} \\\hline
+H2az        & 14.7\%           & 30.8\%           & 0.9\%            & 1.8\%          & 6.7\%         & 0.1\%                         \\
+H3k27ac     & 24.2\%           & 6.2\%            & 1.4\%            & 12.1\%         & 4.2\%         & 11.3\%                        \\
+H3k27me3    & 10.0\%           & 12.6\%           & 0.4\%            & 11.4\%         & 2.4\%         & 8.8\%                         \\
+H3k36me3    & 7.6\%            & 2.6\%            & 1.3\%            & 5.1\%          & 7.3\%         & 39.2\%                        \\
+H3k4me1     & 19.4\%           & 16.7\%           & 0.4\%            & 10.9\%         & 4.1\%         & 9.9\%                         \\
+H3k4me2     & 16.8\%           & 17.2\%           & 0.3\%            & 11.8\%         & 3.5\%         & 14.5\%                        \\
+H3k4me3     & 20.4\%           & 8.6\%            & 0.1\%            & 15.3\%         & 5.5\%         & 12.7\%                        \\
+H3k79me2    & 13.4\%           & 5.3\%            & 1.0\%            & 2.8\%          & 5.0\%         & 39.4\%                        \\
+H3k9ac      & 21.6\%           & 11.6\%           & 1.1\%            & 9.4\%          & 7.7\%         & 7.7\%                         \\
+H3k9me3     & 65.7\%           & 4.9\%            & 0.9\%            & 4.1\%          & 0.3\%         & 0.9\%                         \\
+H4k20me1    & 11.2\%           & 23.1\%           & 0.2\%            & 5.2\%          & 9.8\%         & 6.2\%
+\end{tabular}
+\normalsize
+\caption[Percentage of uniquely and mutually enriched gene sets by Broad-Enrich for each HM in each cell line.]
+{
+% Rackham requires the figure list title matches the first sentence, so repeat that sentence here
+\textbf{Percentage of uniquely and mutually enriched gene sets by Broad-Enrich for each HM in each cell line.}
+We observe that the cell lines GM12878 and H1-hESC tend to have the highest percentage of uniquely enriched gene sets across all HMs. Histone marks H3K36me3 and H3K79me2, which tend to bind in gene bodies, have the most gene sets mutually enriched among all 5 cell lines.
+}
+\label{chap2:table:3}
+
+\end{table}
+
+\newpage
+
+\begin{sidewaystable}[!ht]
+\tiny
+\centering
+\begin{tabular}{lll|p{1.5cm}p{1.5cm}p{1.5cm}p{1.5cm}p{1.5cm}p{1.5cm}}
+\textbf{DBP} & \textbf{Cell Line} & \textbf{Method} & \textbf{\% Uniquely Enriched} & \textbf{\% Mutually Enriched} & \textbf{\% Stronger Enrichments} & \textbf{Avg \# GS Genes} & \textbf{GS Avg Length} & \textbf{GS Avg Coverage} \\\hline
+H3k9ac       & Gm12878            & Broad-Enrich    & \textbf{31\%}                 & 46\%                          & \textbf{57\%}                    & 170                      & 162,413                & 18\%                     \\
+             &                    & FET             & 23\%                          &                               & 43\%                             & 121                      & 137,357                & 15\%                     \\
+H3k27ac      & Gm12878            & Broad-Enrich    & \textbf{36\%}                 & 46\%                          & \textbf{64\%}                    & 148                      & 153,043                & 20\%                     \\
+             &                    & FET             & 17\%                          &                               & 36\%                             & 161                      & 143,318                & 15\%                     \\
+H3k79me2     & Gm12878            & Broad-Enrich    & 18\%                          & 60\%                          & \textbf{53\%}                    & 163                      & 158,495                & 33\%                     \\
+             &                    & FET             & \textbf{22\%}                 &                               & 47\%                             & 60                       & 128,346                & 30\%                     \\
+H3k36me3     & Gm12878            & Broad-Enrich    & \textbf{35\%}                 & 48\%                          & \textbf{72\%}                    & 148                      & 130,460                & 56\%                     \\
+             &                    & FET             & 17\%                          &                               & 28\%                             & 208                      & 153,056                & 45\%                     \\
+H3k36me3     & H1hesc             & Broad-Enrich    & \textbf{25\%}                 & 51\%                          & \textbf{60\%}                    & 125                      & 121,990                & 49\%                     \\
+             &                    & FET             & 24\%                          &                               & 40\%                             & 236                      & 177,800                & 36\%                     \\
+H3k4me3      & Helas3             & Broad-Enrich    & 13\%                          & 34\%                          & 22\%                             & 191                      & 178,927                & 22\%                     \\
+             &                    & FET             & \textbf{52\%}                 &                               & \textbf{78\%}                    & 255                      & 176,903                & 16\%                     \\
+H3k9ac       & Hepg2              & Broad-Enrich    & \textbf{33\%}                 & 36\%                          & 50\%                             & 230                      & 159,961                & 23\%                     \\
+             &                    & FET             & 31\%                          &                               & 50\%                             & 194                      & 145,440                & 17\%                     \\
+H3k27ac      & Hepg2              & Broad-Enrich    & 23\%                          & 37\%                          & 36\%                             & 210                      & 160,203                & 20\%                     \\
+             &                    & FET             & \textbf{40\%}                 &                               & \textbf{64\%}                    & 131                      & 137,333                & 14\%                     \\
+H3k4me3      & Hepg2              & Broad-Enrich    & \textbf{49\%}                 & 41\%                          & \textbf{79\%}                    & 184                      & 181,263                & 16\%                     \\
+             &                    & FET             & 10\%                          &                               & 21\%                             & 192                      & 158,142                & 12\%                     \\
+H3k36me3     & Hepg2              & Broad-Enrich    & \textbf{32\%}                 & 47\%                          & \textbf{68\%}                    & 122                      & 129,180                & 53\%                     \\
+             &                    & FET             & 21\%                          &                               & 32\%                             & 214                      & 162,036                & 42\%                     \\
+H3k9ac       & K562               & Broad-Enrich    & 25\%                          & 45\%                          & 48\%                             & 243                      & 163,578                & 24\%                     \\
+             &                    & FET             & \textbf{29\%}                 &                               & \textbf{52\%}                    & 142                      & 139,211                & 19\%                     \\
+H3k4me3      & K562               & Broad-Enrich    & \textbf{39\%}                 & 39\%                          & \textbf{66\%}                    & 218                      & 144,140                & 20\%                     \\
+             &                    & FET             & 22\%                          &                               & 34\%                             & 240                      & 155,380                & 14\%                     \\
+H3k4me2      & K562               & Broad-Enrich    & \textbf{58\%}                 & 29\%                          & \textbf{82\%}                    & 284                      & 158,231                & 18\%                     \\
+             &                    & FET             & 12\%                          &                               & 18\%                             & 233                      & 166,737                & 13\%                     \\
+H3k79me2     & K562               & Broad-Enrich    & 20\%                          & 56\%                          & \textbf{52\%}                    & 227                      & 152,467                & 32\%                     \\
+             &                    & FET             & \textbf{24\%}                 &                               & 48\%                             & 58                       & 134,907                & 29\%                     \\
+H3k4me1      & K562               & Broad-Enrich    & \textbf{67\%}                 & 19\%                          & \textbf{80\%}                    & 357                      & 169,937                & 31\%                     \\
+             &                    & FET             & 14\%                          &                               & 20\%                             & 285                      & 146,407                & 26\%                     \\
+H3k36me3     & K562               & Broad-Enrich    & \textbf{39\%}                 & 46\%                          & \textbf{77\%}                    & 130                      & 131,744                & 55\%                     \\
+             &                    & FET             & 15\%                          &                               & 23\%                             & 141                      & 158,565                & 45\%
+\end{tabular}
+\normalsize
+\caption[A comparison between Fisher's exact test and Broad-Enrich for the 16 datasets with acceptable type I error rates for Fisher's exact test.]
+{
+% Rackham requires the figure list title matches the first sentence, so repeat that sentence here
+\textbf{A comparison between Fisher's exact test and Broad-Enrich for the 16 datasets with acceptable type I error rates for Fisher's exact test.}
+Results show that Broad-Enrich tends to identify more significantly enriched gene sets (11/16), stronger enrichment signal for gene sets identified by either (12/16), and gene sets with higher average proportions of the gene loci covered by a peak (16/16). The percentage of uniquely enriched gene sets is based on the number of gene sets with $\beta_1 > 0$ and $FDR < 0.05$ in one method and $\beta_1 > 0$ and $FDR > 0.05$ in the other divided by the number of enriched gene sets according to either method. The percentage of stronger enrichments is the number of genesets with $FDR_{Broad-Enrich} < FDR_{FET}$ (stronger in Broad-Enrich) and $FDR_{Broad-Enrich}>FDR_{FET}$ (stronger in FET) divided by the number of enriched gene sets according to either method. All results are with the nearest TSS locus definition. (GS: Gene set)
+}
+\label{chap2:table:4}
+
+\end{sidewaystable}
+
+\newpage
+
+\begin{table}[!ht]
+\small
+\centering
+\begin{tabular}{ll|l|llll|l}
+\textbf{GO Term}            & \textbf{Size}        & \textbf{Peak Prop} & \multicolumn{5}{l}{\textbf{Coverage Proportion}}                          \\
+                            &                      &                    & \multicolumn{4}{l}{Broad-Enrich}                            & FET         \\
+                            &                      &                    & \textit{0.25} & \textit{0.5} & \textit{0.75} & \textit{0.9} & \textit{NA} \\\hline
+\multirow{4}{*}{GO:0007435} & \multirow{4}{*}{30}  & \textit{0.25}      & 0.0625        & 0.5625       & 0.5625        & 0.6875       & 0           \\
+                            &                      & \textit{0.5}       & 0.5625        & 0.75         & 0.9375        & 1            & 0           \\
+                            &                      & \textit{0.75}      & 0.5625        & 1            & 1             & 1            & 0.375       \\
+                            &                      & \textit{0.9}       & 0.625         & 1            & 1             & 1            & 0.875       \\\hline
+\multirow{4}{*}{GO:0009306} & \multirow{4}{*}{150} & \textit{0.25}      & 0             & 0.3125       & 0.5625        & 0.5625       & 0           \\
+                            &                      & \textit{0.5}       & 0.3125        & 0.6875       & 0.8125        & 1            & 0           \\
+                            &                      & \textit{0.75}      & 0.5625        & 0.8125       & 1             & 1            & 0.4375      \\
+                            &                      & \textit{0.9}       & 0.5625        & 1            & 1             & 1            & 1           \\\hline
+\multirow{4}{*}{GO:0048878} & \multirow{4}{*}{763} & \textit{0.25}      & 0             & 0.375        & 0.5625        & 0.6875       & 0           \\
+                            &                      & \textit{0.5}       & 0.375         & 0.75         & 0.875         & 1            & 0.0625      \\
+                            &                      & \textit{0.75}      & 0.5625        & 0.875        & 1             & 1            & 0.5         \\
+                            &                      & \textit{0.9}       & 0.6875        & 1            & 1             & 1            & 1
+\end{tabular}
+\normalsize
+\caption[Power comparisons for Broad-Enrich versus Fisher's exact test]
+{
+% Rackham requires the figure list title matches the first sentence, so repeat that sentence here
+\textbf{Power comparisons for Broad-Enrich versus Fisher's exact test.}
+Three artificially enriched GO terms averaged across the 16 datasets with acceptable type I error for Fisher's exact test. We observe that Broad-Enrich tends to have higher power than FET in nearly all simulated datasets. Exceptions occur in some cases where the proportion of a locus covered by a peak is only 25\%. Values indicate the proportion of the 50 simulations $\times$ 16 HMs = 800 total simulated tests that resulted in $p < 0.05$. Among these original 16 datasets, the average coverage proportion for the identified enriched GO terms was 0.30, which corresponds to the coverage proportion times the peak proportion in the table below.
+}
+\label{chap2:table:5}
+
+\end{table}
+
+\newpage
+
+\begin{table}[!ht]
+\small
+\centering
+\begin{tabular}{ll|lll}
+\textbf{Dataset} & \textbf{Method} & \textbf{Avg \# Genes} & \textbf{Avg GS Locus Length} & \textbf{Avg GS Coverage} \\\hline
+H3k4me1          & Broad-Enrich    & 796                   & 155515                            & \textbf{31\%}                          \\
+H3k4me1          & GREAT           & 1343                  & 145478                            & 25\%                          \\\hline
+H3k4me2          & Broad-Enrich    & 1110                  & 149952                            & \textbf{22\%}                          \\
+H3k4me2          & GREAT           & 1117                  & 148496                            & 21\%                          \\\hline
+H3k4me3          & Broad-Enrich    & 1039                  & 142054                            & \textbf{20\%}                          \\
+H3k4me3          & GREAT           & 1331                  & 151599                            & 17\%                          \\\hline
+H3k9me3          & Broad-Enrich    & 552                   & 186518                            & \textbf{26\%}                          \\
+H3k9me3          & GREAT           & 844                   & 156895                            & 18\%                          \\\hline
+H3k27me3         & Broad-Enrich    & 888                   & 177617                            & \textbf{53\%}                          \\
+H3k27me3         & GREAT           & 505                   & 162586                            & 47\%                          \\\hline
+H3k79me2         & Broad-Enrich    & 1005                  & 130174                            & \textbf{33\%}                          \\
+H3k79me2         & GREAT           & 1146                  & 133277                            & 30\%
+\end{tabular}
+\normalsize
+\caption[A comparison of the characteristics of the top 20 gene sets identified by Broad-Enrich and GREAT.]
+{
+% Rackham requires the figure list title matches the first sentence, so repeat that sentence here
+\textbf{A comparison of the characteristics of the top 20 gene sets identified by Broad-Enrich and GREAT.}
+We used the nearest TSS locus definition for Broad-Enrich, and the "single nearest gene" within 9999kb as the gene regulatory domain for GREAT because it best approximates the nearest TSS definition. Average number of genes, average gene set locus length, and average gene set coverage for the top 20 ranked GO terms according to Broad-Enrich and GREAT (v1.8.2). Broad-Enrich finds gene sets with higher average coverage (6/6 datasets) and smaller average gene set size (5/6 datasets). (GS: Gene set)
+}
+\label{chap2:table:6}
+
+\end{table}
+
+\newpage
+
+\begin{sidewaystable}[!ht]
+\tiny
+\centering
+\begin{tabular}{lp{2cm}p{1cm}p{1cm}p{1.25cm}p{1.25cm}p{1cm}p{1.25cm}p{1.25cm}p{1.25cm}}
+\textbf{GS ID}      & \textbf{Description}                                    & \textbf{Broad-Enrich Rank} & \textbf{GREAT Rank} & \textbf{Broad-Enrich p-value} & \textbf{GREAT p-value} & \textbf{Status}   & \textbf{\# GS Genes} & \textbf{GS Avg Length} & \textbf{GS Avg Gene Coverage} \\\hline
+GO:0002376 & immune system process                          & 1                 & 5          & 3.01E-33             & 1.43E-157     & enriched & 1,605       & 138,051       & 28\%                 \\
+GO:0002682 & regulation of immune system process            & 2                 & 59         & 1.14E-31             & 1.61E-73      & enriched & 790         & 146,017       & 31\%                 \\
+GO:0002684 & positive regulation of immune system process   & 3                 & 165        & 6.58E-28             & 1.67E-43      & enriched & 506         & 148,279       & 32\%                 \\
+GO:0002764 & immune response-regulating signaling pathway   & 4                 & 647        & 1.04E-27             & 5.57E-16      & enriched & 238         & 149,948       & 37\%                 \\
+GO:0045321 & leukocyte activation                           & 5                 & 74         & 1.11E-27             & 1.38E-65      & enriched & 498         & 165,678       & 31\%                 \\
+GO:0002757 & immune response-activating signal transduction & 6                 & 671        & 1.13E-27             & 1.75E-15      & enriched & 225         & 149,574       & 38\%                 \\
+GO:0046649 & lymphocyte activation                          & 7                 & 80         & 7.28E-27             & 1.30E-63      & enriched & 419         & 170,823       & 32\%                 \\
+GO:0006955 & immune response                                & 8                 & 28         & 2.97E-25             & 9.41E-104     & enriched & 966         & 118,625       & 30\%                 \\
+GO:0001775 & cell activation                                & 9                 & 93         & 1.33E-24             & 5.50E-60      & enriched & 693         & 163,846       & 29\%                 \\
+GO:0051249 & regulation of lymphocyte activation            & 10                & 182        & 3.49E-23             & 4.34E-41      & enriched & 274         & 168,362       & 34\%                 \\
+GO:0035556 & intracellular signal transduction              & 11                & 63         & 1.57E-22             & 5.22E-72      & enriched & 1,684       & 178,113       & 25\%                 \\
+GO:0050776 & regulation of immune response                  & 12                & 102        & 5.57E-22             & 1.14E-55      & enriched & 497         & 130,410       & 32\%                 \\
+GO:0050778 & positive regulation of immune response         & 13                & 426        & 1.49E-21             & 7.99E-23      & enriched & 331         & 146,364       & 33\%                 \\
+GO:0012501 & programmed cell death                          & 14                & 26         & 3.37E-21             & 1.37E-104     & enriched & 1,467       & 166,245       & 26\%                 \\
+GO:0031347 & regulation of defense response                 & 15                & 452        & 1.03E-20             & 6.51E-22      & enriched & 390         & 138,909       & 33\%                 \\
+GO:0002694 & regulation of leukocyte activation             & 16                & 148        & 1.47E-20             & 7.52E-47      & enriched & 311         & 167,196       & 32\%                 \\
+GO:0006915 & apoptotic process                              & 17                & 24         & 4.46E-20             & 1.73E-106     & enriched & 1,454       & 166,538       & 26\%                 \\
+GO:0016265 & death                                          & 18                & 23         & 9.31E-20             & 1.56E-106     & enriched & 1,620       & 164,585       & 25\%                 \\
+GO:0050865 & regulation of cell activation                  & 19                & 147        & 9.50E-20             & 6.53E-47      & enriched & 333         & 167,988       & 31\%                 \\
+GO:0008219 & cell death                                     & 20                & 22         & 2.73E-19             & 1.39E-109     & enriched & 1,617       & 164,758       & 25\%
+\end{tabular}
+\normalsize
+\caption[Top 20 Broad-Enrich ranked GO terms for H3K4me1 in the cell line GM12878 with nearest TSS locus definition.]
+{
+% Rackham requires the figure list title matches the first sentence, so repeat that sentence here
+\textbf{Top 20 Broad-Enrich ranked GO terms for H3K4me1 in the cell line GM12878 with nearest TSS locus definition.}
+(GS: Gene set)
+}
+\label{chap2:table:7}
+
+\end{sidewaystable}
+
+\newpage
+
+\begin{sidewaystable}[!ht]
+\tiny
+\centering
+\begin{tabular}{lp{2cm}p{1cm}p{1cm}p{1.25cm}p{1.25cm}p{1cm}p{1.25cm}p{1.25cm}p{1.25cm}}
+\textbf{GS ID}      & \textbf{Description}                                    & \textbf{Broad-Enrich Rank} & \textbf{GREAT Rank} & \textbf{Broad-Enrich p-value} & \textbf{GREAT p-value} & \textbf{Status}   & \textbf{\# GS Genes} & \textbf{GS Avg Length} & \textbf{GS Avg Gene Coverage} \\\hline
+GO:0031981 & nuclear lumen                           & 27                & 1          & 8.64E-18             & 7.77E-298     & enriched & 1,999       & 135,832       & 26\%                 \\
+GO:0005654 & nucleoplasm                             & 63                & 2          & 1.95E-14             & 1.13E-255     & enriched & 1,417       & 136,910       & 26\%                 \\
+GO:0046907 & intracellular transport                 & 47                & 3          & 5.38E-16             & 2.09E-181     & enriched & 1,056       & 122,892       & 28\%                 \\
+GO:0007049 & cell cycle                              & 148               & 4          & 3.38E-09             & 3.53E-165     & enriched & 1,329       & 144,297       & 25\%                 \\
+GO:0002376 & immune system process                   & 1                 & 5          & 3.01E-33             & 1.43E-157     & enriched & 1,605       & 138,051       & 28\%                 \\
+GO:0006996 & organelle organization                  & 56                & 6          & 2.93E-15             & 2.46E-151     & enriched & 1,948       & 148,087       & 25\%                 \\
+GO:0005524 & ATP binding                             & 366               & 7          & 2.70E-05             & 3.09E-148     & enriched & 1,441       & 154,503       & 22\%                 \\
+GO:0043687 & post-translational protein modification & 2009              & 8          & 3.77E-01             & 2.55E-147     & enriched & 176         & 192,579       & 22\%                 \\
+GO:0032555 & purine ribonucleotide binding           & 337               & 9          & 1.30E-05             & 7.59E-143     & enriched & 1,798       & 150,579       & 22\%                 \\
+GO:0032553 & ribonucleotide binding                  & 338               & 10         & 1.31E-05             & 1.23E-142     & enriched & 1,799       & 150,578       & 22\%                 \\
+GO:0006917 & induction of apoptosis                  & 30                & 11         & 1.01E-17             & 9.53E-139     & enriched & 387         & 134,894       & 31\%                 \\
+GO:0017076 & purine nucleotide binding               & 308               & 12         & 7.22E-06             & 2.13E-136     & enriched & 1,811       & 150,866       & 22\%                 \\
+GO:0033554 & cellular response to stress             & 112               & 13         & 1.17E-10             & 3.75E-132     & enriched & 1,096       & 143,185       & 26\%                 \\
+GO:0051641 & cellular localization                   & 106               & 14         & 8.02E-11             & 1.55E-131     & enriched & 1,837       & 151,526       & 24\%                 \\
+GO:0044451 & nucleoplasm part                        & 178               & 15         & 2.63E-08             & 1.43E-129     & enriched & 785         & 144,434       & 25\%                 \\
+GO:0005739 & mitochondrion                           & 281               & 16         & 3.07E-06             & 4.14E-129     & enriched & 1,417       & 112,739       & 25\%                 \\
+GO:0051649 & establishment of localization in cell   & 116               & 17         & 2.13E-10             & 1.27E-126     & enriched & 1,633       & 143,002       & 25\%                 \\
+GO:0032559 & adenyl ribonucleotide binding           & 392               & 18         & 5.46E-05             & 2.41E-125     & enriched & 1,466       & 157,613       & 22\%                 \\
+GO:0030554 & adenyl nucleotide binding               & 360               & 19         & 2.29E-05             & 3.72E-119     & enriched & 1,476       & 157,899       & 22\%                 \\
+GO:0012502 & induction of programmed cell death      & 25                & 20         & 1.49E-18             & 1.05E-118     & enriched & 390         & 139,087       & 31\%
+\end{tabular}
+\normalsize
+\caption[Top 20 GREAT ranked GO terms for H3K4me1 in the cell line GM12878 with the "single nearest gene" within 9999kb as the gene regulatory domain.]
+{
+% Rackham requires the figure list title matches the first sentence, so repeat that sentence here
+\textbf{Top 20 GREAT ranked GO terms for H3K4me1 in the cell line GM12878 with the "single nearest gene" within 9999kb as the gene regulatory domain.}
+(GS: Gene set)
+}
+\label{chap2:table:8}
+\end{sidewaystable}
+
+\newpage
+
+\begin{table}[!ht]
+\tiny
+\centering
+\begin{tabular}{lllll}
+\textbf{GO ID} & \textbf{Description}                         & \textbf{Broad-Enrich Rank} & \textbf{GREAT Rank} & \textbf{\% GS Avg Coverage} \\\hline
+\multicolumn{5}{l}{\textit{A.     Broad-Enrich Results}}                                                                                       \\\hline
+GO:0002684     & positive regulation of immune system process & 3                          & 165                 & 32                          \\
+GO:0002764     & immune response-regulating signaling pathway & 4                          & 647                 & 37                          \\
+GO:0045321     & leukocyte activation                         & 5                          & 74                  & 31                          \\
+GO:0046649     & lymphocyte activation                        & 7                          & 80                  & 32                          \\
+GO:0051249     & regulation of lymphocyte activation          & 10                         & 182                 & 34                          \\
+GO:0035556     & intracellular signal transduction            & 11                         & 63                  & 25                          \\
+GO:0050778     & positive regulation of immune response       & 13                         & 426                 & 33                          \\
+GO:0012501     & programmed cell death                        & 14                         & 26                  & 26                          \\
+GO:0031347     & regulation of defense response               & 15                         & 452                 & 33                          \\
+GO:0002694     & regulation of leukocyte activation           & 16                         & 148                 & 32                          \\\hline
+\multicolumn{5}{l}{\textit{B.      GREAT Results}}                                                                                             \\\hline
+GO:0031981     & nuclear lumen                                & 27                         & 1                   & 26                          \\
+GO:0046907     & intracellular transport                      & 47                         & 3                   & 28                          \\
+GO:0002376     & immune system process                        & 1                          & 5                   & 28                          \\
+GO:0005524     & ATP binding                                  & 366                        & 7                   & 22                          \\
+GO:0043687     & post-translational protein modification      & 2,009                      & 8                   & 22                          \\
+GO:0032553     & ribonucleotide binding                       & 338                        & 10                  & 22                          \\
+GO:0006917     & induction of apoptosis                       & 30                         & 11                  & 31                          \\
+GO:0017076     & purine nucleotide binding                    & 308                        & 12                  & 22                          \\
+GO:0033554     & cellular response to stress                  & 112                        & 13                  & 26                          \\
+GO:0005739     & mitochondrion                                & 281                        & 16                  & 25
+\end{tabular}
+\normalsize
+\caption[Subset of top 20 genes ranked by Broad-Enrich and GREAT.]
+{
+% Rackham requires the figure list title matches the first sentence, so repeat that sentence here
+\textbf{Subset of top 20 genes ranked by Broad-Enrich and GREAT.}
+(A) A subset of the top 20 gene sets, as ranked by Broad-Enrich, for H3K4me1 in the GM12878 cell line using the nearest TSS definition. (B) A subset of the top 20 gene sets, as ranked by GREAT (v1.8.2), for H3K4me1 in the GM12878 cell line using the "single nearest gene" within 9999kb gene regulatory definition.
+}
+\label{chap2:table:11}
+
+\end{table}
+
+\newpage
+
+\begin{sidewaystable}[!ht]
+\tiny
+\centering
+\begin{tabular}{lp{2cm}p{1cm}p{1cm}p{1.25cm}p{1.25cm}p{1cm}p{1.25cm}p{1.25cm}p{1.25cm}}
+\textbf{GS ID} & \textbf{Description}               & \textbf{Broad-Enrich Rank} & \textbf{GREAT Rank} & \textbf{Broad-Enrich p-value} & \textbf{GREAT p-value} & \textbf{Status} & \textbf{\# GS Genes} & \textbf{GS Avg Length} & \textbf{GS Avg Coverage} \\\hline
+GO:0005576     & extracellular region               & 1                          & 2                   & 3.88883E-68                   & 3.62253E-28            & enriched        & 1959                 & 149495.5768            & 0.49291351               \\
+GO:0044421     & extracellular region part          & 2                          & 63                  & 5.83E-46                      & 4.37E-13               & enriched        & 1,031                & 157,614                & 52\%                     \\
+GO:0005615     & extracellular space                & 3                          & 75                  & 1.26E-39                      & 2.80E-12               & enriched        & 804                  & 146,729                & 53\%                     \\
+GO:0009888     & tissue development                 & 4                          & 306                 & 2.28E-33                      & 8.03E-06               & enriched        & 1,118                & 200,244                & 49\%                     \\
+GO:0005882     & intermediate filament              & 5                          & 389                 & 1.24E-28                      & 5.28E-05               & enriched        & 157                  & 55,607                 & 70\%                     \\
+GO:0003008     & system process                     & 6                          & 153                 & 1.36E-28                      & 1.86E-08               & enriched        & 1,522                & 203,448                & 46\%                     \\
+GO:0009653     & anatomical structure morphogenesis & 7                          & 994                 & 5.67E-25                      & 2.80E-02               & enriched        & 1,867                & 222,080                & 45\%                     \\
+GO:0045111     & intermediate filament cytoskeleton & 8                          & 481                 & 2.21E-24                      & 2.44E-04               & enriched        & 193                  & 77,247                 & 62\%                     \\
+GO:0009887     & organ morphogenesis                & 9                          & 609                 & 3.27E-23                      & 1.34E-03               & enriched        & 701                  & 216,324                & 51\%                     \\
+GO:0060429     & epithelium development             & 10                         & 580                 & 4.61E-23                      & 1.02E-03               & enriched        & 514                  & 219,959                & 53\%                     \\
+GO:0030855     & epithelial cell differentiation    & 11                         & 76                  & 4.92E-23                      & 3.00E-12               & enriched        & 275                  & 206,451                & 59\%                     \\
+GO:0044459     & plasma membrane part               & 12                         & 86                  & 2.35E-21                      & 1.88E-11               & enriched        & 1,985                & 193,892                & 43\%                     \\
+GO:0007267     & cell-cell signaling                & 13                         & 961                 & 3.47E-21                      & 2.38E-02               & enriched        & 1,016                & 226,091                & 47\%                     \\
+GO:0003002     & regionalization                    & 14                         & 1,728               & 5.96E-21                      & 4.33E-01               & enriched        & 266                  & 209,625                & 59\%                     \\
+GO:0031012     & extracellular matrix               & 15                         & 953                 & 7.99E-21                      & 2.29E-02               & enriched        & 404                  & 202,739                & 54\%                     \\
+GO:0007389     & pattern specification process      & 16                         & 2,004               & 1.05E-20                      & 6.83E-01               & enriched        & 370                  & 217,164                & 56\%                     \\
+GO:0050877     & neurological system process        & 17                         & 654                 & 1.77E-19                      & 2.16E-03               & enriched        & 1,101                & 217,460                & 46\%                     \\
+GO:0045095     & keratin filament                   & 18                         & 463                 & 2.38E-19                      & 1.88E-04               & enriched        & 80                   & 24,339                 & 76\%                     \\
+GO:0031226     & intrinsic to plasma membrane       & 19                         & 765                 & 7.54E-19                      & 5.87E-03               & enriched        & 1,216                & 203,748                & 45\%                     \\
+GO:0005887     & integral to plasma membrane        & 20                         & 1,203               & 9.62E-19                      & 7.68E-02               & enriched        & 1,175                & 202,079                & 45\%
+\end{tabular}
+\normalsize
+\caption[Top 20 Broad-Enrich ranked GO terms for H3K27me3 in the cell line GM12878 with nearest TSS locus definition.]
+{
+% Rackham requires the figure list title matches the first sentence, so repeat that sentence here
+\textbf{Top 20 Broad-Enrich ranked GO terms for H3K27me3 in the cell line GM12878 with nearest TSS locus definition.}
+(GS: Gene set)
+}
+\label{chap2:table:9}
+
+\end{sidewaystable}
+
+\newpage
+
+\begin{sidewaystable}[!ht]
+\tiny
+\centering
+\begin{tabular}{lp{2cm}p{1cm}p{1cm}p{1.25cm}p{1.25cm}p{1cm}p{1.25cm}p{1.25cm}p{1.25cm}}
+\textbf{GS ID} & \textbf{Description}                                      & \textbf{Broad-Enrich Rank} & \textbf{GREAT Rank} & \textbf{Broad-Enrich p-value} & \textbf{GREAT p-value} & \textbf{Status} & \textbf{\# GS Genes} & \textbf{GS Avg Length} & \textbf{GS Avg Coverage} \\\hline
+GO:0055094     & response to lipoprotein particle stimulus                 & 1,509                      & 1                   & 1.32E-01                      & 5.99E-32               & enriched        & 13                   & 195,722                & 53\%                     \\
+GO:0005576     & extracellular region                                      & 1                          & 2                   & 3.89E-68                      & 3.62E-28               & enriched        & 1,959                & 149,496                & 49\%                     \\
+GO:0060627     & regulation of vesicle-mediated transport                  & 2,123                      & 3                   & 4.25E-01                      & 7.20E-28               & enriched        & 199                  & 182,099                & 37\%                     \\
+GO:0005868     & cytoplasmic dynein complex                                & 2,749                      & 4                   & 9.05E-01                      & 1.20E-27               & enriched        & 13                   & 146,250                & 38\%                     \\
+GO:0004522     & pancreatic ribonuclease activity                          & 656                        & 5                   & 3.77E-03                      & 6.61E-25               & enriched        & 11                   & 36,163                 & 69\%                     \\
+GO:0051049     & regulation of transport                                   & 114                        & 6                   & 2.46E-08                      & 3.99E-24               & enriched        & 894                  & 183,000                & 43\%                     \\
+GO:0051668     & localization within membrane                              & 2,826                      & 7                   & 9.61E-01                      & 5.90E-24               & enriched        & 20                   & 154,071                & 35\%                     \\
+GO:0015833     & peptide transport                                         & 425                        & 8                   & 4.28E-04                      & 1.29E-23               & enriched        & 183                  & 192,789                & 47\%                     \\
+GO:0030431     & sleep                                                     & 700                        & 9                   & 5.23E-03                      & 4.47E-23               & enriched        & 26                   & 141,405                & 57\%                     \\
+GO:0009749     & response to glucose stimulus                              & 2,427                      & 10                  & 6.46E-01                      & 1.41E-22               & enriched        & 104                  & 181,683                & 37\%                     \\
+GO:0009893     & positive regulation of metabolic process                  & 1,330                      & 11                  & 8.06E-02                      & 2.99E-22               & enriched        & 1,833                & 176,536                & 37\%                     \\
+GO:0010604     & positive regulation of macromolecule metabolic process    & 1,399                      & 12                  & 9.78E-02                      & 4.40E-21               & enriched        & 1,706                & 176,977                & 37\%                     \\
+GO:0009611     & response to wounding                                      & 109                        & 13                  & 2.22E-08                      & 8.61E-21               & enriched        & 1,042                & 154,859                & 42\%                     \\
+GO:0016892     & endoribonuclease activity, producing 3'-phosphomonoesters & 504                        & 14                  & 9.57E-04                      & 1.00E-20               & enriched        & 14                   & 41,597                 & 69\%                     \\
+GO:0051930     & regulation of sensory perception of pain                  & 1,817                      & 15                  & 2.51E-01                      & 2.52E-20               & enriched        & 18                   & 185,052                & 46\%                     \\
+GO:0032879     & regulation of localization                                & 73                         & 16                  & 1.12E-10                      & 2.71E-20               & enriched        & 1,209                & 197,426                & 42\%                     \\
+GO:0017157     & regulation of exocytosis                                  & 1,462                      & 17                  & 1.16E-01                      & 4.89E-20               & enriched        & 73                   & 172,934                & 42\%                     \\
+GO:0046903     & secretion                                                 & 48                         & 18                  & 3.99E-13                      & 1.68E-19               & enriched        & 730                  & 174,058                & 46\%                     \\
+GO:0043616     & keratinocyte proliferation                                & 1,521                      & 19                  & 1.37E-01                      & 1.89E-19               & enriched        & 23                   & 300,646                & 49\%                     \\
+GO:0001533     & cornified envelope                                        & 216                        & 20                  & 4.78E-06                      & 2.02E-19               & enriched        & 24                   & 108,955                & 74\%
+\end{tabular}
+\normalsize
+\caption[Top 20 GREAT ranked GO terms for H3K27me3 in the cell line GM12878 with the "single nearest gene" within 9999kb as the gene regulatory domain.]
+{
+% Rackham requires the figure list title matches the first sentence, so repeat that sentence here
+\textbf{Top 20 GREAT ranked GO terms for H3K27me3 in the cell line GM12878 with the "single nearest gene" within 9999kb as the gene regulatory domain.}
+(GS: Gene set)
+}
+\label{chap2:table:10}
+
+\end{sidewaystable}

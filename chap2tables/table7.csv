@@ -1,0 +1,21 @@
+GS ID,Geneset.Type,Description,Broad-Enrich Rank,GREAT Rank,Broad-Enrich p-value,GREAT p-value,FDR,Odds.Ratio,Status,# GS Genes,TotalGenes,N.Geneset.Peak.Genes,ObsRegions,GS Avg Length,GS Avg Gene Coverage
+GO:0002376,Gene Ontology Biological Process,immune system process,1,5,3.01E-33,1.43E-157,1.22E-29,3.193200192,enriched," 1,605 ",989,1465,7550," 138,051 ",28%
+GO:0002682,Gene Ontology Biological Process,regulation of immune system process,2,59,1.14E-31,1.61E-73,2.31E-28,4.535974052,enriched, 790 ,461,719,3857," 146,017 ",31%
+GO:0002684,Gene Ontology Biological Process,positive regulation of immune system process,3,165,6.58E-28,1.67E-43,7.59E-25,5.503409517,enriched, 506 ,273,464,2311," 148,279 ",32%
+GO:0002764,Gene Ontology Biological Process,immune response-regulating signaling pathway,4,647,1.04E-27,5.57E-16,7.59E-25,10.38995754,enriched, 238 ,67,230,659," 149,948 ",37%
+GO:0045321,Gene Ontology Biological Process,leukocyte activation,5,74,1.11E-27,1.38E-65,7.59E-25,5.7024465,enriched, 498 ,258,471,2560," 165,678 ",31%
+GO:0002757,Gene Ontology Biological Process,immune response-activating signal transduction,6,671,1.13E-27,1.75E-15,7.59E-25,10.95270433,enriched, 225 ,62,221,601," 149,574 ",38%
+GO:0046649,Gene Ontology Biological Process,lymphocyte activation,7,80,7.28E-27,1.30E-63,4.20E-24,6.329754728,enriched, 419 ,206,400,2132," 170,823 ",32%
+GO:0006955,Gene Ontology Biological Process,immune response,8,28,2.97E-25,9.41E-104,1.50E-22,3.367304552,enriched, 966 ,633,881,4187," 118,625 ",30%
+GO:0001775,Gene Ontology Biological Process,cell activation,9,93,1.33E-24,5.50E-60,5.98E-22,4.206971546,enriched, 693 ,304,649,2777," 163,846 ",29%
+GO:0051249,Gene Ontology Biological Process,regulation of lymphocyte activation,10,182,3.49E-23,4.34E-41,1.41E-20,7.766252406,enriched, 274 ,168,262,1719," 168,362 ",34%
+GO:0035556,Gene Ontology Biological Process,intracellular signal transduction,11,63,1.57E-22,5.22E-72,5.77E-20,2.64346393,enriched," 1,684 ",902,1558,7572," 178,113 ",25%
+GO:0050776,Gene Ontology Biological Process,regulation of immune response,12,102,5.57E-22,1.14E-55,1.88E-19,4.457552122,enriched, 497 ,248,452,1924," 130,410 ",32%
+GO:0050778,Gene Ontology Biological Process,positive regulation of immune response,13,426,1.49E-21,7.99E-23,4.64E-19,5.893133173,enriched, 331 ,155,306,1214," 146,364 ",33%
+GO:0012501,Gene Ontology Biological Process,programmed cell death,14,26,3.37E-21,1.37E-104,9.73E-19,2.64295109,enriched," 1,467 ",664,1351,5527," 166,245 ",26%
+GO:0031347,Gene Ontology Biological Process,regulation of defense response,15,452,1.03E-20,6.51E-22,2.77E-18,5.025043054,enriched, 390 ,171,363,1260," 138,909 ",33%
+GO:0002694,Gene Ontology Biological Process,regulation of leukocyte activation,16,148,1.47E-20,7.52E-47,3.72E-18,6.280279406,enriched, 311 ,191,294,1958," 167,196 ",32%
+GO:0006915,Gene Ontology Biological Process,apoptotic process,17,24,4.46E-20,1.73E-106,1.06E-17,2.584993666,enriched," 1,454 ",653,1339,5436," 166,538 ",26%
+GO:0016265,Gene Ontology Biological Process,death,18,23,9.31E-20,1.56E-106,2.02E-17,2.459169076,enriched," 1,620 ",789,1488,6401," 164,585 ",25%
+GO:0050865,Gene Ontology Biological Process,regulation of cell activation,19,147,9.50E-20,6.53E-47,2.02E-17,5.763557236,enriched, 333 ,203,314,2024," 167,988 ",31%
+GO:0008219,Gene Ontology Biological Process,cell death,20,22,2.73E-19,1.39E-109,5.52E-17,2.438942371,enriched," 1,617 ",784,1485,6376," 164,758 ",25%

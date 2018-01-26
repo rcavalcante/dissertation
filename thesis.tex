@@ -1,0 +1,188 @@
+% This is an AMS-LaTeX v. 1.2 File.
+
+\documentclass[leqno]{report}
+%\usepackage{amsmath}
+\usepackage{amsthm}
+\usepackage{amssymb}
+%\usepackage{amsfonts}
+\usepackage{amsxtra}     % Use various AMS packages
+\usepackage{rac}         % Use Rackham thesis macros
+\usepackage{dbl12}
+%\usepackage{srcltx}
+\usepackage{epsfig}
+\usepackage{verbatim}
+\usepackage{hyperref}
+\usepackage{xcolor}
+\usepackage{multirow}
+\usepackage{rotating}
+
+\hypersetup{
+    colorlinks = false,
+    linkbordercolor = {white},
+    citebordercolor = {white}
+}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% Redefine margins and other page formatting
+
+\setlength{\oddsidemargin}{0.5in}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% Various theorem environments. All of the following have the same numbering
+% system as theorem.
+
+\theoremstyle{plain}
+\newtheorem{theorem}{Theorem}
+\newtheorem{prop}[theorem]{Proposition}
+\newtheorem{corollary}[theorem]{Corollary}
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{question}[theorem]{Question}
+\newtheorem{conjecture}[theorem]{Conjecture}
+\newtheorem{assumption}[theorem]{Assumption}
+
+\theoremstyle{definition}
+\newtheorem{definition}[theorem]{Definition}
+\newtheorem{notation}[theorem]{Notation}
+\newtheorem{condition}[theorem]{Condition}
+\newtheorem{example}[theorem]{Example}
+\newtheorem{introduction}[theorem]{Introduction}
+
+\theoremstyle{remark}
+\newtheorem{remark}[theorem]{Remark}
+\include{header}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\numberwithin{theorem}{chapter}        % Numbers theorems "x.y" where x
+                                        % is the section number, y is the
+                                        % theorem number
+
+%\renewcommand{\thetheorem}{\arabic{chapter}.\arabic{theorem}}
+
+%\makeatletter                          % This sequence of commands will
+%\let\c@equation\c@theorem              % incorporate equation numbering
+%\makeatother                           % into the theorem numbering scheme
+
+%\renewcommand{\theenumi}{(\roman{enumi})}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{document}
+
+\bibliographystyle{ieeetr}       % Set the bibliography style to AMS
+                                % alphabetized. (Can use ``amsalpha'' or
+                                % ``abbrv''instead.)
+
+% Title page as required by Rackham dissertation guidelines
+
+\titlepage{Beyond the Transcriptome: Facilitating Interpretation of Epigenomics and Metabolomics Data}{Raymond Cavalcante Jr.}{Doctor of Philosophy}
+{Bioinformatics} {2017}
+{ Associate Professor Maureen A. Sartor, Chair \\
+  Assistant Professor Alan P. Boyle \\
+  Associate Professor Maria Figueroa\\
+  Research Assistant Professor Alla Karnovsky\\
+  Professor Kerby A. Shedden }
+
+% Copyright page
+\copyrightpage{Raymond Cavalcante Jr.}{rcavalca@umich.edu}{ORCHID iD: 0000-0002-6986-4283}
+
+% Begin the front matter as required by Rackham dissertation guidelines
+\initializefrontsections
+
+% Dedication page
+\dedicationpage{To my parents, for their unwavering love and support.}
+
+% Acknowledgements page
+\startacknowledgementspage
+{We are each the sum of the people we surround ourselves with, the experiences we have, and the inner lives we live. I have been fortunate throughout my entire life to have a loving family, wonderful friends, and supportive colleagues.
+
+I would like to thank the members of my committee for their time and advice. I especially would like to thank Maureen for being an excellent advisor, but more for being an extraordinary person. She has helped me accomplish so much academically in these 5 years, but has also helped me to quite literally see the world. I have been \emph{enriched} by my time with Maureen, one could say.
+
+I would like to thank my parents for having the wisdom and courage to let me explore the world on my own terms. Arthur, my love, and the man I will spend the rest of my life with. Bronwyn and Tim, you are two of the best things to have ever happened to me. Diego, for knowing that I had it in me. Shweta and Teal, for being a patronus when I needed it.
+}
+
+% Table of contents, list of figures, etc.
+\tableofcontents
+\listoffigures
+\listoftables
+
+%Abstract Page
+\startabstractpage{\setcounter{page}{10} High-throughput omics experiments produce an incredible amount of data which must be put into context to make it useful. This is true of transcriptomics assays, epigenomics assays such as those measuring transcription factor binding and histone modifications (e.g. ChIP-seq) or those measuring DNA methylation (e.g. WGBS and RRBS), as well as for metabolomics assays quantifying small molecules (e.g. LC-MS). The field of transcriptomics, having been developed earlier than epigenomics and metabolomics, benefits from more, and more mature, interpretive tools. The primary goal of this dissertation is to develop software tools to interpret epigenomics and metabolomics data.
+
+First, we developed Broad-Enrich, a gene set enrichment tool designed for histone modification ChIP-seq data and other broad genomic regions. We employ a logistic regression model with a smoothing spline to account for the relationship between the proportion of a gene covered by a peak and a gene's length. We demonstrate Broad-Enrich has correct Type I error across 55 ENCODE HM datasets, that Broad-Enrich returns more biologically relevant results than other approaches, and that the correct choice of gene locus definition improves the strength of enrichments.
+
+Second, we developed ConceptMetab, an interactive web-based tool that maps and explores the relationships among biologically-defined metabolite sets developed from Gene Ontology, KEGG Pathways, and Medical Subject Headings, and based on statistical tests for association.  We demonstrate the utility of ConceptMetab with multiple vignettes, showing it can be used to identify known and potentially novel relationships among metabolic pathways, cellular processes, phenotypes, and diseases, and provides an intuitive interface for linking compounds to their molecular functions and higher level biological effects.
+
+Third, we developed annotatr, a tool for annotating genomic regions to genomic annotations. The annotatr package reports all intersections of regions and annotations, giving a better understanding of the genomic context of the regions. A variety of functions are implemented to easily plot covariate data associated with the regions across the annotations, and across annotation intersections, providing insight into how characteristics of the regions differ across the genome.
+
+Fourth, we developed mint, a pipeline to analyze, integrate, and annotate DNA methylation (5mC) and hydroxymethylation data (5hmC). Current gold-standard methods for measuring 5mC also capture 5hmC signal, confounding biological conclusions. The mint pipeline separates the signals \emph{in silico} to discern the effects of each epigenetic mark in the experiment under consideration. The pipeline supports group comparisons for general designs with covariate information, and data are integrated based upon overlapping signal of 5mC and 5hmC. Genomic annotations and summary visualizations are output at various stages to facilitate interpretation.
+
+In sum, this body of work establishes tools enabling the interpretation of epigenomics and metabolomics data via functional enrichment, genomic annotation, data integration, and visualization.
+}
+
+\startthechapters
+% The individual files for each of the chapters are put here.
+% Save each chapter of your thesis to a seperate tex file
+% and then use the \input command to include this file in your
+% thesis.  For instance you can save a file to "intro.tex" and
+% then type \input{intro}".
+
+\setcounter{page}{1}
+
+\chapter{Introduction}
+\label{introduction}
+\input{introduction}
+
+\chapter{Broad-Enrich: Functional interpretation of large sets of broad genomic regions}
+\label{chap2}
+\input{chap2}
+\clearpage
+\section*{Figures}
+\input{chap2figs}
+\clearpage
+\section*{Tables}
+\input{chap2tables}
+
+\chapter{ConceptMetab: Exploring relationships among metabolite sets to identify links among biomedical concepts}
+\label{chap3}
+\input{chap3}
+\clearpage
+\section*{Figures}
+\input{chap3figs}
+\clearpage
+\section*{Tables}
+\input{chap3tables}
+
+\chapter{annotatr: Genomic regions in context}
+\label{chap4}
+\input{chap4}
+\clearpage
+\section*{Figures}
+\input{chap4figs}
+\clearpage
+\section*{Tables}
+\input{chap4tables}
+
+\chapter{Integrating DNA methylation and hydroxymethylation data with the mint pipeline}
+\label{chap5}
+\input{chap5}
+\clearpage
+\section*{Figures}
+\input{chap5figs}
+\clearpage
+\section*{Tables}
+\input{chap5tables}
+
+\chapter{Conclusion}
+\label{conclusion}
+\input{conclusion}
+
+%\startappendices
+%\label{appendix}
+%\input{appendix}
+
+\bibliography{bibliography}   % Use the BibTeX file ``biblio.bib''.
+
+\end{document}
